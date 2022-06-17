@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notes from #wcuk &#8211; Mark Wilkinson &#8211; Matt Radford</title>
+<link rel="canonical" href="/notes-wcuk-mark-wilkinson/">
+    <style>body img {width: 100%;height: auto;}</style>
+            <!-- All Glory to the Hypno Toad! -->
+    </head>
+
+    <body>
+        
+        <header>
+            <a href="/">Matt Radford</a>
+            <p>Messing with links since &lt;blink&gt;</p>
+            <nav>
+                <ul id="menu-primary-navigation" class="menu">
+<li id="menu-item-961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-961"><a href="/about/">About</a></li>
+</ul>            </nav>
+        </header>
+
+        <main>            <article id="post-254" class="post-254 post type-post status-publish format-standard hentry">
+            <header>
+                <h1>Notes from #wcuk &#8211; Mark Wilkinson</h1>
+            </header>
+            <section>
+                <h3>Extensible Plugins</h3>
+<p>31491 plugins: can&#8217;t always find the one you need to do the job</p>
+<p>Help others make a tiny tweak by making plugins extensible.</p>
+<p>This is about plugins, but also applicable to themes.</p>
+<p>&#8220;One that can be modified or extended without changing the plugin code itself.&#8221;</p>
+<h3>Why?</h3>
+<p>Safe modification.<br>
+Much more popular in WP Plugin Directory!</p>
+<h3>Tools &amp; Functions</h3>
+<p>Actions &amp; Filters</p>
+<p><code>do_action();</code><br>
+&#8211; a hook to add functionality at that point</p>
+<p>Create a function, and add an action, e.g. to 2014 footer.php</p>
+<p><code>apply_filters();</code><br>
+&#8211; filter the data that WP works with before its seen by the user</p>
+<p>E.g. wanted to add a link to a Twitter user within a tweet widget. Looked for class wrapping the user. Searched the plugin for that class, and found an apply_filters string. Don&#8217;t need to edit plugin.</p>
+<p>Wrote a simple function to user that filter.</p>
+<h3>Where should we use these actions &amp; filters?</h3>
+<p>1) Setting up arrays<br>
+2) Before/after HTML output<br>
+3) Before/after setup</p>
+<p>E.g. instead of just declaring an array, pass it through a filter first.</p>
+<h4>Template Overides</h4>
+<p>Can use a filter to override template files, e.g. WooCommerce does this.</p>
+<p><a href="http://mattrad.uk/wp-content/uploads/2014/07/wpmark1.jpg"><img class="aligncenter size-large wp-image-255" src="http://mattrad.uk/wp-content/uploads/2014/07/wpmark1-1024x768.jpg" alt="wpmark1" width="1024" height="768" srcset="/wp-content/uploads/2014/07/wpmark1-1024x768.jpg 1024w, /wp-content/uploads/2014/07/wpmark1-300x225.jpg 300w" sizes="(max-width: 1024px) 100vw, 1024px"></a></p>
+<p><a href="http://mattrad.uk/wp-content/uploads/2014/07/wpmark2.jpg"><img loading="lazy" class="aligncenter size-large wp-image-256" src="http://mattrad.uk/wp-content/uploads/2014/07/wpmark2-1024x811.jpg" alt="wpmark2" width="1024" height="811" srcset="/wp-content/uploads/2014/07/wpmark2-1024x811.jpg 1024w, /wp-content/uploads/2014/07/wpmark2-300x237.jpg 300w" sizes="(max-width: 1024px) 100vw, 1024px"></a></p>
+<p><a href="http://mattrad.uk/wp-content/uploads/2014/07/wpmark3.jpg"><img loading="lazy" class="aligncenter size-large wp-image-257" src="http://mattrad.uk/wp-content/uploads/2014/07/wpmark3-1024x784.jpg" alt="wpmark3" width="1024" height="784" srcset="/wp-content/uploads/2014/07/wpmark3-1024x784.jpg 1024w, /wp-content/uploads/2014/07/wpmark3-300x229.jpg 300w" sizes="(max-width: 1024px) 100vw, 1024px"></a></p>
+<p><a href="http://mattrad.uk/wp-content/uploads/2014/07/wpmark4.jpg"><img loading="lazy" class="aligncenter size-large wp-image-258" src="http://mattrad.uk/wp-content/uploads/2014/07/wpmark4-1024x785.jpg" alt="wpmark4" width="1024" height="785" srcset="/wp-content/uploads/2014/07/wpmark4-1024x785.jpg 1024w, /wp-content/uploads/2014/07/wpmark4-300x229.jpg 300w" sizes="(max-width: 1024px) 100vw, 1024px"></a></p>
+            </section>
+        </article>
+        </main>
+
+    <footer>
+        <p><small>&copy; 1996 - 2022 Matt Radford. As ever, built with <a href="http://wordpress.org/">WordPress</a>.</small></p>
+    </footer>
+    
+</body>
+</html>

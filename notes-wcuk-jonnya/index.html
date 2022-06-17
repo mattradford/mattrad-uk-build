@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notes from #wcuk &#8211; @jonnya &#8211; Matt Radford</title>
+<link rel="canonical" href="/notes-wcuk-jonnya/">
+    <style>body img {width: 100%;height: auto;}</style>
+            <!-- All Glory to the Hypno Toad! -->
+    </head>
+
+    <body>
+        
+        <header>
+            <a href="/">Matt Radford</a>
+            <p>Messing with links since &lt;blink&gt;</p>
+            <nav>
+                <ul id="menu-primary-navigation" class="menu">
+<li id="menu-item-961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-961"><a href="/about/">About</a></li>
+</ul>            </nav>
+        </header>
+
+        <main>            <article id="post-263" class="post-263 post type-post status-publish format-standard hentry">
+            <header>
+                <h1>Notes from #wcuk &#8211; @jonnya</h1>
+            </header>
+            <section>
+                <h3>Designing with Data</h3>
+<p>Content detection can be brittle (limited)<br>
+&#8211; i.e. detecting page IDs</p>
+<ul>
+<li>More creative flexibility</li>
+<li>Bespoke editing</li>
+<li>Accomodate future development</li>
+</ul>
+<h4>Structure data</h4>
+<p>&#8211; content &amp; design elements<br>
+-** functionality?**<br>
+What needs to be editable?<br>
+&#8211; e.g. don&#8217;t let clients alter theme colours</p>
+<p>What needs to be queried?<br>
+&#8211; do you need to get to data attributes to alter what is displayed on the page?</p>
+<p>How to achieve the design requirements?</p>
+<p>e.g. instead of creating different templates for differently coloured pages, why not use a custom field that is pre-poulated in the edit screen, which targets a class</p>
+<h4>Data attributes</h4>
+<ul>
+<li>Page/post hierarchy</li>
+<li>Post types/formats</li>
+<li>Tags/categories</li>
+<li>Custom tax.</li>
+<li>Custom fields</li>
+<li>Images/attachments</li>
+</ul>
+<h4>Design attributes:</h4>
+<p>General static(isj) design/structure<br>
+Editable WP menus<br>
+Editable Widget areas<br>
+&#8211; Jonny has a plugin to remove widgets, to leave in only the only that they need, and not allow breaking<br>
+Archive views</p>
+<p>Sophistication using template hierarchy, esp taxonomies</p>
+<h4>Content Detection</h4>
+<p>&#8211; CSS<br>
+&#8211; body and post class<br>
+PHP<br>
+&#8211; post id<br>
+&#8211; query variables<br>
+&#8211; <code>is_page()</code> etc<br>
+&#8211; has post image<br>
+&#8211; has widgets</p>
+<p>Can alter body class with a filter, add a custom name.<br>
+&#8211; all sort of content detection, then add a body class</p>
+<p>Content detection with PHP<br>
+e.g. Displaying a fallback image if there&#8217;s no post_thumbnail.<br>
+(I do that already &#8211; sweet!)</p>
+<p><code>get_</code> on a function returns it rather than echos output, e.g. <code>get_the_post_thumbnail($post_id)</code> rather than <code>the_post_thumbnail($post_id)</code></p>
+<p><code>is_active_sidebar( $name-or-id)</code><br>
+(has a user dragged widgets into an active widget area?)</p>
+<p><code>pre_get_posts</code><br>
+Super-powerful. Don&#8217;t let it mess with the admin!</p>
+<h4>What about data input?</h4>
+<p>Validate user input<br>
+Always escape on output<br>
+Escape late<br>
+Use <code>$wpdb</code> class for the database</p>
+<p>More coming:</p>
+<p>WP-API<br>
+WP metabox API</p>
+            </section>
+        </article>
+        </main>
+
+    <footer>
+        <p><small>&copy; 1996 - 2022 Matt Radford. As ever, built with <a href="http://wordpress.org/">WordPress</a>.</small></p>
+    </footer>
+    
+</body>
+</html>

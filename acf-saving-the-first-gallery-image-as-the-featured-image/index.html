@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACF &#8211; Saving the first gallery image as the featured image &#8211; Matt Radford</title>
+<link rel="canonical" href="/acf-saving-the-first-gallery-image-as-the-featured-image/">
+    <style>body img {width: 100%;height: auto;}</style>
+            <!-- All Glory to the Hypno Toad! -->
+    </head>
+
+    <body>
+        
+        <header>
+            <a href="/">Matt Radford</a>
+            <p>Messing with links since &lt;blink&gt;</p>
+            <nav>
+                <ul id="menu-primary-navigation" class="menu">
+<li id="menu-item-961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-961"><a href="/about/">About</a></li>
+</ul>            </nav>
+        </header>
+
+        <main>            <article id="post-328" class="post-328 post type-post status-publish format-standard hentry">
+            <header>
+                <h1>ACF &#8211; Saving the first gallery image as the featured image</h1>
+            </header>
+            <section>
+                <p>I decided to use the Advanced Custom Fields Gallery field to show some images on a specific post type. Easy enough, but I wanted to set the featured image from the first gallery image, as there&#8217;s a performance hit involved in retrieving all those gallery arrays on, say an archive or search results page. A quick Googling and I found some code that almost did it:</p>
+<p><a href="http://support.advancedcustomfields.com/forums/topic/display-1-gallery-picture-on-archive-page/">http://support.advancedcustomfields.com/forums/topic/display-1-gallery-picture-on-archive-page/</a></p>
+<p>The answer from marius.stuparu <em>almost</em> did do the job, namely:</p>
+<p>[gist id=&#8221;5d097d41e326ffeeee33&#8243;]</p>
+<p>However, I noticed straight away a couple of problems. I&#8217;m using this in a functions.php file, i.e. outside the loop, so <code>global $post</code> was required, plus some changes to <code>get_field</code>.</p>
+<p>But more than that, the code was giving a load of <code>trying to get property of non-object</code> errors when saving other post objects in the backend, such as menus. The solution was changing the hook from <code>save_post</code> to <code>save_post_{$post-type}</code>, which is documented in the <a href="https://codex.wordpress.org/Plugin_API/Action_Reference/save_post">Codex entry</a> for <code>save_post</code>; its been there <a href="http://adambrown.info/p/wp_hooks/hook/save_post_%7B$post-%3Epost_type%7D">since 3.7</a>.</p>
+<p>So the solution then, which doesn&#8217;t give any errors, is below.</p>
+<p>[gist id=&#8221;b4db20572c11780d3138&#8243;]</p>
+            </section>
+        </article>
+        </main>
+
+    <footer>
+        <p><small>&copy; 1996 - 2022 Matt Radford. As ever, built with <a href="http://wordpress.org/">WordPress</a>.</small></p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notes from #responsiveconf – Ethan Marcotte &#8211; Matt Radford</title>
+<link rel="canonical" href="/notes-responsiveconf-ethan-marcotte/">
+    <style>body img {width: 100%;height: auto;}</style>
+            <!-- All Glory to the Hypno Toad! -->
+    </head>
+
+    <body>
+        
+        <header>
+            <a href="/">Matt Radford</a>
+            <p>Messing with links since &lt;blink&gt;</p>
+            <nav>
+                <ul id="menu-primary-navigation" class="menu">
+<li id="menu-item-961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-961"><a href="/about/">About</a></li>
+</ul>            </nav>
+        </header>
+
+        <main>            <article id="post-228" class="post-228 post type-post status-publish format-standard hentry">
+            <header>
+                <h1>Notes from #responsiveconf – Ethan Marcotte</h1>
+            </header>
+            <section>
+                <h3>Laziness in the Time of Responsive Design</h3>
+<p>&#8220;A network of control rearranged at any screen size to best convey a message&#8221; (<a href="http://trentwalton.com/">Trent Walton</a>)</p>
+<p>Mobile, tablet and desktops are one continuum of the web.<br>
+We have different device classes and OS.</p>
+<p>&#8220;Tablet&#8221; and &#8220;mobile&#8221; are anti-patterns: too broad to define.</p>
+<p>60% of mobile access is sub-3G.</p>
+<p>&#8220;Anxiety does not come from thinking about the future, but from wanting to control it&#8221; (<a href="http://en.wikipedia.org/wiki/Kahlil_Gibran">Khalil Gibran</a>).</p>
+<p>Embrace laziness.</p>
+<h4>Layout</h4>
+<h5>Video</h5>
+<p>Size at smallest viewport. Add a surrounding div with padding-top set at the aspect ratio. Then absolutely position the video in the container.</p>
+<p>&#8220;A little less code, a little bit lazier&#8221;.</p>
+<h5>Grids</h5>
+<p>Target / content = result.</p>
+<p>Use <code>.doc-cell:nth-child(3n)</code> and <code>.doc-cell:nth-child(3n+1) { clear: left; }</code>.</p>
+<p><em>Matt: Crap. I only just recognised where <a href="http://clearleft.com/">ClearLeft</a> got their name!</em></p>
+<h4>Frameworks</h4>
+<p>Good for prototyping.<br>
+Philosophically heavy.</p>
+<p><a href="http://alistapart.com/article/content-out-layout">Content-out layout</a>.<br>
+Small layout systems, such as navigation.<br>
+Media queries based on the small systems.</p>
+<p>Hamburger problem.</p>
+<p>Are off-canvas menus hiding all the things we didn&#8217;t want to deal with?</p>
+<p><a href="http://filamentgroup.com/">Filament</a> shows a menu expanded on the home page, but toggled on interior pages.</p>
+<p><a href="http://frankchimero.com/">Frank Chimero</a>. Using Flexbox to changes columns of the simple menu.</p>
+<p><strong>Conservation of Effort</strong>.</p>
+<h4>Animation</h4>
+<p>Design the transaction not the interface.<br>
+Animations for state change. Hiding using <code>transform: scale(0)</code>.</p>
+<p>&#8220;Websites should be built to face the reality of the web&#8217;s inherent variabilty&#8221; (Trent Walton).<br>
+<a href="http://trentwalton.com/2014/03/10/device-agnostic/">Device-Agnostic article</a>.</p>
+<p>Progressive enhancement = letting go of designing for specific devices.</p>
+<p>The web is any size, any time.</p>
+<p><a href="http://en.wikipedia.org/wiki/Shoshin">Beginner&#8217;s mind</a>.</p>
+            </section>
+        </article>
+        </main>
+
+    <footer>
+        <p><small>&copy; 1996 - 2022 Matt Radford. As ever, built with <a href="http://wordpress.org/">WordPress</a>.</small></p>
+    </footer>
+    
+</body>
+</html>

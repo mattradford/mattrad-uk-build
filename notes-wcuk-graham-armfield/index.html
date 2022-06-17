@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notes from #wcuk &#8211; Graham Armfield &#8211; Matt Radford</title>
+<link rel="canonical" href="/notes-wcuk-graham-armfield/">
+    <style>body img {width: 100%;height: auto;}</style>
+            <!-- All Glory to the Hypno Toad! -->
+    </head>
+
+    <body>
+        
+        <header>
+            <a href="/">Matt Radford</a>
+            <p>Messing with links since &lt;blink&gt;</p>
+            <nav>
+                <ul id="menu-primary-navigation" class="menu">
+<li id="menu-item-961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-961"><a href="/about/">About</a></li>
+</ul>            </nav>
+        </header>
+
+        <main>            <article id="post-244" class="post-244 post type-post status-publish format-standard hentry">
+            <header>
+                <h1>Notes from #wcuk &#8211; Graham Armfield</h1>
+            </header>
+            <section>
+                <h3>&#8220;A Beginners Guide to Web Accessibility&#8221;</h3>
+<h3>What legislation do we need to be aware of?</h3>
+<p>(cf. Norwegian law as of July 1st &#8211; all sites must be accessible)</p>
+<p>But which standards?</p>
+<ul>
+<ul>
+<li>WCAG v2 &#8211; W3C published.</li>
+<li>A (mandatory), AA (most pragmatic), AAA (impossible!)</li>
+</ul>
+</ul>
+<p>AA is most pragmatic</p>
+<h3>Most important thing to make a site accessible?</h3>
+<p>&#8220;Enabling the web so that everyone can access its content when they want to and how they need to&#8221;</p>
+<p>Accessibility is not black and white &#8211; can be fine for some but totally inaccessible for others</p>
+<p>Accessibility can increase profitability.</p>
+<h3>More people are affected by poor accessibility that you think.</h3>
+<p>12m in UK have a recognised disability. 15m &gt; 55 old.</p>
+<p>So (roughly) 16.5m could benefit from good acc.</p>
+<p>Not all about blind people. Blindness is a legal term, some registered blind can see things<br>
+1/12 have colour blindness.</p>
+<p>2.6m people have difficulty using their hands.</p>
+<p><em>Ida Aalen</em>: websites must be navigable by keyboard, touch &amp; mouse.</p>
+<p>2m people have a hearing impairment.<br>
+2m people are dyslexic.<br>
+2.2m have memory difficulties.</p>
+<p>Can&#8217;t make assumptions about who is visiting your site, e.g. a blind parent browsing for a skateboard for a child.<br>
+Impacts on your business; reputation.</p>
+<p>People with disabilities represent a market worth £80bn in UK.<br>
+83% of PWD will not return to a business that meerts their needs.</p>
+<h3>Law</h3>
+<p>Equality Act 2010 (supplemanted DDA, except in NI). Specifically refers to websites, but does not define reasonable steps.</p>
+<h4>&#8220;No-one gets sued anyway&#8221;.</h4>
+<p>BMI sued in 2012 by RNIB as you couldn&#8217;t book a seat without a mouse.</p>
+<h4>Types of disability/impairment</h4>
+<p>Visual, Motor, Deafness &amp; Hard of Hearing, Epilepsy, Cognitive (dyslexia, autism, ADHD).</p>
+<h3>Mitigating impairment</h3>
+<p>Lots of people with accessibility needs use IE because it has good accessibility built in, same with Firefox. Not Chrome.</p>
+<p><span style="line-height: 1.428571429;">IE, FF users can specify colours</span><br>
+Adjust text size without zooming</p>
+<p>Absolute pixel values cannot be adjusted in IE.</p>
+<p>&nbsp;</p>
+<h4>Assistive technology</h4>
+<p>Glasses<br>
+Zooming in<br>
+JAWS screenreader<br>
+Dragon voice recognition</p>
+<p>&#8211; voice recognition built into OS X, iOS</p>
+<p>Refreshable braille display &#8211; Wow<br>
+Motor switches controlled by feet, shoulders, etc</p>
+<p>JAWS costs $895!<br>
+Braille display &#8211; $4k!!!<br>
+Open source srceenreader &#8211; NVDA</p>
+<p>&#8211; Also VoiceOver in iOS and OS X &#8211; plug and play with braille displays<br>
+&#8211; https://www.apple.com/uk/accessibility/osx/voiceover/<br>
+&#8211; https://www.apple.com/uk/accessibility/ios/voiceover/</p>
+<p>iOS is the tool of choice for Blind people.</p>
+<p>Android version of VoiceOver is called TalkBack, but its not as good.</p>
+<h3>WordPress accessibility is influeced by:</h3>
+<p>&nbsp;</p>
+<ul>
+<li>Theme devs</li>
+<li>Plugin devs</li>
+<li>Content authors</li>
+</ul>
+<p>75% websites have some sort of accessibility issue.</p>
+<p><strong>Every accessibility step you take will make life easier for someone</strong></p>
+<h3>Simple things to do:</h3>
+<ul>
+<li>alt text images</li>
+<li>descrbe what image shows or represents</li>
+<li>if a link, describe destination</li>
+<li>if decorative, leave blank (use alt=&#8221;&#8221;) &#8211; screen readers know to ignore</li>
+<li>WP will put a blank alt tag in if content picker is used.</li>
+</ul>
+<h4>Links</h4>
+<p>Use &#8220;my blog post: read more&#8221; not my blog post: &#8220;read more&#8221;<br>
+&#8211; means links in screen reader will be appropriate, not just a bunch of &#8220;read more&#8221;s.</p>
+<h4>Use headings properly</h4>
+<p>&#8211; semantics<br>
+&#8211; used as a nav mechanism by screen readers &#8211; signpost content<br>
+&#8211; HTML5 H1s?<br>
+&#8211; &#8211; screenreaders cannot cope with this</p>
+<h4>Keyboard focus and operation.</h4>
+<p>&#8211; focus should be easily visible<br>
+&#8211; .hover &amp; .focus together?<br>
+&#8211; tab order should make sense (less of an issue with WP sites)<br>
+&#8211; ensure all functionality accessible by keystrokes<br>
+&#8211; test your own website using tab, arrow and spacebar</p>
+<h4>Text</h4>
+<p>&#8211; contrast<br>
+&#8211; allow resizing without breaking the layout<br>
+&#8211; don&#8217;t use fully justified text &#8211; makes it a lot harder to read, esp. for thos with dyslexia and congnotive impairments<br>
+&#8211; Dyslexic-appropriate fonts?</p>
+<h4>Forms</h4>
+<p>&#8211; use labels for input fields, link id to input field<br>
+&#8211; important for screenreaders: if no label, they will get confused<br>
+&#8211; &#8211; how does Gravity Forms cope with this?<br>
+&#8211; don&#8217;t use captchas<br>
+&#8211; generate appropriate errors</p>
+<h4>WAI-ARIA</h4>
+<p>&#8211; labelling areas with roles</p>
+<p><strong>It&#8217;s hard to retrofit accessibility.</strong></p>
+            </section>
+        </article>
+        </main>
+
+    <footer>
+        <p><small>&copy; 1996 - 2022 Matt Radford. As ever, built with <a href="http://wordpress.org/">WordPress</a>.</small></p>
+    </footer>
+    
+</body>
+</html>

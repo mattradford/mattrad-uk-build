@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Downloading an entire website on a Mac using wget &#8211; Matt Radford</title>
+<link rel="canonical" href="/downloading-an-entire-website-on-a-mac-using-wget/">
+    <style>body img {width: 100%;height: auto;}</style>
+            <!-- All Glory to the Hypno Toad! -->
+    </head>
+
+    <body>
+        
+        <header>
+            <a href="/">Matt Radford</a>
+            <p>Messing with links since &lt;blink&gt;</p>
+            <nav>
+                <ul id="menu-primary-navigation" class="menu">
+<li id="menu-item-961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-961"><a href="/about/">About</a></li>
+</ul>            </nav>
+        </header>
+
+        <main>            <article id="post-52" class="post-52 post type-post status-publish format-standard hentry">
+            <header>
+                <h1>Downloading an entire website on a Mac using wget</h1>
+            </header>
+            <section>
+                <p>I recently had to take a copy of a client&#8217;s website before they transferred from another provider. It was running an old copy of Joomla, and getting backend access proved difficult. So we opted to grab a static copy of the site and keep that live until we had their new WordPress website ready.</p>
+<p>There are plenty of apps out there that will download whole websites for you, but the simplest way is to use <a href="https://www.gnu.org/software/wget/">wget</a>. If you don&#8217;t have a copy, you can install wget on a Mac without using MacPorts or HomeBrew using <a href="http://osxdaily.com/2012/05/22/install-wget-mac-os-x/">this guide from OS X Daily</a>.</p>
+<p>Once it&#8217;s installed, open Terminal and type:</p>
+<pre class="prettyprint lang-bsh">wget -help</pre>
+<p>You&#8217;ll see there are a ton of options. At it&#8217;s simplest, you can just type: </p>
+<pre class="prettyprint lang-bsh">wget example.com</pre>
+<p>That will download a copy of the index page of example.com to whichever directory you&#8217;re calling wget from in Terminal. But I wanted to get a copy of the whole website, and have it to work locally, i.e. using root-relative URLs, rather than referring back to example.com live on the web.</p>
+<p>So here&#8217;s the code:</p>
+<pre class="prettyprint lang-bsh">wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --random-wait --domains example.com --no-parent www.example.com</pre>
+<p>Let&#8217;s step through the options used:</p>
+<pre class="prettyprint lang-bsh">--recursive</pre>
+<p>Recrusively download the directories, up to a max of 5 deep.</p>
+<pre class="prettyprint lang-bsh">--no-clobber</pre>
+<p>Can also use &#8220;-nc&#8221;. Stops the same files on a server being downloaded more than once.</p>
+<pre class="prettyprint lang-bsh">--page-requisites</pre>
+<p>Causes Wget to download all the files that are necessary to properly display a given HTML page. Including such things as inlined images, sounds, and referenced stylesheets.</p>
+<pre class="prettyprint lang-bsh">--html-extension</pre>
+<p>Renames HTML files as .html. Handy for converting PHP-based sites, such as the Joomla one I needed to copy.</p>
+<pre class="prettyprint lang-bsh">--convert-links</pre>
+<p>After the download is complete, convert the links in the document to make them suitable for local viewing.</p>
+<pre class="prettyprint lang-bsh">--restrict-file-names=windows</pre>
+<p>Escapes characters to make them safe on your local system.</p>
+<pre class="prettyprint lang-bsh">--random-wait</pre>
+<p>Don&#8217;t act like we&#8217;re downloading the whole site&#8230;</p>
+<pre class="prettyprint lang-bsh">--domains example.com</pre>
+<p>The domain you want to download the whole site from.</p>
+<pre class="prettyprint lang-bsh">--no-parent www.example.com</pre>
+<p>Do not ever ascend to the parent directory when retrieving recursively.</p>
+<p>After all that you&#8217;re left with a folder that should be a complete copy of the domain you&#8217;ve targeted. Very handy.</p>
+<p>However, typing all that is a bit of a pain. I think a bash script taking the domain as an input would save the pain of typing all that out, maybe even wrap it up into an app using <a href="http://mathiasbynens.be/notes/shell-script-mac-apps">Appify</a>. Hmm, one for the to-do list.</p>
+            </section>
+        </article>
+        </main>
+
+    <footer>
+        <p><small>&copy; 1996 - 2022 Matt Radford. As ever, built with <a href="http://wordpress.org/">WordPress</a>.</small></p>
+    </footer>
+    
+</body>
+</html>

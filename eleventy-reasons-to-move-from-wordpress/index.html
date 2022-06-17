@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eleventy reasons to move from WordPress &#8211; Matt Radford</title>
+<link rel="canonical" href="/eleventy-reasons-to-move-from-wordpress/">
+    <style>body img {width: 100%;height: auto;}</style>
+            <!-- All Glory to the Hypno Toad! -->
+    </head>
+
+    <body>
+        
+        <header>
+            <a href="/">Matt Radford</a>
+            <p>Messing with links since &lt;blink&gt;</p>
+            <nav>
+                <ul id="menu-primary-navigation" class="menu">
+<li id="menu-item-961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-961"><a href="/about/">About</a></li>
+</ul>            </nav>
+        </header>
+
+        <main>            <article id="post-953" class="post-953 post type-post status-publish format-standard hentry">
+            <header>
+                <h1>Eleventy reasons to move from WordPress</h1>
+            </header>
+            <section>
+                
+<p>WordPress pays my wages. It enables me (and many others) to create flexible and extensible websites for clients. It’s fair to say, after years of working with it, that I know it inside out.</p>
+
+
+
+<p>But there’s more out there. When I decided to rebuild my own website, I wanted something different. Something that would stretch me, help me learn more JavaScript, write in Markdown, and which would be output in static HTML. And be more <em>fun</em>. Enter <strong>Eleventy</strong>.</p>
+
+
+
+<p><a href="https://www.11ty.io/">Eleventy</a> is a static site generator written in JS. There are a few starter packages available &#8211; I forked from <a href="https://github.com/11ty/eleventy-base-blog">eleventy-base-blog</a>. This gave me a head start with a few blogging bits, such as a RSS feed.</p>
+
+
+
+<h2 id="what-have-i-learnt-or-added-so-far%3F">What have I learnt or added so far? <a href="https://mattrad.uk/eleventy-reasons-to-move-from-wordpress/#what-have-i-learnt-or-added-so-far%3F">#</a>
+</h2>
+
+
+
+<ul>
+<li>The <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> templating language, including how to manipulate loops</li>
+<li>Added Gulp asset building, which also runs <code>npx eleventy —serve</code> to build the site</li>
+<li>Forcing post permalinks to use a <code>%postname%</code> equivalent to WordPress</li>
+<li>Allowing post permalinks to redirect to an external link</li>
+<li>Date format handling using <a href="https://moment.github.io/luxon/index.html">luxon</a>
+</li>
+<li>Generating read time<ul><li>Removed for now as most posts were coming in at “About 1 min. read time”, so what’s the point? I’d like to make it conditional on &gt; 1 minute.</li></ul>
+</li>
+<li>Allowing for some fuzzy dates, for the older repost material that I’m finding in the depths of my hard drives</li>
+</ul>
+
+
+
+<h2 id="what%E2%80%99s-left-to-do%3F">What’s left to do? <a href="https://mattrad.uk/eleventy-reasons-to-move-from-wordpress/#what%E2%80%99s-left-to-do%3F">#</a>
+</h2>
+
+
+
+<p>Many many things.</p>
+
+
+
+<ul>
+<li>Applying a design. But I’m trying to focus on the content first, otherwise I’ll get distracted by all the <em>shiny</em>. So the CSS will have to wait.</li>
+<li>Clean up the root directory, as there are files scattered everywhere right now</li>
+<li>Inserting images (sorry <a href="https://lynx.browser.org/">Lynx</a> users)</li>
+<li>Inserting images as <code>&lt;figure&gt;</code>, which will probably need a Nunjucks macro</li>
+<li>Output one year indicator per collection of posts in that year. This is surprisingly involved, especially as Nunjucks doesn’t have <code>foreach</code> loops.</li>
+<li>A proper draft status, rather than keeping them in a non-processed directory</li>
+<li>Figure out how to schedule posts, and have Netlify build on a schedule</li>
+<li>Auto-posting to Twitter (using a <a href="https://www.netlify.com/docs/functions/">Netlify lambda function</a>)</li>
+<li><a href="https://indieweb.org/Webmention">Webmentions</a></li>
+<li>Remove Gulp and use <code>npm</code> for asset compilation</li>
+</ul>
+
+
+
+<p>“You could have saved yourself a lot of bother and just stuck with WordPress”. Well yes, but the point is to learn and expand my horizons. Everything I’ve learnt so far is visible and available to others on Github at <a href="https://github.com/mattradford/mattrad-uk">https://github.com/mattradford/mattrad-uk</a>. <a href="https://www.11ty.io/docs/sites/">Others have done the same</a>.</p>
+
+
+
+<p>I can now write this post in <a href="https://ia.net/writer">IA Writer</a> on my phone, push to my website’s git repo (using <a href="https://workingcopyapp.com/">Working Copy</a>), which Netlify will then build and deploy. It’s not going to be everyone’s cup of tea but I’m loving it. Forward!</p>
+            </section>
+        </article>
+        </main>
+
+    <footer>
+        <p><small>&copy; 1996 - 2022 Matt Radford. As ever, built with <a href="http://wordpress.org/">WordPress</a>.</small></p>
+    </footer>
+    
+</body>
+</html>
