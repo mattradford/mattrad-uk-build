@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Data protection and Gravity Forms &#8211; Matt Radford</title>
 <link rel="canonical" href="/data-protection-gravity-forms/">
-    <style>body img {width: 100%;height: auto;}</style>
+    <style>body img {max-width: 100%;height: auto;}</style>
             <!-- All Glory to the Hypno Toad! -->
     </head>
 
@@ -24,7 +24,7 @@
         <main>            <article id="post-138" class="post-138 post type-post status-publish format-standard hentry">
             <header>
                 <h1>Data protection and Gravity Forms</h1>
-            </header>
+                <span>Published on&nbsp;</span><time datetime="2014-05-23T13:56:28+00:00">2014-05-23</time>            </header>
             <section>
                 <p>Gravity Forms is a great solution for building all sort of forms within WordPress. Every entry is stored under Forms &#8211;> Entries for easy retrieval. But this means that if the website or server is compromised, then data can be stolen. For one website I manage, I needed a way to get rid of any submitted data from Gravity Forms.</p>
 <p>So how to deal with this? Basically, after the entry has been submitted &#8211; which allows for emails to send and others actions to complete, we wipe the relevant database tables, namely <code>rg_lead_table</code>, <code>rg_lead_notes_table</code>, <code>rg_lead_detail_table</code> and <code>rg_lead_detail_long_table</code>.</p>
