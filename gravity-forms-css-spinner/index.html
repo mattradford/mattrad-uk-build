@@ -29,11 +29,208 @@
                 <p>When you submit a form the Gravity Forms default spinner appears. It is a gif, which doesn&#8217;t look great when used on anything but a white background, and isn&#8217;t retina-friendly. Let&#8217;s sort that out.</p>
 <p>RocketGenius have <a href="https://www.gravityhelp.com/documentation/article/gform_ajax_spinner_url">documentation for the ajax spinner</a> and from that I&#8217;ve created a filter:</p>
 <p>&nbsp;</p>
-<p>[gist id=&#8221;330d748bd5b0bb0e9511aaffd1e6680c&#8221;]</p>
+<div id="gist36884885" class="gist">
+    <div class="gist-file" translate="no">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-gravity_forms_filter_spinner-php" class="file my-2">
+    
+    <div itemprop="text" class="Box-body p-0 blob-wrapper data type-hack  ">
+
+        
+<div class="js-check-bidi js-blob-code-container blob-code-content">
+
+  <template class="js-file-alert-template">
+  <div data-view-component="true" class="flash flash-warn flash-full d-flex flex-items-center">
+  <svg aria-hidden="true" height="16" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+  
+    <span>
+      This file contains bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
+      <a href="https://github.co/hiddenchars" target="_blank">Learn more about bidirectional Unicode characters</a>
+    </span>
+
+
+  <div data-view-component="true" class="flash-action">      <a href="/gravity-forms-css-spinner/%7B%7B%20revealButtonHref%20%7D%7D" data-view-component="true" class="btn-sm btn">  Show hidden characters
+  
+</a>
+</div>
+</div></template>
+<template class="js-line-alert-template">
+  <span aria-label="This line has hidden Unicode characters" data-view-component="true" class="line-alert tooltipped tooltipped-e">
+    <svg aria-hidden="true" height="16" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+</span></template>
+
+  <table class="highlight tab-size js-file-line-container js-code-nav-container js-tagsearch-file" data-tab-size="8" data-paste-markdown-skip data-tagsearch-lang="Hack" data-tagsearch-path="gravity_forms_filter_spinner.php">
+        <tr class="line">
+          <td id="file-gravity_forms_filter_spinner-php-L1" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="1"></td>
+          <td id="file-gravity_forms_filter_spinner-php-LC1" class="blob-code blob-code-inner js-file-line">
+<span class="pl-k">function</span> <span class="pl-en">gf_spinner_replace</span>( <span class="pl-smi">$image_src</span>, <span class="pl-smi">$form</span> ) {</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_filter_spinner-php-L2" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="2"></td>
+          <td id="file-gravity_forms_filter_spinner-php-LC2" class="blob-code blob-code-inner js-file-line">	<span class="pl-k">return</span>  <span class="pl-s"><span class="pl-pds">'</span>data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7<span class="pl-pds">'</span></span>; <span class="pl-c"><span class="pl-c">//</span> relative to you theme images folder</span>
+</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_filter_spinner-php-L3" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="3"></td>
+          <td id="file-gravity_forms_filter_spinner-php-LC3" class="blob-code blob-code-inner js-file-line">}</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_filter_spinner-php-L4" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="4"></td>
+          <td id="file-gravity_forms_filter_spinner-php-LC4" class="blob-code blob-code-inner js-file-line">
+<span class="pl-en">add_filter</span>( <span class="pl-s"><span class="pl-pds">'</span>gform_ajax_spinner_url<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>gf_spinner_replace<span class="pl-pds">'</span></span>, <span class="pl-c1">10</span>, <span class="pl-c1">2</span> );</td>
+        </tr>
+  </table>
+</div>
+
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/mattradford/330d748bd5b0bb0e9511aaffd1e6680c/raw/60b81eaf7d81a5466602447894372e09dbd1981e/gravity_forms_filter_spinner.php" style="float:right">view raw</a>
+        <a href="https://gist.github.com/mattradford/330d748bd5b0bb0e9511aaffd1e6680c#file-gravity_forms_filter_spinner-php">
+          gravity_forms_filter_spinner.php
+        </a>
+        hosted with &#10084; by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
 <p>&nbsp;</p>
 <p>This replaced the default <code>loader.gif</code> with a base64-encoded transparent gif, taken from a <a href="https://css-tricks.com/snippets/html/base64-encode-of-1x1px-transparent-gif/">CSS Tricks code snippet</a>. I then added some CSS modified from <a href="http://twitter.com/lukehaas">@lukehass</a>&#8216; <a href="http://projects.lukehaas.me/css-loaders/">Single Element CSS Spinners</a>.</p>
 <p>&nbsp;</p>
-<p>[gist id=&#8221;76a882097063857769eb7f14f3c3c5bd&#8221;]</p>
+<div id="gist36886652" class="gist">
+    <div class="gist-file" translate="no">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-gravity_spinner_css" class="file my-2">
+    
+    <div itemprop="text" class="Box-body p-0 blob-wrapper data type-text  ">
+
+        
+<div class="js-check-bidi js-blob-code-container blob-code-content">
+
+  <template class="js-file-alert-template">
+  <div data-view-component="true" class="flash flash-warn flash-full d-flex flex-items-center">
+  <svg aria-hidden="true" height="16" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+  
+    <span>
+      This file contains bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
+      <a href="https://github.co/hiddenchars" target="_blank">Learn more about bidirectional Unicode characters</a>
+    </span>
+
+
+  <div data-view-component="true" class="flash-action">      <a href="/gravity-forms-css-spinner/%7B%7B%20revealButtonHref%20%7D%7D" data-view-component="true" class="btn-sm btn">  Show hidden characters
+  
+</a>
+</div>
+</div></template>
+<template class="js-line-alert-template">
+  <span aria-label="This line has hidden Unicode characters" data-view-component="true" class="line-alert tooltipped tooltipped-e">
+    <svg aria-hidden="true" height="16" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+</span></template>
+
+  <table class="highlight tab-size js-file-line-container js-code-nav-container js-tagsearch-file" data-tab-size="8" data-paste-markdown-skip data-tagsearch-lang="" data-tagsearch-path="gravity_spinner_css">
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L1" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="1"></td>
+          <td id="file-gravity_spinner_css-LC1" class="blob-code blob-code-inner js-file-line">.gform_ajax_spinner {</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L2" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="2"></td>
+          <td id="file-gravity_spinner_css-LC2" class="blob-code blob-code-inner js-file-line">	margin-left: 20px;				/* give it some space from the Submit button */</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L3" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="3"></td>
+          <td id="file-gravity_spinner_css-LC3" class="blob-code blob-code-inner js-file-line">	border: 4px solid rgba(255, 255, 255, 0.3);	/* match with border-left */</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L4" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="4"></td>
+          <td id="file-gravity_spinner_css-LC4" class="blob-code blob-code-inner js-file-line">	border-left: 4px solid gold;</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L5" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="5"></td>
+          <td id="file-gravity_spinner_css-LC5" class="blob-code blob-code-inner js-file-line">	animation: spinner 1.1s infinite linear;</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L6" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="6"></td>
+          <td id="file-gravity_spinner_css-LC6" class="blob-code blob-code-inner js-file-line">	border-radius: 50%;</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L7" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="7"></td>
+          <td id="file-gravity_spinner_css-LC7" class="blob-code blob-code-inner js-file-line">	width: 30px;					/* match with height for a circle */</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L8" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="8"></td>
+          <td id="file-gravity_spinner_css-LC8" class="blob-code blob-code-inner js-file-line">	height: 30px;</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L9" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="9"></td>
+          <td id="file-gravity_spinner_css-LC9" class="blob-code blob-code-inner js-file-line">}</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L10" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="10"></td>
+          <td id="file-gravity_spinner_css-LC10" class="blob-code blob-code-inner js-file-line">@keyframes spinner {</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L11" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="11"></td>
+          <td id="file-gravity_spinner_css-LC11" class="blob-code blob-code-inner js-file-line">	0% {</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L12" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="12"></td>
+          <td id="file-gravity_spinner_css-LC12" class="blob-code blob-code-inner js-file-line">		transform: rotate(0deg);</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L13" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="13"></td>
+          <td id="file-gravity_spinner_css-LC13" class="blob-code blob-code-inner js-file-line">	}</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L14" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="14"></td>
+          <td id="file-gravity_spinner_css-LC14" class="blob-code blob-code-inner js-file-line">	100% {</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L15" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="15"></td>
+          <td id="file-gravity_spinner_css-LC15" class="blob-code blob-code-inner js-file-line">		transform: rotate(360deg);</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L16" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="16"></td>
+          <td id="file-gravity_spinner_css-LC16" class="blob-code blob-code-inner js-file-line">	}</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_spinner_css-L17" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="17"></td>
+          <td id="file-gravity_spinner_css-LC17" class="blob-code blob-code-inner js-file-line">}</td>
+        </tr>
+  </table>
+</div>
+
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/mattradford/76a882097063857769eb7f14f3c3c5bd/raw/80c90c85ebb14ea052e2ca4ca2f0b5a3a4fc5849/gravity_spinner_css" style="float:right">view raw</a>
+        <a href="https://gist.github.com/mattradford/76a882097063857769eb7f14f3c3c5bd#file-gravity_spinner_css">
+          gravity_spinner_css
+        </a>
+        hosted with &#10084; by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
 <p>&nbsp;</p>
 <p>The CSS above isn&#8217;t prefixed, so run it through autoprefixer or similar. You could also easily replace the blank loader gif with an SVG instead for endless customised spinners.</p>
             </section>
@@ -43,6 +240,7 @@
     <footer>
         <p><small>&copy; 1996 - 2022 Matt Radford. As ever, built with <a href="http://wordpress.org/">WordPress</a>.</small></p>
     </footer>
-    
+    <link rel="stylesheet" id="gistpress-css" href="https://github.githubassets.com/assets/gist-embed-39872b2714d6.css?ver=6.0" type="text/css" media="all">
+
 </body>
 </html>

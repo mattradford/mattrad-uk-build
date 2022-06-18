@@ -26,9 +26,919 @@
                 <h1>Enable UK address format in Gravity Forms</h1>
                 <span>Published on&nbsp;</span><time datetime="2014-09-24T12:57:07+00:00">2014-09-24</time>            </header>
             <section>
-                <p>The below is a collection of functions to alter address formatting in Gravity Forms. The built-in format isn&#8217;t very helpful if you&#8217;re in the UK, so this changes the labels and allows a &#8220;UK/Ireland&#8221; choice to be made in the address field of your form.</p>
+                <br>
+<font size="1"><table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">
+<tr><th align="left" bgcolor="#f57900" colspan="5">
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Warning: DOMDocument::loadHTML(): Tag template invalid in Entity, line: 12 in /Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php on line <i>466</i>
+</th></tr>
+<tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
+<tr>
+<th align="center" bgcolor="#eeeeec">#</th>
+<th align="left" bgcolor="#eeeeec">Time</th>
+<th align="left" bgcolor="#eeeeec">Memory</th>
+<th align="left" bgcolor="#eeeeec">Function</th>
+<th align="left" bgcolor="#eeeeec">Location</th>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">1</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">363848</td>
+<td bgcolor="#eeeeec">{main}(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>0</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">2</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">364128</td>
+<td bgcolor="#eeeeec">require( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>17</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">3</td>
+<td bgcolor="#eeeeec" align="center">0.2116</td>
+<td bgcolor="#eeeeec" align="right">7186328</td>
+<td bgcolor="#eeeeec">require_once( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php" bgcolor="#eeeeec">.../wp-blog-header.php<b>:</b>19</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">4</td>
+<td bgcolor="#eeeeec" align="center">0.2125</td>
+<td bgcolor="#eeeeec" align="right">7187720</td>
+<td bgcolor="#eeeeec">include( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php" bgcolor="#eeeeec">.../template-loader.php<b>:</b>106</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">5</td>
+<td bgcolor="#eeeeec" align="center">0.2262</td>
+<td bgcolor="#eeeeec" align="right">7351672</td>
+<td bgcolor="#eeeeec">the_content(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php" bgcolor="#eeeeec">.../singular.php<b>:</b>23</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">6</td>
+<td bgcolor="#eeeeec" align="center">0.2264</td>
+<td bgcolor="#eeeeec" align="right">7351704</td>
+<td bgcolor="#eeeeec">apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/post-template.php" bgcolor="#eeeeec">.../post-template.php<b>:</b>253</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">7</td>
+<td bgcolor="#eeeeec" align="center">0.2264</td>
+<td bgcolor="#eeeeec" align="right">7352112</td>
+<td bgcolor="#eeeeec">WP_Hook->apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/plugin.php" bgcolor="#eeeeec">.../plugin.php<b>:</b>191</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">8</td>
+<td bgcolor="#eeeeec" align="center">0.2272</td>
+<td bgcolor="#eeeeec" align="right">7358120</td>
+<td bgcolor="#eeeeec">do_shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/class-wp-hook.php" bgcolor="#eeeeec">.../class-wp-hook.php<b>:</b>307</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">9</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7360488</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/function.preg-replace-callback" target="_new">preg_replace_callback</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">10</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7361016</td>
+<td bgcolor="#eeeeec">do_shortcode_tag(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">11</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7361504</td>
+<td bgcolor="#eeeeec">GistPress->shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>356</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">12</td>
+<td bgcolor="#eeeeec" align="center">0.2274</td>
+<td bgcolor="#eeeeec" align="right">7363696</td>
+<td bgcolor="#eeeeec">GistPress->get_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>209</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">13</td>
+<td bgcolor="#eeeeec" align="center">0.7781</td>
+<td bgcolor="#eeeeec" align="right">7433856</td>
+<td bgcolor="#eeeeec">GistPress->process_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>377</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">14</td>
+<td bgcolor="#eeeeec" align="center">0.7782</td>
+<td bgcolor="#eeeeec" align="right">7458544</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/DOMDocument.loadHTML" target="_new">loadHTML</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>466</td>
+</tr>
+</table></font>
+<br>
+<font size="1"><table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">
+<tr><th align="left" bgcolor="#f57900" colspan="5">
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Warning: DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 14 in /Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php on line <i>466</i>
+</th></tr>
+<tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
+<tr>
+<th align="center" bgcolor="#eeeeec">#</th>
+<th align="left" bgcolor="#eeeeec">Time</th>
+<th align="left" bgcolor="#eeeeec">Memory</th>
+<th align="left" bgcolor="#eeeeec">Function</th>
+<th align="left" bgcolor="#eeeeec">Location</th>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">1</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">363848</td>
+<td bgcolor="#eeeeec">{main}(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>0</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">2</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">364128</td>
+<td bgcolor="#eeeeec">require( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>17</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">3</td>
+<td bgcolor="#eeeeec" align="center">0.2116</td>
+<td bgcolor="#eeeeec" align="right">7186328</td>
+<td bgcolor="#eeeeec">require_once( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php" bgcolor="#eeeeec">.../wp-blog-header.php<b>:</b>19</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">4</td>
+<td bgcolor="#eeeeec" align="center">0.2125</td>
+<td bgcolor="#eeeeec" align="right">7187720</td>
+<td bgcolor="#eeeeec">include( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php" bgcolor="#eeeeec">.../template-loader.php<b>:</b>106</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">5</td>
+<td bgcolor="#eeeeec" align="center">0.2262</td>
+<td bgcolor="#eeeeec" align="right">7351672</td>
+<td bgcolor="#eeeeec">the_content(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php" bgcolor="#eeeeec">.../singular.php<b>:</b>23</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">6</td>
+<td bgcolor="#eeeeec" align="center">0.2264</td>
+<td bgcolor="#eeeeec" align="right">7351704</td>
+<td bgcolor="#eeeeec">apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/post-template.php" bgcolor="#eeeeec">.../post-template.php<b>:</b>253</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">7</td>
+<td bgcolor="#eeeeec" align="center">0.2264</td>
+<td bgcolor="#eeeeec" align="right">7352112</td>
+<td bgcolor="#eeeeec">WP_Hook->apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/plugin.php" bgcolor="#eeeeec">.../plugin.php<b>:</b>191</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">8</td>
+<td bgcolor="#eeeeec" align="center">0.2272</td>
+<td bgcolor="#eeeeec" align="right">7358120</td>
+<td bgcolor="#eeeeec">do_shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/class-wp-hook.php" bgcolor="#eeeeec">.../class-wp-hook.php<b>:</b>307</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">9</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7360488</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/function.preg-replace-callback" target="_new">preg_replace_callback</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">10</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7361016</td>
+<td bgcolor="#eeeeec">do_shortcode_tag(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">11</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7361504</td>
+<td bgcolor="#eeeeec">GistPress->shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>356</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">12</td>
+<td bgcolor="#eeeeec" align="center">0.2274</td>
+<td bgcolor="#eeeeec" align="right">7363696</td>
+<td bgcolor="#eeeeec">GistPress->get_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>209</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">13</td>
+<td bgcolor="#eeeeec" align="center">0.7781</td>
+<td bgcolor="#eeeeec" align="right">7433856</td>
+<td bgcolor="#eeeeec">GistPress->process_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>377</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">14</td>
+<td bgcolor="#eeeeec" align="center">0.7782</td>
+<td bgcolor="#eeeeec" align="right">7458544</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/DOMDocument.loadHTML" target="_new">loadHTML</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>466</td>
+</tr>
+</table></font>
+<br>
+<font size="1"><table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">
+<tr><th align="left" bgcolor="#f57900" colspan="5">
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Warning: DOMDocument::loadHTML(): Tag path invalid in Entity, line: 15 in /Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php on line <i>466</i>
+</th></tr>
+<tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
+<tr>
+<th align="center" bgcolor="#eeeeec">#</th>
+<th align="left" bgcolor="#eeeeec">Time</th>
+<th align="left" bgcolor="#eeeeec">Memory</th>
+<th align="left" bgcolor="#eeeeec">Function</th>
+<th align="left" bgcolor="#eeeeec">Location</th>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">1</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">363848</td>
+<td bgcolor="#eeeeec">{main}(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>0</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">2</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">364128</td>
+<td bgcolor="#eeeeec">require( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>17</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">3</td>
+<td bgcolor="#eeeeec" align="center">0.2116</td>
+<td bgcolor="#eeeeec" align="right">7186328</td>
+<td bgcolor="#eeeeec">require_once( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php" bgcolor="#eeeeec">.../wp-blog-header.php<b>:</b>19</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">4</td>
+<td bgcolor="#eeeeec" align="center">0.2125</td>
+<td bgcolor="#eeeeec" align="right">7187720</td>
+<td bgcolor="#eeeeec">include( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php" bgcolor="#eeeeec">.../template-loader.php<b>:</b>106</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">5</td>
+<td bgcolor="#eeeeec" align="center">0.2262</td>
+<td bgcolor="#eeeeec" align="right">7351672</td>
+<td bgcolor="#eeeeec">the_content(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php" bgcolor="#eeeeec">.../singular.php<b>:</b>23</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">6</td>
+<td bgcolor="#eeeeec" align="center">0.2264</td>
+<td bgcolor="#eeeeec" align="right">7351704</td>
+<td bgcolor="#eeeeec">apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/post-template.php" bgcolor="#eeeeec">.../post-template.php<b>:</b>253</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">7</td>
+<td bgcolor="#eeeeec" align="center">0.2264</td>
+<td bgcolor="#eeeeec" align="right">7352112</td>
+<td bgcolor="#eeeeec">WP_Hook->apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/plugin.php" bgcolor="#eeeeec">.../plugin.php<b>:</b>191</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">8</td>
+<td bgcolor="#eeeeec" align="center">0.2272</td>
+<td bgcolor="#eeeeec" align="right">7358120</td>
+<td bgcolor="#eeeeec">do_shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/class-wp-hook.php" bgcolor="#eeeeec">.../class-wp-hook.php<b>:</b>307</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">9</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7360488</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/function.preg-replace-callback" target="_new">preg_replace_callback</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">10</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7361016</td>
+<td bgcolor="#eeeeec">do_shortcode_tag(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">11</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7361504</td>
+<td bgcolor="#eeeeec">GistPress->shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>356</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">12</td>
+<td bgcolor="#eeeeec" align="center">0.2274</td>
+<td bgcolor="#eeeeec" align="right">7363696</td>
+<td bgcolor="#eeeeec">GistPress->get_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>209</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">13</td>
+<td bgcolor="#eeeeec" align="center">0.7781</td>
+<td bgcolor="#eeeeec" align="right">7433856</td>
+<td bgcolor="#eeeeec">GistPress->process_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>377</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">14</td>
+<td bgcolor="#eeeeec" align="center">0.7782</td>
+<td bgcolor="#eeeeec" align="right">7458544</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/DOMDocument.loadHTML" target="_new">loadHTML</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>466</td>
+</tr>
+</table></font>
+<br>
+<font size="1"><table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">
+<tr><th align="left" bgcolor="#f57900" colspan="5">
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Warning: DOMDocument::loadHTML(): Tag template invalid in Entity, line: 29 in /Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php on line <i>466</i>
+</th></tr>
+<tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
+<tr>
+<th align="center" bgcolor="#eeeeec">#</th>
+<th align="left" bgcolor="#eeeeec">Time</th>
+<th align="left" bgcolor="#eeeeec">Memory</th>
+<th align="left" bgcolor="#eeeeec">Function</th>
+<th align="left" bgcolor="#eeeeec">Location</th>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">1</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">363848</td>
+<td bgcolor="#eeeeec">{main}(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>0</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">2</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">364128</td>
+<td bgcolor="#eeeeec">require( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>17</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">3</td>
+<td bgcolor="#eeeeec" align="center">0.2116</td>
+<td bgcolor="#eeeeec" align="right">7186328</td>
+<td bgcolor="#eeeeec">require_once( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php" bgcolor="#eeeeec">.../wp-blog-header.php<b>:</b>19</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">4</td>
+<td bgcolor="#eeeeec" align="center">0.2125</td>
+<td bgcolor="#eeeeec" align="right">7187720</td>
+<td bgcolor="#eeeeec">include( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php" bgcolor="#eeeeec">.../template-loader.php<b>:</b>106</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">5</td>
+<td bgcolor="#eeeeec" align="center">0.2262</td>
+<td bgcolor="#eeeeec" align="right">7351672</td>
+<td bgcolor="#eeeeec">the_content(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php" bgcolor="#eeeeec">.../singular.php<b>:</b>23</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">6</td>
+<td bgcolor="#eeeeec" align="center">0.2264</td>
+<td bgcolor="#eeeeec" align="right">7351704</td>
+<td bgcolor="#eeeeec">apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/post-template.php" bgcolor="#eeeeec">.../post-template.php<b>:</b>253</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">7</td>
+<td bgcolor="#eeeeec" align="center">0.2264</td>
+<td bgcolor="#eeeeec" align="right">7352112</td>
+<td bgcolor="#eeeeec">WP_Hook->apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/plugin.php" bgcolor="#eeeeec">.../plugin.php<b>:</b>191</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">8</td>
+<td bgcolor="#eeeeec" align="center">0.2272</td>
+<td bgcolor="#eeeeec" align="right">7358120</td>
+<td bgcolor="#eeeeec">do_shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/class-wp-hook.php" bgcolor="#eeeeec">.../class-wp-hook.php<b>:</b>307</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">9</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7360488</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/function.preg-replace-callback" target="_new">preg_replace_callback</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">10</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7361016</td>
+<td bgcolor="#eeeeec">do_shortcode_tag(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">11</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7361504</td>
+<td bgcolor="#eeeeec">GistPress->shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>356</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">12</td>
+<td bgcolor="#eeeeec" align="center">0.2274</td>
+<td bgcolor="#eeeeec" align="right">7363696</td>
+<td bgcolor="#eeeeec">GistPress->get_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>209</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">13</td>
+<td bgcolor="#eeeeec" align="center">0.7781</td>
+<td bgcolor="#eeeeec" align="right">7433856</td>
+<td bgcolor="#eeeeec">GistPress->process_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>377</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">14</td>
+<td bgcolor="#eeeeec" align="center">0.7782</td>
+<td bgcolor="#eeeeec" align="right">7458544</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/DOMDocument.loadHTML" target="_new">loadHTML</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>466</td>
+</tr>
+</table></font>
+<br>
+<font size="1"><table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">
+<tr><th align="left" bgcolor="#f57900" colspan="5">
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Warning: DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 31 in /Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php on line <i>466</i>
+</th></tr>
+<tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
+<tr>
+<th align="center" bgcolor="#eeeeec">#</th>
+<th align="left" bgcolor="#eeeeec">Time</th>
+<th align="left" bgcolor="#eeeeec">Memory</th>
+<th align="left" bgcolor="#eeeeec">Function</th>
+<th align="left" bgcolor="#eeeeec">Location</th>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">1</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">363848</td>
+<td bgcolor="#eeeeec">{main}(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>0</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">2</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">364128</td>
+<td bgcolor="#eeeeec">require( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>17</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">3</td>
+<td bgcolor="#eeeeec" align="center">0.2116</td>
+<td bgcolor="#eeeeec" align="right">7186328</td>
+<td bgcolor="#eeeeec">require_once( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php" bgcolor="#eeeeec">.../wp-blog-header.php<b>:</b>19</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">4</td>
+<td bgcolor="#eeeeec" align="center">0.2125</td>
+<td bgcolor="#eeeeec" align="right">7187720</td>
+<td bgcolor="#eeeeec">include( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php" bgcolor="#eeeeec">.../template-loader.php<b>:</b>106</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">5</td>
+<td bgcolor="#eeeeec" align="center">0.2262</td>
+<td bgcolor="#eeeeec" align="right">7351672</td>
+<td bgcolor="#eeeeec">the_content(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php" bgcolor="#eeeeec">.../singular.php<b>:</b>23</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">6</td>
+<td bgcolor="#eeeeec" align="center">0.2264</td>
+<td bgcolor="#eeeeec" align="right">7351704</td>
+<td bgcolor="#eeeeec">apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/post-template.php" bgcolor="#eeeeec">.../post-template.php<b>:</b>253</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">7</td>
+<td bgcolor="#eeeeec" align="center">0.2264</td>
+<td bgcolor="#eeeeec" align="right">7352112</td>
+<td bgcolor="#eeeeec">WP_Hook->apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/plugin.php" bgcolor="#eeeeec">.../plugin.php<b>:</b>191</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">8</td>
+<td bgcolor="#eeeeec" align="center">0.2272</td>
+<td bgcolor="#eeeeec" align="right">7358120</td>
+<td bgcolor="#eeeeec">do_shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/class-wp-hook.php" bgcolor="#eeeeec">.../class-wp-hook.php<b>:</b>307</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">9</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7360488</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/function.preg-replace-callback" target="_new">preg_replace_callback</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">10</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7361016</td>
+<td bgcolor="#eeeeec">do_shortcode_tag(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">11</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7361504</td>
+<td bgcolor="#eeeeec">GistPress->shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>356</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">12</td>
+<td bgcolor="#eeeeec" align="center">0.2274</td>
+<td bgcolor="#eeeeec" align="right">7363696</td>
+<td bgcolor="#eeeeec">GistPress->get_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>209</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">13</td>
+<td bgcolor="#eeeeec" align="center">0.7781</td>
+<td bgcolor="#eeeeec" align="right">7433856</td>
+<td bgcolor="#eeeeec">GistPress->process_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>377</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">14</td>
+<td bgcolor="#eeeeec" align="center">0.7782</td>
+<td bgcolor="#eeeeec" align="right">7458544</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/DOMDocument.loadHTML" target="_new">loadHTML</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>466</td>
+</tr>
+</table></font>
+<br>
+<font size="1"><table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">
+<tr><th align="left" bgcolor="#f57900" colspan="5">
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Warning: DOMDocument::loadHTML(): Tag path invalid in Entity, line: 32 in /Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php on line <i>466</i>
+</th></tr>
+<tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
+<tr>
+<th align="center" bgcolor="#eeeeec">#</th>
+<th align="left" bgcolor="#eeeeec">Time</th>
+<th align="left" bgcolor="#eeeeec">Memory</th>
+<th align="left" bgcolor="#eeeeec">Function</th>
+<th align="left" bgcolor="#eeeeec">Location</th>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">1</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">363848</td>
+<td bgcolor="#eeeeec">{main}(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>0</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">2</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">364128</td>
+<td bgcolor="#eeeeec">require( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>17</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">3</td>
+<td bgcolor="#eeeeec" align="center">0.2116</td>
+<td bgcolor="#eeeeec" align="right">7186328</td>
+<td bgcolor="#eeeeec">require_once( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php" bgcolor="#eeeeec">.../wp-blog-header.php<b>:</b>19</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">4</td>
+<td bgcolor="#eeeeec" align="center">0.2125</td>
+<td bgcolor="#eeeeec" align="right">7187720</td>
+<td bgcolor="#eeeeec">include( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php" bgcolor="#eeeeec">.../template-loader.php<b>:</b>106</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">5</td>
+<td bgcolor="#eeeeec" align="center">0.2262</td>
+<td bgcolor="#eeeeec" align="right">7351672</td>
+<td bgcolor="#eeeeec">the_content(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php" bgcolor="#eeeeec">.../singular.php<b>:</b>23</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">6</td>
+<td bgcolor="#eeeeec" align="center">0.2264</td>
+<td bgcolor="#eeeeec" align="right">7351704</td>
+<td bgcolor="#eeeeec">apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/post-template.php" bgcolor="#eeeeec">.../post-template.php<b>:</b>253</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">7</td>
+<td bgcolor="#eeeeec" align="center">0.2264</td>
+<td bgcolor="#eeeeec" align="right">7352112</td>
+<td bgcolor="#eeeeec">WP_Hook->apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/plugin.php" bgcolor="#eeeeec">.../plugin.php<b>:</b>191</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">8</td>
+<td bgcolor="#eeeeec" align="center">0.2272</td>
+<td bgcolor="#eeeeec" align="right">7358120</td>
+<td bgcolor="#eeeeec">do_shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/class-wp-hook.php" bgcolor="#eeeeec">.../class-wp-hook.php<b>:</b>307</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">9</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7360488</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/function.preg-replace-callback" target="_new">preg_replace_callback</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">10</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7361016</td>
+<td bgcolor="#eeeeec">do_shortcode_tag(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">11</td>
+<td bgcolor="#eeeeec" align="center">0.2273</td>
+<td bgcolor="#eeeeec" align="right">7361504</td>
+<td bgcolor="#eeeeec">GistPress->shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>356</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">12</td>
+<td bgcolor="#eeeeec" align="center">0.2274</td>
+<td bgcolor="#eeeeec" align="right">7363696</td>
+<td bgcolor="#eeeeec">GistPress->get_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>209</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">13</td>
+<td bgcolor="#eeeeec" align="center">0.7781</td>
+<td bgcolor="#eeeeec" align="right">7433856</td>
+<td bgcolor="#eeeeec">GistPress->process_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>377</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">14</td>
+<td bgcolor="#eeeeec" align="center">0.7782</td>
+<td bgcolor="#eeeeec" align="right">7458544</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/DOMDocument.loadHTML" target="_new">loadHTML</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>466</td>
+</tr>
+</table></font>
+<p>The below is a collection of functions to alter address formatting in Gravity Forms. The built-in format isn&#8217;t very helpful if you&#8217;re in the UK, so this changes the labels and allows a &#8220;UK/Ireland&#8221; choice to be made in the address field of your form.</p>
 <p>Include <code>$formid</code> if you just want to target one form.</p>
-<p>[gist id=&#8221;b1f8f65ee6bf13423ca4&#8243;]</p>
+<div id="gist14721056" class="gist">
+    <div class="gist-file" translate="no">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-gravity_forms_uk-php" class="file my-2">
+    
+    <div itemprop="text" class="Box-body p-0 blob-wrapper data type-php  ">
+
+        
+<div class="js-check-bidi js-blob-code-container blob-code-content">
+
+  <template class="js-file-alert-template">
+  <div data-view-component="true" class="flash flash-warn flash-full d-flex flex-items-center">
+  <svg aria-hidden="true" height="16" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+  
+    <span>
+      This file contains bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters.
+      <a href="https://github.co/hiddenchars" target="_blank">Learn more about bidirectional Unicode characters</a>
+    </span>
+
+
+  <div data-view-component="true" class="flash-action">      <a href="/enable-uk-address-format-gravity-forms/%7B%7B%20revealButtonHref%20%7D%7D" data-view-component="true" class="btn-sm btn">  Show hidden characters
+  
+</a>
+</div>
+</div></template>
+<template class="js-line-alert-template">
+  <span aria-label="This line has hidden Unicode characters" data-view-component="true" class="line-alert tooltipped tooltipped-e">
+    <svg aria-hidden="true" height="16" viewbox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+</span></template>
+
+  <table class="highlight tab-size js-file-line-container js-code-nav-container js-tagsearch-file" data-tab-size="8" data-paste-markdown-skip data-tagsearch-lang="PHP" data-tagsearch-path="gravity_forms_uk.php">
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L1" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="1"></td>
+          <td id="file-gravity_forms_uk-php-LC1" class="blob-code blob-code-inner js-file-line">// Gravity forms UK Address. Stick it in your functions.php</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L2" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="2"></td>
+          <td id="file-gravity_forms_uk-php-LC2" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L3" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="3"></td>
+          <td id="file-gravity_forms_uk-php-LC3" class="blob-code blob-code-inner js-file-line">function uk_address($address_types, $form_id) {</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L4" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="4"></td>
+          <td id="file-gravity_forms_uk-php-LC4" class="blob-code blob-code-inner js-file-line">    $address_types["uk"] = array(</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L5" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="5"></td>
+          <td id="file-gravity_forms_uk-php-LC5" class="blob-code blob-code-inner js-file-line">    "label" =<span class="pl-kos">&gt;</span> "UK &amp; Ireland",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L6" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="6"></td>
+          <td id="file-gravity_forms_uk-php-LC6" class="blob-code blob-code-inner js-file-line">    "country" =<span class="pl-kos">&gt;</span> "UK",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L7" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="7"></td>
+          <td id="file-gravity_forms_uk-php-LC7" class="blob-code blob-code-inner js-file-line">    "zip_label" =<span class="pl-kos">&gt;</span> "Postcode",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L8" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="8"></td>
+          <td id="file-gravity_forms_uk-php-LC8" class="blob-code blob-code-inner js-file-line">    "state_label" =<span class="pl-kos">&gt;</span> "County",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L9" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="9"></td>
+          <td id="file-gravity_forms_uk-php-LC9" class="blob-code blob-code-inner js-file-line">    "states" =<span class="pl-kos">&gt;</span> array("Aberdeenshire"=<span class="pl-kos">&gt;</span>"Aberdeenshire","Angus/Forfarshire"=<span class="pl-kos">&gt;</span>"Angus/Forfarshire","Argyllshire"=<span class="pl-kos">&gt;</span>"Argyllshire","Ayrshire"=<span class="pl-kos">&gt;</span>"Ayrshire","Banffshire"=<span class="pl-kos">&gt;</span>"Banffshire","Bedfordshire"=<span class="pl-kos">&gt;</span>"Bedfordshire","Berkshire"=<span class="pl-kos">&gt;</span>"Berkshire",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L10" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="10"></td>
+          <td id="file-gravity_forms_uk-php-LC10" class="blob-code blob-code-inner js-file-line">"Berwickshire"=<span class="pl-kos">&gt;</span>"Berwickshire","Blaenau Gwent"=<span class="pl-kos">&gt;</span>"Blaenau Gwent","Bridgend"=<span class="pl-kos">&gt;</span>"Bridgend","Buckinghamshire"=<span class="pl-kos">&gt;</span>"Buckinghamshire","Buteshire"=<span class="pl-kos">&gt;</span>"Buteshire","Caerphilly"=<span class="pl-kos">&gt;</span>"Caerphilly","Caithness"=<span class="pl-kos">&gt;</span>"Caithness",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L11" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="11"></td>
+          <td id="file-gravity_forms_uk-php-LC11" class="blob-code blob-code-inner js-file-line">"Cambridgeshire"=<span class="pl-kos">&gt;</span>"Cambridgeshire","Cardiff"=<span class="pl-kos">&gt;</span>"Cardiff","Carmarthenshire"=<span class="pl-kos">&gt;</span>"Carmarthenshire","Ceredigion"=<span class="pl-kos">&gt;</span>"Ceredigion","Cheshire"=<span class="pl-kos">&gt;</span>"Cheshire","Clackmannanshire"=<span class="pl-kos">&gt;</span>"Clackmannanshire",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L12" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="12"></td>
+          <td id="file-gravity_forms_uk-php-LC12" class="blob-code blob-code-inner js-file-line">"Conwy"=<span class="pl-kos">&gt;</span>"Conwy","Cornwall"=<span class="pl-kos">&gt;</span>"Cornwall","Cromartyshire"=<span class="pl-kos">&gt;</span>"Cromartyshire","Cumberland"=<span class="pl-kos">&gt;</span>"Cumberland","Denbighshire"=<span class="pl-kos">&gt;</span>"Denbighshire","Derbyshire"=<span class="pl-kos">&gt;</span>"Derbyshire","Devon"=<span class="pl-kos">&gt;</span>"Devon","Dorset"=<span class="pl-kos">&gt;</span>"Dorset",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L13" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="13"></td>
+          <td id="file-gravity_forms_uk-php-LC13" class="blob-code blob-code-inner js-file-line">"Dumfriesshire"=<span class="pl-kos">&gt;</span>"Dumfriesshire","Dunbartonshire/Dumbartonshire"=<span class="pl-kos">&gt;</span>"Dunbartonshire/Dumbartonshire","Durham"=<span class="pl-kos">&gt;</span>"Durham","East Lothian/Haddingtonshire"=<span class="pl-kos">&gt;</span>"East Lothian/Haddingtonshire","Essex"=<span class="pl-kos">&gt;</span>"Essex","Fife"=<span class="pl-kos">&gt;</span>"Fife",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L14" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="14"></td>
+          <td id="file-gravity_forms_uk-php-LC14" class="blob-code blob-code-inner js-file-line">"Flintshire"=<span class="pl-kos">&gt;</span>"Flintshire","Gloucestershire"=<span class="pl-kos">&gt;</span>"Gloucestershire","Gwynedd"=<span class="pl-kos">&gt;</span>"Gwynedd","Hampshire"=<span class="pl-kos">&gt;</span>"Hampshire","Herefordshire"=<span class="pl-kos">&gt;</span>"Herefordshire","Hertfordshire"=<span class="pl-kos">&gt;</span>"Hertfordshire","Huntingdonshire"=<span class="pl-kos">&gt;</span>"Huntingdonshire",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L15" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="15"></td>
+          <td id="file-gravity_forms_uk-php-LC15" class="blob-code blob-code-inner js-file-line">"Inverness-shire"=<span class="pl-kos">&gt;</span>"Inverness-shire","Isle of Anglesey"=<span class="pl-kos">&gt;</span>"Isle of Anglesey","Kent"=<span class="pl-kos">&gt;</span>"Kent","Kincardineshire"=<span class="pl-kos">&gt;</span>"Kincardineshire","Kinross-shire"=<span class="pl-kos">&gt;</span>"Kinross-shire","Kirkcudbrightshire"=<span class="pl-kos">&gt;</span>"Kirkcudbrightshire",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L16" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="16"></td>
+          <td id="file-gravity_forms_uk-php-LC16" class="blob-code blob-code-inner js-file-line">"Lanarkshire"=<span class="pl-kos">&gt;</span>"Lanarkshire","Lancashire"=<span class="pl-kos">&gt;</span>"Lancashire","Leicestershire"=<span class="pl-kos">&gt;</span>"Leicestershire","Lincolnshire"=<span class="pl-kos">&gt;</span>"Lincolnshire","Merthyr Tydfil"=<span class="pl-kos">&gt;</span>"Merthyr Tydfil","Middlesex"=<span class="pl-kos">&gt;</span>"Middlesex",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L17" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="17"></td>
+          <td id="file-gravity_forms_uk-php-LC17" class="blob-code blob-code-inner js-file-line">"Midlothian/Edinburghshire"=<span class="pl-kos">&gt;</span>"Midlothian/Edinburghshire","Monmouthshire"=<span class="pl-kos">&gt;</span>"Monmouthshire","Morayshire"=<span class="pl-kos">&gt;</span>"Morayshire","Nairnshire"=<span class="pl-kos">&gt;</span>"Nairnshire","Neath Port Talbot"=<span class="pl-kos">&gt;</span>"Neath Port Talbot",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L18" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="18"></td>
+          <td id="file-gravity_forms_uk-php-LC18" class="blob-code blob-code-inner js-file-line">"Newport"=<span class="pl-kos">&gt;</span>"Newport","Norfolk"=<span class="pl-kos">&gt;</span>"Norfolk","Northamptonshire"=<span class="pl-kos">&gt;</span>"Northamptonshire","Northumberland"=<span class="pl-kos">&gt;</span>"Northumberland","Nottinghamshire"=<span class="pl-kos">&gt;</span>"Nottinghamshire","Orkney"=<span class="pl-kos">&gt;</span>"Orkney",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L19" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="19"></td>
+          <td id="file-gravity_forms_uk-php-LC19" class="blob-code blob-code-inner js-file-line">"Oxfordshire"=<span class="pl-kos">&gt;</span>"Oxfordshire","Peeblesshire"=<span class="pl-kos">&gt;</span>"Peeblesshire","Pembrokeshire"=<span class="pl-kos">&gt;</span>"Pembrokeshire","Perthshire"=<span class="pl-kos">&gt;</span>"Perthshire","Powys"=<span class="pl-kos">&gt;</span>"Powys","Renfrewshire"=<span class="pl-kos">&gt;</span>"Renfrewshire",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L20" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="20"></td>
+          <td id="file-gravity_forms_uk-php-LC20" class="blob-code blob-code-inner js-file-line">"Rhondda Cynon Taff"=<span class="pl-kos">&gt;</span>"Rhondda Cynon Taff","Ross-shire"=<span class="pl-kos">&gt;</span>"Ross-shire","Roxburghshire"=<span class="pl-kos">&gt;</span>"Roxburghshire","Rutland"=<span class="pl-kos">&gt;</span>"Rutland","Selkirkshire"=<span class="pl-kos">&gt;</span>"Selkirkshire","Shetland"=<span class="pl-kos">&gt;</span>"Shetland","Shropshire"=<span class="pl-kos">&gt;</span>"Shropshire",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L21" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="21"></td>
+          <td id="file-gravity_forms_uk-php-LC21" class="blob-code blob-code-inner js-file-line">"Somerset"=<span class="pl-kos">&gt;</span>"Somerset","Staffordshire"=<span class="pl-kos">&gt;</span>"Staffordshire","Stirlingshire"=<span class="pl-kos">&gt;</span>"Stirlingshire","Suffolk"=<span class="pl-kos">&gt;</span>"Suffolk","Surrey"=<span class="pl-kos">&gt;</span>"Surrey","Sussex"=<span class="pl-kos">&gt;</span>"Sussex","Sutherland"=<span class="pl-kos">&gt;</span>"Sutherland","Swansea"=<span class="pl-kos">&gt;</span>"Swansea","Torfaen"=<span class="pl-kos">&gt;</span>"Torfaen",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L22" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="22"></td>
+          <td id="file-gravity_forms_uk-php-LC22" class="blob-code blob-code-inner js-file-line">"Vale of Glamorgan"=<span class="pl-kos">&gt;</span>"Vale of Glamorgan","Warwickshire"=<span class="pl-kos">&gt;</span>"Warwickshire","West Lothian/Linlithgowshire"=<span class="pl-kos">&gt;</span>"West Lothian/Linlithgowshire","Westmorland"=<span class="pl-kos">&gt;</span>"Westmorland",</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L23" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="23"></td>
+          <td id="file-gravity_forms_uk-php-LC23" class="blob-code blob-code-inner js-file-line">"Wigtownshire"=<span class="pl-kos">&gt;</span>"Wigtownshire","Wiltshire"=<span class="pl-kos">&gt;</span>"Wiltshire","Worcestershire"=<span class="pl-kos">&gt;</span>"Worcestershire","Wrexham"=<span class="pl-kos">&gt;</span>"Wrexham","Yorkshire"=<span class="pl-kos">&gt;</span>"Yorkshire")</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L24" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="24"></td>
+          <td id="file-gravity_forms_uk-php-LC24" class="blob-code blob-code-inner js-file-line">    );</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L25" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="25"></td>
+          <td id="file-gravity_forms_uk-php-LC25" class="blob-code blob-code-inner js-file-line">return $address_types;</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L26" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="26"></td>
+          <td id="file-gravity_forms_uk-php-LC26" class="blob-code blob-code-inner js-file-line">}</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L27" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="27"></td>
+          <td id="file-gravity_forms_uk-php-LC27" class="blob-code blob-code-inner js-file-line">add_filter("gform_address_types", "uk_address", 10, 2);</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L28" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="28"></td>
+          <td id="file-gravity_forms_uk-php-LC28" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L29" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="29"></td>
+          <td id="file-gravity_forms_uk-php-LC29" class="blob-code blob-code-inner js-file-line">// Change to Town/City</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L30" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="30"></td>
+          <td id="file-gravity_forms_uk-php-LC30" class="blob-code blob-code-inner js-file-line">function set_gravityform_city($label, $form_id){</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L31" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="31"></td>
+          <td id="file-gravity_forms_uk-php-LC31" class="blob-code blob-code-inner js-file-line">    return "Town/City";</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L32" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="32"></td>
+          <td id="file-gravity_forms_uk-php-LC32" class="blob-code blob-code-inner js-file-line">}</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L33" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="33"></td>
+          <td id="file-gravity_forms_uk-php-LC33" class="blob-code blob-code-inner js-file-line">add_filter("gform_address_city", "set_gravityform_city", 10, 2);</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L34" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="34"></td>
+          <td id="file-gravity_forms_uk-php-LC34" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L35" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="35"></td>
+          <td id="file-gravity_forms_uk-php-LC35" class="blob-code blob-code-inner js-file-line">// Change "Street Address"</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L36" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="36"></td>
+          <td id="file-gravity_forms_uk-php-LC36" class="blob-code blob-code-inner js-file-line">function change_address_street($label, $form_id){</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L37" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="37"></td>
+          <td id="file-gravity_forms_uk-php-LC37" class="blob-code blob-code-inner js-file-line">    return "Name/Number and Street";</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L38" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="38"></td>
+          <td id="file-gravity_forms_uk-php-LC38" class="blob-code blob-code-inner js-file-line">}</td>
+        </tr>
+        <tr class="line">
+          <td id="file-gravity_forms_uk-php-L39" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="39"></td>
+          <td id="file-gravity_forms_uk-php-LC39" class="blob-code blob-code-inner js-file-line">add_filter("gform_address_street", "change_address_street", 10, 2);</td>
+        </tr>
+  </table>
+</div>
+
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/mattradford/b1f8f65ee6bf13423ca4/raw/fc35234ca4eafc4cc27eadf86d3f7fb0c17aee48/gravity_forms_uk.php" style="float:right">view raw</a>
+        <a href="https://gist.github.com/mattradford/b1f8f65ee6bf13423ca4#file-gravity_forms_uk-php">
+          gravity_forms_uk.php
+        </a>
+        hosted with &#10084; by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
             </section>
         </article>
         </main>
@@ -36,6 +946,7 @@
     <footer>
         <p><small>&copy; 1996 - 2022 Matt Radford. As ever, built with <a href="http://wordpress.org/">WordPress</a>.</small></p>
     </footer>
-    
+    <link rel="stylesheet" id="gistpress-css" href="https://github.githubassets.com/assets/gist-embed-39872b2714d6.css?ver=6.0" type="text/css" media="all">
+
 </body>
 </html>
