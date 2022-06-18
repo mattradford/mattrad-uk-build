@@ -26,9 +26,14 @@
                 <h1>Gravity Forms CSS spinner</h1>
                 <span>Published on&nbsp;</span><time datetime="2016-06-17T19:03:01+00:00">2016-06-17</time>            </header>
             <section>
-                <p>When you submit a form the Gravity Forms default spinner appears. It is a gif, which doesn&#8217;t look great when used on anything but a white background, and isn&#8217;t retina-friendly. Let&#8217;s sort that out.</p>
+                
+<p>When you submit a form the Gravity Forms default spinner appears. It is a gif, which doesn&#8217;t look great when used on anything but a white background, and isn&#8217;t retina-friendly. Let&#8217;s sort that out.</p>
+
+
+
 <p>RocketGenius have <a href="https://www.gravityhelp.com/documentation/article/gform_ajax_spinner_url">documentation for the ajax spinner</a> and from that I&#8217;ve created a filter:</p>
-<p>&nbsp;</p>
+
+
 <div id="gist36884885" class="gist">
     <div class="gist-file" translate="no">
       <div class="gist-data">
@@ -104,9 +109,12 @@
     </div>
 </div>
 
-<p>&nbsp;</p>
+
+
+
 <p>This replaced the default <code>loader.gif</code> with a base64-encoded transparent gif, taken from a <a href="https://css-tricks.com/snippets/html/base64-encode-of-1x1px-transparent-gif/">CSS Tricks code snippet</a>. I then added some CSS modified from <a href="http://twitter.com/lukehaas">@lukehass</a>&#8216; <a href="http://projects.lukehaas.me/css-loaders/">Single Element CSS Spinners</a>.</p>
-<p>&nbsp;</p>
+
+
 <div id="gist36886652" class="gist">
     <div class="gist-file" translate="no">
       <div class="gist-data">
@@ -231,7 +239,9 @@
     </div>
 </div>
 
-<p>&nbsp;</p>
+
+
+
 <p>The CSS above isn&#8217;t prefixed, so run it through autoprefixer or similar. You could also easily replace the blank loader gif with an SVG instead for endless customised spinners.</p>
             </section>
         </article>

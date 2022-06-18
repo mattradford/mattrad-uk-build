@@ -26,7 +26,11 @@
                 <h1>Embedding an Apple Map on a WordPress website using Mapkit JS</h1>
                 <span>Published on&nbsp;</span><time datetime="2018-06-12T21:36:20+00:00">2018-06-12</time>            </header>
             <section>
-                <p>Apple announced MapKit JS at WWDC recently, and there are already some great demos available:</p>
+                
+<p>Apple announced MapKit JS at WWDC recently, and there are already some great demos available:</p>
+
+
+
 <ul>
 <li>
 <a href="https://mapkit-demo.herokuapp.com/">https://mapkit-demo.herokuapp.com/</a> (source: <a href="https://github.com/ankurp/mapkit-demo">https://github.com/ankurp/mapkit-demo</a>)</li>
@@ -35,9 +39,21 @@
 <li>
 <a href="https://github.com/vasile/mapkit-js-demo">https://github.com/vasile/mapkit-js-demo</a> (this shows a country outline drawn from a geoJSON file).</li>
 </ul>
+
+
+
 <p>But how can we integrate this with WordPress? I use <a href="https://www.advancedcustomfields.com/">Advanced Custom Fields Pro</a> quite a lot, so my first thought was &#8220;How can I work MapKit JS into ACF and provide user-customisable maps to clients?&#8221; There is already a Google Maps field type in ACF, so perhaps I can piggyback on that? But I&#8217;m getting ahead of myself.</p>
+
+
+
 <h2>Pre-requisites</h2>
+
+
+
 <p>You thought it was just a matter of generating and adding an API key? Not so fast. Before you can embed a MapKit JS map, you will need:</p>
+
+
+
 <ul>
 <li>an Apple developer account</li>
 <li>your Apple developer Team ID</li>
@@ -46,24 +62,66 @@
 <li>a key identifier</li>
 <li>a JWT (JSON Web Token)</li>
 </ul>
+
+
+
 <p>Get an Apple Developer account if you don&#8217;t have one already. <a href="https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/">9 to 5 Mac have a good guide to getting an account for free</a>.</p>
-<p>Then follow Apple&#8217;s Developer documentation here: <a href="https://help.apple.com/developer-account/#/dev4bb1cc12b?sub=devc240e1a83">https://help.apple.com/developer-account/#/dev4bb1cc12b?sub=devc240e1a83</a></p>
-<blockquote>
+
+
+
+<p>Then follow Apple&#8217;s Developer documentation here:&nbsp;<a href="https://help.apple.com/developer-account/#/dev4bb1cc12b?sub=devc240e1a83">https://help.apple.com/developer-account/#/dev4bb1cc12b?sub=devc240e1a83</a></p>
+
+
+
+<blockquote class="wp-block-quote">
 <p>To communicate with the MapKit JS, you’ll use a Maps private key to sign one or more developer tokens.</p>
 <p>First <a id="ember600" class="ember-view xRef Task subTopicLink active" href="https://help.apple.com/developer-account/#/dev4bb1cc12b?sub=devc240e1a83">register a Maps identifier</a> to identify your app. Register a Maps identifier for each app that uses MapKit JS. Next <a id="ember601" class="ember-view xRef AppleTopic" href="https://help.apple.com/developer-account/#/devcdfbb56a3?sub=devc240e1a83">create and download a private key</a> with MapKit JS enabled and associate it with the Maps identifier. You can associate two keys with each Maps identifier.</p>
 <p>Then <a id="ember602" class="ember-view xRef AppleTopic" href="https://help.apple.com/developer-account/#/dev646934554?sub=devc240e1a83">get the key identifier</a> (<em>kid</em>) to create a JSON web token (JWT) that you’ll use to communicate with the services you enabled.</p>
 </blockquote>
+
+
+
 <p>Once you have a maps identifier, private key and key identifier, you can then generate a JWT.</p>
+
+
+
 <p><em>Phew</em>. This is starting to sound like a lot of work.</p>
+
+
+
 <p>Especially as (ideally) Apple wants you to host a:</p>
-<blockquote><p><code>/services/jwt/</code> endpoint yourself. The endpoint should return a signed <a href="https://jwt.io/">JWT-token</a> which can then be used to authenticate against Apple endpoints.</p></blockquote>
+
+
+
+<blockquote class="wp-block-quote"><p><code>/services/jwt/</code> endpoint yourself. The endpoint should return a signed <a href="https://jwt.io/">JWT-token</a> which can then be used to authenticate against Apple endpoints.</p></blockquote>
+
+
+
 <p>See <a href="https://blog.rubeng.nl/getting-started-with-apples-mapkit-js/">https://blog.rubeng.nl/getting-started-with-apples-mapkit-js/</a> for (many) more details. But as the author Ruben Gommers points out in that post, you can also generate a token that will last up to 10 years, and negate the need to run an endpoint for token generation. So that&#8217;s something. But you still have to generate the JWT.</p>
+
+
+
 <p>[Update 2017-09-12] Ruben contacted me to point out he has created a tool to create long-lived tokens. It&#8217;s available here: <a href="https://mapkitjs.rubeng.nl/">https://mapkitjs.rubeng.nl</a></p>
+
+
+
 <p>Thankfully, Thomas Schoffelen has already created MapKit JWT for PHP: <a href="https://github.com/includable/mapkit-jwt">https://github.com/includable/mapkit-jwt</a> 🙂 You pass his function a private key, key identifier and maps identifier, and it returns a JWT. It&#8217;s this token that you use much like a Google Maps API key in order to authorise initialization of your map.</p>
+
+
+
 <p>Now we are getting somewhere.</p>
+
+
+
 <h2>How do Mapkit JS embeds work?</h2>
+
+
+
 <p>Apple has demonstrated some embeds on its introductory page for developers: <a href="https://developer.apple.com/maps/mapkitjs/">https://developer.apple.com/maps/mapkitjs/</a>. Here&#8217;s the sample code for a simple embed:</p>
-<pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+
+
+
+<pre class="wp-block-code"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
         <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
@@ -103,20 +161,47 @@
         <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
         <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
         <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
+
+
+
 <p>Breaking this down, we have:</p>
+
+
+
 <p><strong>Link to the MapKit JS library</strong></p>
-<pre><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre>
+
+
+
+<pre class="wp-block-code"><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre>
+
+
+
 <p><strong>Define the map size</strong></p>
-<pre><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+
+
+
+<pre class="wp-block-code"><code><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
 <span class="p">#</span><span class="nn">map</span> <span class="p">{</span>
 <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
 <span class="k">height</span><span class="p">:</span> <span class="mi">600</span><span class="kt">px</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+
+
+
 <p><strong>Give the map JS a target in the DOM</strong></p>
-<pre><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"map"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+
+
+
+<pre class="wp-block-code"><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"map"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+
+
+
 <p><strong>Initialise, set map parameters and attach it to the DOM element</strong></p>
-<pre><code class="language-html" data-lang="html"> <span class="nx">mapkit</span><span class="p">.</span><span class="nx">init</span><span class="p">({</span>
+
+
+
+<pre class="wp-block-code"><code> <span class="nx">mapkit</span><span class="p">.</span><span class="nx">init</span><span class="p">({</span>
             <span class="nx">authorizationCallback</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="p">{</span>
                 <span class="kd">var</span> <span class="nx">xhr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
                 <span class="nx">xhr</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="s2">"/services/jwt"</span><span class="p">);</span>
@@ -133,9 +218,21 @@
         <span class="p">);</span>
         <span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mapkit</span><span class="p">.</span><span class="nx">Map</span><span class="p">(</span><span class="s2">"map"</span><span class="p">);</span>
         <span class="nx">map</span><span class="p">.</span><span class="nx">region</span> <span class="o">=</span> <span class="nx">Cupertino</span><span class="p">;</span></code></pre>
+
+
+
 <p>All in all, this looks a lot like the ACF documentation for adding a Google Map: <a href="https://www.advancedcustomfields.com/resources/google-map/">https://www.advancedcustomfields.com/resources/google-map/</a>.</p>
+
+
+
 <h2>WordPress integration</h2>
+
+
+
 <p>To get this integrated into a WordPress website I will:</p>
+
+
+
 <ul>
 <li>add the MapKit JWT library</li>
 <li>create a settings page to store Team ID, Key ID, Private Key and origin</li>
@@ -145,11 +242,21 @@
 <li>enqueue the MapKit JS CDN and custom map JS</li>
 <li>initialise and display the map using a shortcode</li>
 </ul>
+
+
+
 <h2>And here&#8217;s the result:</h2>
-<p>&nbsp;</p>
-<p>[applemap]</p>
-<p>&nbsp;</p>
-<p>To do this I&#8217;ve created a plugin. It&#8217;s just a demo of a simple embed but does output an Apple Map 🙂  Even this was certainly more effort than using a Google Maps embed, and a lot more work than I was expecting. The next step will be to integrate custom markers, controlled using an ACF repeater. Any questions, please contact me on Twitter or raise an issue on Github.</p>
+
+
+
+<p><em>Well it did show a live Apple Map. But I&#8217;ve deactivated the plugin now.</em></p>
+
+
+
+<p>To do this I&#8217;ve created a plugin. It&#8217;s just a demo of&nbsp;a simple embed but does output an Apple Map 🙂&nbsp; Even this was certainly more effort than using a Google Maps embed, and a lot more work than I was expecting. The next step will be to integrate custom markers, controlled using an ACF repeater. Any questions, please contact me on Twitter or raise an issue on Github.</p>
+
+
+
 <p>You can get the plugin here: <a href="https://github.com/mattradford/apple-map-embed">https://github.com/mattradford/apple-map-embed</a>.</p>
             </section>
         </article>
