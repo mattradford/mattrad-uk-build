@@ -6,8 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Add icon to external link, including https &#8211; Matt Radford</title>
 <link rel="canonical" href="/add-icon-external-link-including-https/">
-<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fadd-icon-external-link-including-https%2F">
-<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fadd-icon-external-link-including-https%2F&#038;format=xml">
     <style>body img {max-width: 100%;height: auto;}</style>
             <!-- All Glory to the Hypno Toad! -->
     </head>
@@ -28,7 +26,703 @@
                 <h1>Add icon to external link, including https</h1>
                 <span>Published on&nbsp;</span><time datetime="2014-05-06T11:08:27+00:00">2014-05-06</time>            </header>
             <section>
-                <div id="gist11558848" class="gist">
+                <br>
+<font size="1"><table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">
+<tr><th align="left" bgcolor="#f57900" colspan="5">
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Warning: DOMDocument::loadHTML(): Tag template invalid in Entity, line: 12 in /Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php on line <i>466</i>
+</th></tr>
+<tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
+<tr>
+<th align="center" bgcolor="#eeeeec">#</th>
+<th align="left" bgcolor="#eeeeec">Time</th>
+<th align="left" bgcolor="#eeeeec">Memory</th>
+<th align="left" bgcolor="#eeeeec">Function</th>
+<th align="left" bgcolor="#eeeeec">Location</th>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">1</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">363848</td>
+<td bgcolor="#eeeeec">{main}(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>0</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">2</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">364128</td>
+<td bgcolor="#eeeeec">require( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>17</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">3</td>
+<td bgcolor="#eeeeec" align="center">0.2177</td>
+<td bgcolor="#eeeeec" align="right">7101312</td>
+<td bgcolor="#eeeeec">require_once( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php" bgcolor="#eeeeec">.../wp-blog-header.php<b>:</b>19</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">4</td>
+<td bgcolor="#eeeeec" align="center">0.2186</td>
+<td bgcolor="#eeeeec" align="right">7102704</td>
+<td bgcolor="#eeeeec">include( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php" bgcolor="#eeeeec">.../template-loader.php<b>:</b>106</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">5</td>
+<td bgcolor="#eeeeec" align="center">0.2320</td>
+<td bgcolor="#eeeeec" align="right">7261176</td>
+<td bgcolor="#eeeeec">the_content(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php" bgcolor="#eeeeec">.../singular.php<b>:</b>23</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">6</td>
+<td bgcolor="#eeeeec" align="center">0.2321</td>
+<td bgcolor="#eeeeec" align="right">7261208</td>
+<td bgcolor="#eeeeec">apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/post-template.php" bgcolor="#eeeeec">.../post-template.php<b>:</b>253</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">7</td>
+<td bgcolor="#eeeeec" align="center">0.2321</td>
+<td bgcolor="#eeeeec" align="right">7261616</td>
+<td bgcolor="#eeeeec">WP_Hook->apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/plugin.php" bgcolor="#eeeeec">.../plugin.php<b>:</b>191</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">8</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7267232</td>
+<td bgcolor="#eeeeec">do_shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/class-wp-hook.php" bgcolor="#eeeeec">.../class-wp-hook.php<b>:</b>307</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">9</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7269152</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/function.preg-replace-callback" target="_new">preg_replace_callback</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">10</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7269680</td>
+<td bgcolor="#eeeeec">do_shortcode_tag(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">11</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7270168</td>
+<td bgcolor="#eeeeec">GistPress->shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>356</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">12</td>
+<td bgcolor="#eeeeec" align="center">0.2329</td>
+<td bgcolor="#eeeeec" align="right">7272360</td>
+<td bgcolor="#eeeeec">GistPress->get_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>209</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">13</td>
+<td bgcolor="#eeeeec" align="center">0.7802</td>
+<td bgcolor="#eeeeec" align="right">7305392</td>
+<td bgcolor="#eeeeec">GistPress->process_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>377</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">14</td>
+<td bgcolor="#eeeeec" align="center">0.7802</td>
+<td bgcolor="#eeeeec" align="right">7317792</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/DOMDocument.loadHTML" target="_new">loadHTML</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>466</td>
+</tr>
+</table></font>
+<br>
+<font size="1"><table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">
+<tr><th align="left" bgcolor="#f57900" colspan="5">
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Warning: DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 14 in /Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php on line <i>466</i>
+</th></tr>
+<tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
+<tr>
+<th align="center" bgcolor="#eeeeec">#</th>
+<th align="left" bgcolor="#eeeeec">Time</th>
+<th align="left" bgcolor="#eeeeec">Memory</th>
+<th align="left" bgcolor="#eeeeec">Function</th>
+<th align="left" bgcolor="#eeeeec">Location</th>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">1</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">363848</td>
+<td bgcolor="#eeeeec">{main}(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>0</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">2</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">364128</td>
+<td bgcolor="#eeeeec">require( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>17</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">3</td>
+<td bgcolor="#eeeeec" align="center">0.2177</td>
+<td bgcolor="#eeeeec" align="right">7101312</td>
+<td bgcolor="#eeeeec">require_once( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php" bgcolor="#eeeeec">.../wp-blog-header.php<b>:</b>19</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">4</td>
+<td bgcolor="#eeeeec" align="center">0.2186</td>
+<td bgcolor="#eeeeec" align="right">7102704</td>
+<td bgcolor="#eeeeec">include( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php" bgcolor="#eeeeec">.../template-loader.php<b>:</b>106</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">5</td>
+<td bgcolor="#eeeeec" align="center">0.2320</td>
+<td bgcolor="#eeeeec" align="right">7261176</td>
+<td bgcolor="#eeeeec">the_content(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php" bgcolor="#eeeeec">.../singular.php<b>:</b>23</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">6</td>
+<td bgcolor="#eeeeec" align="center">0.2321</td>
+<td bgcolor="#eeeeec" align="right">7261208</td>
+<td bgcolor="#eeeeec">apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/post-template.php" bgcolor="#eeeeec">.../post-template.php<b>:</b>253</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">7</td>
+<td bgcolor="#eeeeec" align="center">0.2321</td>
+<td bgcolor="#eeeeec" align="right">7261616</td>
+<td bgcolor="#eeeeec">WP_Hook->apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/plugin.php" bgcolor="#eeeeec">.../plugin.php<b>:</b>191</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">8</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7267232</td>
+<td bgcolor="#eeeeec">do_shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/class-wp-hook.php" bgcolor="#eeeeec">.../class-wp-hook.php<b>:</b>307</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">9</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7269152</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/function.preg-replace-callback" target="_new">preg_replace_callback</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">10</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7269680</td>
+<td bgcolor="#eeeeec">do_shortcode_tag(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">11</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7270168</td>
+<td bgcolor="#eeeeec">GistPress->shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>356</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">12</td>
+<td bgcolor="#eeeeec" align="center">0.2329</td>
+<td bgcolor="#eeeeec" align="right">7272360</td>
+<td bgcolor="#eeeeec">GistPress->get_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>209</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">13</td>
+<td bgcolor="#eeeeec" align="center">0.7802</td>
+<td bgcolor="#eeeeec" align="right">7305392</td>
+<td bgcolor="#eeeeec">GistPress->process_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>377</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">14</td>
+<td bgcolor="#eeeeec" align="center">0.7802</td>
+<td bgcolor="#eeeeec" align="right">7317792</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/DOMDocument.loadHTML" target="_new">loadHTML</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>466</td>
+</tr>
+</table></font>
+<br>
+<font size="1"><table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">
+<tr><th align="left" bgcolor="#f57900" colspan="5">
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Warning: DOMDocument::loadHTML(): Tag path invalid in Entity, line: 15 in /Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php on line <i>466</i>
+</th></tr>
+<tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
+<tr>
+<th align="center" bgcolor="#eeeeec">#</th>
+<th align="left" bgcolor="#eeeeec">Time</th>
+<th align="left" bgcolor="#eeeeec">Memory</th>
+<th align="left" bgcolor="#eeeeec">Function</th>
+<th align="left" bgcolor="#eeeeec">Location</th>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">1</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">363848</td>
+<td bgcolor="#eeeeec">{main}(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>0</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">2</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">364128</td>
+<td bgcolor="#eeeeec">require( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>17</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">3</td>
+<td bgcolor="#eeeeec" align="center">0.2177</td>
+<td bgcolor="#eeeeec" align="right">7101312</td>
+<td bgcolor="#eeeeec">require_once( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php" bgcolor="#eeeeec">.../wp-blog-header.php<b>:</b>19</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">4</td>
+<td bgcolor="#eeeeec" align="center">0.2186</td>
+<td bgcolor="#eeeeec" align="right">7102704</td>
+<td bgcolor="#eeeeec">include( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php" bgcolor="#eeeeec">.../template-loader.php<b>:</b>106</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">5</td>
+<td bgcolor="#eeeeec" align="center">0.2320</td>
+<td bgcolor="#eeeeec" align="right">7261176</td>
+<td bgcolor="#eeeeec">the_content(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php" bgcolor="#eeeeec">.../singular.php<b>:</b>23</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">6</td>
+<td bgcolor="#eeeeec" align="center">0.2321</td>
+<td bgcolor="#eeeeec" align="right">7261208</td>
+<td bgcolor="#eeeeec">apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/post-template.php" bgcolor="#eeeeec">.../post-template.php<b>:</b>253</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">7</td>
+<td bgcolor="#eeeeec" align="center">0.2321</td>
+<td bgcolor="#eeeeec" align="right">7261616</td>
+<td bgcolor="#eeeeec">WP_Hook->apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/plugin.php" bgcolor="#eeeeec">.../plugin.php<b>:</b>191</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">8</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7267232</td>
+<td bgcolor="#eeeeec">do_shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/class-wp-hook.php" bgcolor="#eeeeec">.../class-wp-hook.php<b>:</b>307</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">9</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7269152</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/function.preg-replace-callback" target="_new">preg_replace_callback</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">10</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7269680</td>
+<td bgcolor="#eeeeec">do_shortcode_tag(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">11</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7270168</td>
+<td bgcolor="#eeeeec">GistPress->shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>356</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">12</td>
+<td bgcolor="#eeeeec" align="center">0.2329</td>
+<td bgcolor="#eeeeec" align="right">7272360</td>
+<td bgcolor="#eeeeec">GistPress->get_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>209</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">13</td>
+<td bgcolor="#eeeeec" align="center">0.7802</td>
+<td bgcolor="#eeeeec" align="right">7305392</td>
+<td bgcolor="#eeeeec">GistPress->process_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>377</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">14</td>
+<td bgcolor="#eeeeec" align="center">0.7802</td>
+<td bgcolor="#eeeeec" align="right">7317792</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/DOMDocument.loadHTML" target="_new">loadHTML</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>466</td>
+</tr>
+</table></font>
+<br>
+<font size="1"><table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">
+<tr><th align="left" bgcolor="#f57900" colspan="5">
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Warning: DOMDocument::loadHTML(): Tag template invalid in Entity, line: 29 in /Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php on line <i>466</i>
+</th></tr>
+<tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
+<tr>
+<th align="center" bgcolor="#eeeeec">#</th>
+<th align="left" bgcolor="#eeeeec">Time</th>
+<th align="left" bgcolor="#eeeeec">Memory</th>
+<th align="left" bgcolor="#eeeeec">Function</th>
+<th align="left" bgcolor="#eeeeec">Location</th>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">1</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">363848</td>
+<td bgcolor="#eeeeec">{main}(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>0</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">2</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">364128</td>
+<td bgcolor="#eeeeec">require( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>17</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">3</td>
+<td bgcolor="#eeeeec" align="center">0.2177</td>
+<td bgcolor="#eeeeec" align="right">7101312</td>
+<td bgcolor="#eeeeec">require_once( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php" bgcolor="#eeeeec">.../wp-blog-header.php<b>:</b>19</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">4</td>
+<td bgcolor="#eeeeec" align="center">0.2186</td>
+<td bgcolor="#eeeeec" align="right">7102704</td>
+<td bgcolor="#eeeeec">include( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php" bgcolor="#eeeeec">.../template-loader.php<b>:</b>106</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">5</td>
+<td bgcolor="#eeeeec" align="center">0.2320</td>
+<td bgcolor="#eeeeec" align="right">7261176</td>
+<td bgcolor="#eeeeec">the_content(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php" bgcolor="#eeeeec">.../singular.php<b>:</b>23</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">6</td>
+<td bgcolor="#eeeeec" align="center">0.2321</td>
+<td bgcolor="#eeeeec" align="right">7261208</td>
+<td bgcolor="#eeeeec">apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/post-template.php" bgcolor="#eeeeec">.../post-template.php<b>:</b>253</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">7</td>
+<td bgcolor="#eeeeec" align="center">0.2321</td>
+<td bgcolor="#eeeeec" align="right">7261616</td>
+<td bgcolor="#eeeeec">WP_Hook->apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/plugin.php" bgcolor="#eeeeec">.../plugin.php<b>:</b>191</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">8</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7267232</td>
+<td bgcolor="#eeeeec">do_shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/class-wp-hook.php" bgcolor="#eeeeec">.../class-wp-hook.php<b>:</b>307</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">9</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7269152</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/function.preg-replace-callback" target="_new">preg_replace_callback</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">10</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7269680</td>
+<td bgcolor="#eeeeec">do_shortcode_tag(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">11</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7270168</td>
+<td bgcolor="#eeeeec">GistPress->shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>356</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">12</td>
+<td bgcolor="#eeeeec" align="center">0.2329</td>
+<td bgcolor="#eeeeec" align="right">7272360</td>
+<td bgcolor="#eeeeec">GistPress->get_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>209</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">13</td>
+<td bgcolor="#eeeeec" align="center">0.7802</td>
+<td bgcolor="#eeeeec" align="right">7305392</td>
+<td bgcolor="#eeeeec">GistPress->process_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>377</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">14</td>
+<td bgcolor="#eeeeec" align="center">0.7802</td>
+<td bgcolor="#eeeeec" align="right">7317792</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/DOMDocument.loadHTML" target="_new">loadHTML</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>466</td>
+</tr>
+</table></font>
+<br>
+<font size="1"><table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">
+<tr><th align="left" bgcolor="#f57900" colspan="5">
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Warning: DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 31 in /Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php on line <i>466</i>
+</th></tr>
+<tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
+<tr>
+<th align="center" bgcolor="#eeeeec">#</th>
+<th align="left" bgcolor="#eeeeec">Time</th>
+<th align="left" bgcolor="#eeeeec">Memory</th>
+<th align="left" bgcolor="#eeeeec">Function</th>
+<th align="left" bgcolor="#eeeeec">Location</th>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">1</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">363848</td>
+<td bgcolor="#eeeeec">{main}(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>0</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">2</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">364128</td>
+<td bgcolor="#eeeeec">require( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>17</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">3</td>
+<td bgcolor="#eeeeec" align="center">0.2177</td>
+<td bgcolor="#eeeeec" align="right">7101312</td>
+<td bgcolor="#eeeeec">require_once( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php" bgcolor="#eeeeec">.../wp-blog-header.php<b>:</b>19</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">4</td>
+<td bgcolor="#eeeeec" align="center">0.2186</td>
+<td bgcolor="#eeeeec" align="right">7102704</td>
+<td bgcolor="#eeeeec">include( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php" bgcolor="#eeeeec">.../template-loader.php<b>:</b>106</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">5</td>
+<td bgcolor="#eeeeec" align="center">0.2320</td>
+<td bgcolor="#eeeeec" align="right">7261176</td>
+<td bgcolor="#eeeeec">the_content(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php" bgcolor="#eeeeec">.../singular.php<b>:</b>23</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">6</td>
+<td bgcolor="#eeeeec" align="center">0.2321</td>
+<td bgcolor="#eeeeec" align="right">7261208</td>
+<td bgcolor="#eeeeec">apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/post-template.php" bgcolor="#eeeeec">.../post-template.php<b>:</b>253</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">7</td>
+<td bgcolor="#eeeeec" align="center">0.2321</td>
+<td bgcolor="#eeeeec" align="right">7261616</td>
+<td bgcolor="#eeeeec">WP_Hook->apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/plugin.php" bgcolor="#eeeeec">.../plugin.php<b>:</b>191</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">8</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7267232</td>
+<td bgcolor="#eeeeec">do_shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/class-wp-hook.php" bgcolor="#eeeeec">.../class-wp-hook.php<b>:</b>307</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">9</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7269152</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/function.preg-replace-callback" target="_new">preg_replace_callback</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">10</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7269680</td>
+<td bgcolor="#eeeeec">do_shortcode_tag(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">11</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7270168</td>
+<td bgcolor="#eeeeec">GistPress->shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>356</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">12</td>
+<td bgcolor="#eeeeec" align="center">0.2329</td>
+<td bgcolor="#eeeeec" align="right">7272360</td>
+<td bgcolor="#eeeeec">GistPress->get_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>209</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">13</td>
+<td bgcolor="#eeeeec" align="center">0.7802</td>
+<td bgcolor="#eeeeec" align="right">7305392</td>
+<td bgcolor="#eeeeec">GistPress->process_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>377</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">14</td>
+<td bgcolor="#eeeeec" align="center">0.7802</td>
+<td bgcolor="#eeeeec" align="right">7317792</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/DOMDocument.loadHTML" target="_new">loadHTML</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>466</td>
+</tr>
+</table></font>
+<br>
+<font size="1"><table class="xdebug-error xe-warning" dir="ltr" border="1" cellspacing="0" cellpadding="1">
+<tr><th align="left" bgcolor="#f57900" colspan="5">
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Warning: DOMDocument::loadHTML(): Tag path invalid in Entity, line: 32 in /Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php on line <i>466</i>
+</th></tr>
+<tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
+<tr>
+<th align="center" bgcolor="#eeeeec">#</th>
+<th align="left" bgcolor="#eeeeec">Time</th>
+<th align="left" bgcolor="#eeeeec">Memory</th>
+<th align="left" bgcolor="#eeeeec">Function</th>
+<th align="left" bgcolor="#eeeeec">Location</th>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">1</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">363848</td>
+<td bgcolor="#eeeeec">{main}(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>0</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">2</td>
+<td bgcolor="#eeeeec" align="center">0.0001</td>
+<td bgcolor="#eeeeec" align="right">364128</td>
+<td bgcolor="#eeeeec">require( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/index.php" bgcolor="#eeeeec">.../index.php<b>:</b>17</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">3</td>
+<td bgcolor="#eeeeec" align="center">0.2177</td>
+<td bgcolor="#eeeeec" align="right">7101312</td>
+<td bgcolor="#eeeeec">require_once( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-blog-header.php" bgcolor="#eeeeec">.../wp-blog-header.php<b>:</b>19</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">4</td>
+<td bgcolor="#eeeeec" align="center">0.2186</td>
+<td bgcolor="#eeeeec" align="right">7102704</td>
+<td bgcolor="#eeeeec">include( <font color="#00bb00">'/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php'</font> )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/template-loader.php" bgcolor="#eeeeec">.../template-loader.php<b>:</b>106</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">5</td>
+<td bgcolor="#eeeeec" align="center">0.2320</td>
+<td bgcolor="#eeeeec" align="right">7261176</td>
+<td bgcolor="#eeeeec">the_content(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/themes/negligible/singular.php" bgcolor="#eeeeec">.../singular.php<b>:</b>23</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">6</td>
+<td bgcolor="#eeeeec" align="center">0.2321</td>
+<td bgcolor="#eeeeec" align="right">7261208</td>
+<td bgcolor="#eeeeec">apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/post-template.php" bgcolor="#eeeeec">.../post-template.php<b>:</b>253</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">7</td>
+<td bgcolor="#eeeeec" align="center">0.2321</td>
+<td bgcolor="#eeeeec" align="right">7261616</td>
+<td bgcolor="#eeeeec">WP_Hook->apply_filters(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/plugin.php" bgcolor="#eeeeec">.../plugin.php<b>:</b>191</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">8</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7267232</td>
+<td bgcolor="#eeeeec">do_shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/class-wp-hook.php" bgcolor="#eeeeec">.../class-wp-hook.php<b>:</b>307</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">9</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7269152</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/function.preg-replace-callback" target="_new">preg_replace_callback</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">10</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7269680</td>
+<td bgcolor="#eeeeec">do_shortcode_tag(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>228</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">11</td>
+<td bgcolor="#eeeeec" align="center">0.2328</td>
+<td bgcolor="#eeeeec" align="right">7270168</td>
+<td bgcolor="#eeeeec">GistPress->shortcode(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-includes/shortcodes.php" bgcolor="#eeeeec">.../shortcodes.php<b>:</b>356</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">12</td>
+<td bgcolor="#eeeeec" align="center">0.2329</td>
+<td bgcolor="#eeeeec" align="right">7272360</td>
+<td bgcolor="#eeeeec">GistPress->get_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>209</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">13</td>
+<td bgcolor="#eeeeec" align="center">0.7802</td>
+<td bgcolor="#eeeeec" align="right">7305392</td>
+<td bgcolor="#eeeeec">GistPress->process_gist_html(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>377</td>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">14</td>
+<td bgcolor="#eeeeec" align="center">0.7802</td>
+<td bgcolor="#eeeeec" align="right">7317792</td>
+<td bgcolor="#eeeeec">
+<a href="http://www.php.net/DOMDocument.loadHTML" target="_new">loadHTML</a>
+(  )</td>
+<td title="/Users/matt/Local Sites/mattrad/app/public/wp-content/plugins/gistpress/includes/class-gistpress.php" bgcolor="#eeeeec">.../class-gistpress.php<b>:</b>466</td>
+</tr>
+</table></font>
+<div id="gist11558848" class="gist">
     <div class="gist-file" translate="no">
       <div class="gist-data">
         <div class="js-gist-file-update-container js-task-list-container file-box">
