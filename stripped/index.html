@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stripped &#8211; Matt Radford</title>
+<link rel="canonical" href="/stripped/">
+    <style>body img {max-width: 100%;height: auto;}</style>
+            <!-- All Glory to the Hypno Toad! -->
+    </head>
+
+    <body>
+        
+        <header>
+            <a href="/">Matt Radford</a>
+            <p>Messing with links since &lt;blink&gt;</p>
+            <nav>
+                <ul id="menu-primary-navigation" class="menu">
+<li id="menu-item-961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-961"><a href="/about/">About</a></li>
+</ul>            </nav>
+        </header>
+
+        <main>            <article id="post-1049" class="post-1049 post type-post status-publish format-standard hentry">
+            <header>
+                <h1>Stripped</h1>
+                <span>Published on&nbsp;</span><time datetime="2022-06-18T16:16:03+00:00">2022-06-18</time>            </header>
+            <section>
+                
+<p>I had a great day at <a href="https://pixelpioneers.co/">Pixel Pioneers</a> in Bristol recently and it got me enthused about the craft of the web again. My day job is fascinating in the reach and attention to detail, but there are also understandable and necessary constraints in working for a large organisation. And the first talk of the day at Pixel Pioneers was from <a href="https://www.jam-factory.com/">Gavin Strange</a> of Aardman &#8211; “Less thinkering, more tinkering”. With the other talks, it got me excited about the possibilities of the web and playing around with my own neglected website. But the <strong>weight</strong> of doing of a rebuild… ugh.</p>
+
+
+
+<p>I’d reworked the site using <a href="https://www.11ty.dev/">Eleventy</a> a while ago but my JavaScript is not brilliant and that’s not what I want to focus on; I need a playground for HTML &amp; CSS with minimal JS. And then I saw <a href="https://twitter.com/robinrendle/status/1536395645107326976">a tweet by Robin Rendle</a>:</p>
+
+
+
+<figure class="wp-block-image size-full"><img width="557" height="694" src="/wp-content/uploads/2022/06/robin-rendle-complexity.jpg" alt="" class="wp-image-1060" srcset="/wp-content/uploads/2022/06/robin-rendle-complexity.jpg 557w, /wp-content/uploads/2022/06/robin-rendle-complexity-241x300.jpg 241w" sizes="(max-width: 557px) 100vw, 557px"></figure>
+
+
+
+<p>That’s exactly what I need to start with: nothing! Take it back to what the web is: HTML. Everything else can come later, considered and added byte by byte.</p>
+
+
+
+<p>No frameworks, dependencies or build process. No cruft. No JavaScript or CSS, to begin with. Just a basic HTML5 structure for a blog with an index and posts.</p>
+
+
+
+<h2>So, just write HTML?</h2>
+
+
+
+<p>Well, that doesn’t mean I wanted to write every page by hand. As well as having a technical playground I want to be able to write and publish quickly when I feel the urge. And still I had a copy of my previous site in a WordPress backup…</p>
+
+
+
+<p>So import the backup and get going. But the familiar warm embrace of WP is not a state of <em>nothing</em>. A basic install of WordPress 6.0 loads up a page with a lot of stuff. So it needed to be stripped down.</p>
+
+
+
+<h2>The front end overload</h2>
+
+
+
+<p>Between WordPress 6.0 and the default theme, <a href="https://wordpress.org/themes/twentytwentytwo/">Twenty Twenty-Two</a>, there&#8217;s a lot getting in the way of my &#8220;Just the HTML, Ma&#8217;am&#8221; approach. We&#8217;ve got 2 CSS files, 2 JS files, a font and favicons. But it&#8217;s the <code>&lt;head&gt;</code> that&#8217;s a bit <em>whoah</em>.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="998" height="639" src="/wp-content/uploads/2022/06/TwentyTwentyTwo_Network.jpeg" alt="" class="wp-image-1053" srcset="/wp-content/uploads/2022/06/TwentyTwentyTwo_Network.jpeg 998w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Network-300x192.jpeg 300w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Network-768x492.jpeg 768w" sizes="(max-width: 998px) 100vw, 998px"></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="813" src="/wp-content/uploads/2022/06/TwentyTwentyTwo_Head-1024x813.jpeg" alt="" class="wp-image-1054" srcset="/wp-content/uploads/2022/06/TwentyTwentyTwo_Head-1024x813.jpeg 1024w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head-300x238.jpeg 300w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head-768x610.jpeg 768w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head.jpeg 1077w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+
+
+
+<p>Look at all that! Script and many styles blocks, mostly for the block editor. Stuff like support for Windows Live Writter, which was discontinued in 2017. A DNS prefetch for s.w.org. </p>
+
+
+
+<p>We&#8217;ve come to expect this from a web page. It&#8217;s not my vision of starting with the least HTML5 and building up. So all that had to go.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="955" height="573" src="/wp-content/uploads/2022/06/Negligible_Network.jpeg" alt="" class="wp-image-1055" srcset="/wp-content/uploads/2022/06/Negligible_Network.jpeg 955w, /wp-content/uploads/2022/06/Negligible_Network-300x180.jpeg 300w, /wp-content/uploads/2022/06/Negligible_Network-768x461.jpeg 768w" sizes="(max-width: 955px) 100vw, 955px"></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="856" height="522" src="/wp-content/uploads/2022/06/Negligible_Head.jpeg" alt="" class="wp-image-1056" srcset="/wp-content/uploads/2022/06/Negligible_Head.jpeg 856w, /wp-content/uploads/2022/06/Negligible_Head-300x183.jpeg 300w, /wp-content/uploads/2022/06/Negligible_Head-768x468.jpeg 768w" sizes="(max-width: 856px) 100vw, 856px"></figure>
+
+
+
+<p>Ah, that&#8217;s better for what I need, running a very simple theme. In that I&#8217;ve removed support for:</p>
+
+
+
+<ul>
+<li>Taxonomies</li>
+<li>Pagination</li>
+<li>Author archives</li>
+<li>Search</li>
+<li>Comments</li>
+<li>oEmbeds</li>
+<li>REST API</li>
+</ul>
+
+
+
+<h3>What do I need to add?</h3>
+
+
+
+<ul>
+<li>Sitemaps<ul><li>To aid search engine discovery. Notwithstanding Yoast SEO&#8217;s ubiquity, these have been built in to WordPress since 5.5 and are easy to customise. I only had to remove the sitemaps for taxonomies and users.</li></ul>
+</li>
+<li>One line of CSS, to make images responsive.</li>
+</ul>
+
+
+
+<h2>What do I need from a blog CMS?</h2>
+
+
+
+<p>As well as the front end, I thought about what I need from the back end. I&#8217;ve worked with WordPress so long and tend to ignore the bits I don&#8217;t need, but for this I want a lean experience. I don&#8217;t need:</p>
+
+
+
+<ul>
+<li>the Dashboard<ul><li>it&#8217;s useless anyway, so just redirect to <em>Posts</em> on login</li></ul>
+</li>
+<li>the Customizer</li>
+</ul>
+
+
+
+<p>So away they went. </p>
+
+
+
+<p>All these customisations can bee seen in the theme, <em>Negligible</em>:</p>
+
+
+
+<p><a href="https://github.com/mattradford/mattrad-uk-source/tree/main/wp-content/themes/negligible">https://github.com/mattradford/mattrad-uk-source/tree/main/wp-content/themes/negligible</a></p>
+
+
+
+<p>Because <a href="https://en.wikipedia.org/wiki/Gertrude_Stein">there is no there there</a>.</p>
+
+
+
+<p>This lightweight approach feels fresh. I feel like I&#8217;m back on the web with a personal site, having consolidated all the articles I&#8217;ve written that I could find and without the mental overhead and technical load that comes from building a site in the way that&#8217;s become expected.</p>
+
+
+
+<p>Onward to play 🙂</p>
+            </section>
+        </article>
+        </main>
+
+    <footer>
+        <p><small>&copy; 1996 - 2022 Matt Radford. As ever, built with <a href="http://wordpress.org/">WordPress</a>.</small></p>
+    </footer>
+    
+</body>
+</html>
