@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Deploying WordPress as static HTML to Netlify &#x2d; Matt Radford</title>
+
+<!-- The SEO Framework by Sybre Waaijer -->
+<meta name="robots" content="max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="description" content="How to deploy WordPress as static HTML from a local&#x2d;only site. Using Local, Simply Static, Github and Netlify.">
+<meta property="og:image" content="/wp-content/uploads/2022/06/local-directory-1.jpg">
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Deploying WordPress as static HTML to Netlify">
+<meta property="og:description" content="How to deploy WordPress as static HTML from a local&#x2d;only site. Using Local, Simply Static, Github and Netlify.">
+<meta property="og:url" content="/deploying-wordpress-as-static-html-to-netlify/">
+<meta property="og:site_name" content="Matt Radford">
+<meta property="og:updated_time" content="2022-06-22T22:12+00:00">
+<meta property="article:published_time" content="2022-06-22T22:06+00:00">
+<meta property="article:modified_time" content="2022-06-22T22:12+00:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Deploying WordPress as static HTML to Netlify">
+<meta name="twitter:description" content="How to deploy WordPress as static HTML from a local&#x2d;only site. Using Local, Simply Static, Github and Netlify.">
+<meta name="twitter:image" content="/wp-content/uploads/2022/06/local-directory-1.jpg">
+<link rel="canonical" href="/deploying-wordpress-as-static-html-to-netlify/">
+<!-- / The SEO Framework by Sybre Waaijer | 7.51ms meta | 0.90ms boot -->
+
+    <style>body img {max-width: 100%;height: auto;}</style>
+    <link rel="alternate" type="application/rss+xml" href="https://mattrad.uk/feed" title="Matt Radford">
+            <!-- All Glory to the Hypno Toad! -->
+    </head>
+
+    <body>
+        
+        <header>
+            <a href="/">Matt Radford</a>
+            <p>Messing with links since &lt;blink&gt;</p>
+            <nav>
+                <ul id="menu-primary-navigation" class="menu">
+<li id="menu-item-961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-961"><a href="/about/">About</a></li>
+</ul>            </nav>
+        </header>
+
+        <main>            <article id="post-1067" class="post-1067 post type-post status-publish format-standard hentry">
+            <header>
+                <h1>Deploying WordPress as static HTML to Netlify</h1>
+                <span>Published on&nbsp;</span><time datetime="2022-06-22T22:06:48+00:00">2022-06-22</time>            </header>
+            <section>
+                
+<p>Zero-cost hosting with super-fast performance? You can&#8217;t beat static HTML. This post looks at using the following to take a local-only site to one hosted as static HTML on Netlify, using:</p>
+
+
+
+<ul>
+<li>Local<ul><li><a href="https://localwp.com/">https://localwp.com/</a></li></ul>
+</li>
+<li>Simply Static<ul><li><a href="https://wordpress.org/plugins/simply-static/">https://wordpress.org/plugins/simply-static/</a></li></ul>
+</li>
+<li>GitHub<ul><li><a href="https://github.com/">https://github.com/</a></li></ul>
+</li>
+<li>Netlify<ul><li><a href="https://www.netlify.com/">https://www.netlify.com/</a></li></ul>
+</li>
+</ul>
+
+
+
+<p>I use Local as my local WordPress development environment. It&#8217;s been very reliable for a long time now, and works well on my aging MacBook, allowing me to quickly spin up sites to hack on. The local site that this website originates from is mattrad.local. In order to get this site deployed to publicly-viewable hosting, I use the WordPress plugin Simply Static.</p>
+
+
+
+<p><a href="https://patrickposner.dev/plugins/simply-static/">Simply Static</a> has both free and paid versions; the Pro version allows for direct deploy to &#8220;Github Pages, Cloudflare Pages, Netlify, Vercel, AWS, or any CDN&#8221;, whereas the free version only allows for generating a site to be stored in a local directory or as a zip file.</p>
+
+
+
+<p>I can&#8217;t justify spending $99 a year for my personal blog just to direct deply to Netlify, so need a workaround. I could generate a zip file everytime and manually upload it, but that&#8217;s not happening. Feels too much like FTP! </p>
+
+
+
+<h3>Sidenote: WP2Static</h3>
+
+
+
+<p>I also tried <a href="https://wp2static.com/">WP2Static</a> for site generation, but found it failed creating a site from an install on Local, as the cURL implementation would not accept a self-signed SSL certificate. Perhaps I should tried without SSL? Hmm. WP2Static is still open source and includes direct deploy to several hosts with free add-ons.</p>
+
+
+
+<h2>Options for generation and deploy</h2>
+
+
+
+<h3>1. A free add-on plugin  is available</h3>
+
+
+
+<p><a href="https://wordpress.org/plugins/simply-static-callback/">Simply Static Callback</a> adds a callback function which fires after the site is statically generated. With a valid header containing Authorization and a Bearer token you can make a POST request, for example, to send a zip file to Netlify for deployment. I hoped this would work, but Simply Static ZIP file option generates a zip with a folder in it. This hangs when deploying to Netlify.</p>
+
+
+
+<h3>2. Local Directory delivery method</h3>
+
+
+
+<figure class="wp-block-image size-full"><img width="930" height="650" src="/wp-content/uploads/2022/06/local-directory-1.jpg" alt="Simply Static generation options" class="wp-image-1071" srcset="/wp-content/uploads/2022/06/local-directory-1.jpg 930w, /wp-content/uploads/2022/06/local-directory-1-300x210.jpg 300w, /wp-content/uploads/2022/06/local-directory-1-768x537.jpg 768w" sizes="(max-width: 930px) 100vw, 930px"></figure>
+
+
+
+<p>Output the generated site to a local directory. I&#8217;ve chosen an output directory in another site added through Local, mattradbuild.local. Along with the option to <em>Use relative URLs</em> this means I can easily preview the generated files after they&#8217;re built.</p>
+
+
+
+<p>I have a very small site, but Simply Static makes quick work of regenerating each time.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="400" src="/wp-content/uploads/2022/06/simply-static-generate-1024x400.jpg" alt="Simply static site generation" class="wp-image-1075" srcset="/wp-content/uploads/2022/06/simply-static-generate-1024x400.jpg 1024w, /wp-content/uploads/2022/06/simply-static-generate-300x117.jpg 300w, /wp-content/uploads/2022/06/simply-static-generate-768x300.jpg 768w, /wp-content/uploads/2022/06/simply-static-generate.jpg 1166w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+
+
+
+<h2>Local Directory + Git = easy deploys</h2>
+
+
+
+<p>Before I started generating static files, I made the output directory &#8211; <code>/Users/matt/Local Sites/mattradbuild/app/public</code> &#8211; a git repository. This is the key that simplifies deployment &#8211; after generation I just have to commit all files and push.</p>
+
+
+
+<p>The subsequent repository on Github &#8211; <a href="https://github.com/mattradford/mattrad-uk-build">https://github.com/mattradford/mattrad-uk-build</a> &#8211; is connected to my Netlify account. Anything pushed to the repository on the <code>main</code> branch will automatically deploy to Netlify. And as a bonus, anything pushed to a different branch will trigger a branch deploy at Netlify, and give me a preview URL to view the generated site.</p>
+
+
+
+<p>Although this setup means I&#8217;m restricted to posting blog articles via my computer, it works for me. After the initial setup, there is very little to do to get my site re-published with new content.</p>
+
+
+
+<h2>Bonus: Sitemaps and RSS</h2>
+
+
+
+<p>Adding a sitemap and RSS feed was straightforward. Since version 5.5, WordPress has supported the generation of native sitemaps. And it has supported feeds since <em>foreever</em>. Adding these to Simply Static&#8217;s list of Additional URLs was all I needed to do to include these features on the generated site.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="969" height="424" src="/wp-content/uploads/2022/06/rss-and-sitemap.jpg" alt="Simply Static additional URLs" class="wp-image-1072" srcset="/wp-content/uploads/2022/06/rss-and-sitemap.jpg 969w, /wp-content/uploads/2022/06/rss-and-sitemap-300x131.jpg 300w, /wp-content/uploads/2022/06/rss-and-sitemap-768x336.jpg 768w" sizes="(max-width: 969px) 100vw, 969px"></figure>
+            </section>
+        </article>
+        </main>
+
+    <footer>
+        <p><small>&copy; 1996 - 2022 Matt Radford. As ever, built with <a href="http://wordpress.org/">WordPress</a>.</small></p>
+    </footer>
+    
+</body>
+</html>

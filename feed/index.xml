@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>Messing with links since &#60;blink&#62;</description>
-	<lastBuildDate>Wed, 22 Jun 2022 21:05:19 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 22 Jun 2022 22:13:30 +0000</lastBuildDate>
 	<language>en-GB</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,6 +20,107 @@
 	1	</sy:updateFrequency>
 	
 	<item>
+		<title>Deploying WordPress as static HTML to Netlify</title>
+		<link>/deploying-wordpress-as-static-html-to-netlify/</link>
+		
+		<dc:creator><![CDATA[mattrad]]></dc:creator>
+		<pubDate>Wed, 22 Jun 2022 22:06:48 +0000</pubDate>
+				<guid isPermaLink="false">/?p=1067</guid>
+
+					<description><![CDATA[Zero-cost hosting with super-fast performance? You can&#8217;t beat static HTML. This post looks at using the following to take a local-only site to one hosted as static HTML on Netlify, using: Local https://localwp.com/ Simply Static https://wordpress.org/plugins/simply-static/ GitHub https://github.com/ Netlify https://www.netlify.com/ I use Local as my local WordPress development environment. It&#8217;s been very reliable for a [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Zero-cost hosting with super-fast performance? You can&#8217;t beat static HTML. This post looks at using the following to take a local-only site to one hosted as static HTML on Netlify, using:</p>
+
+
+
+<ul><li>Local<ul><li><a href="https://localwp.com/">https://localwp.com/</a></li></ul></li><li>Simply Static<ul><li><a href="https://wordpress.org/plugins/simply-static/">https://wordpress.org/plugins/simply-static/</a></li></ul></li><li>GitHub<ul><li><a href="https://github.com/">https://github.com/</a></li></ul></li><li>Netlify<ul><li><a href="https://www.netlify.com/">https://www.netlify.com/</a></li></ul></li></ul>
+
+
+
+<p>I use Local as my local WordPress development environment. It&#8217;s been very reliable for a long time now, and works well on my aging MacBook, allowing me to quickly spin up sites to hack on. The local site that this website originates from is mattrad.local. In order to get this site deployed to publicly-viewable hosting, I use the WordPress plugin Simply Static.</p>
+
+
+
+<p><a href="https://patrickposner.dev/plugins/simply-static/">Simply Static</a> has both free and paid versions; the Pro version allows for direct deploy to &#8220;Github Pages, Cloudflare Pages, Netlify, Vercel, AWS, or any CDN&#8221;, whereas the free version only allows for generating a site to be stored in a local directory or as a zip file.</p>
+
+
+
+<p>I can&#8217;t justify spending $99 a year for my personal blog just to direct deply to Netlify, so need a workaround. I could generate a zip file everytime and manually upload it, but that&#8217;s not happening. Feels too much like FTP! </p>
+
+
+
+<h3>Sidenote: WP2Static</h3>
+
+
+
+<p>I also tried <a href="https://wp2static.com/">WP2Static</a> for site generation, but found it failed creating a site from an install on Local, as the cURL implementation would not accept a self-signed SSL certificate. Perhaps I should tried without SSL? Hmm. WP2Static is still open source and includes direct deploy to several hosts with free add-ons.</p>
+
+
+
+<h2>Options for generation and deploy</h2>
+
+
+
+<h3>1. A free add-on plugin  is available</h3>
+
+
+
+<p><a href="https://wordpress.org/plugins/simply-static-callback/">Simply Static Callback</a> adds a callback function which fires after the site is statically generated. With a valid header containing Authorization and a Bearer token you can make a POST request, for example, to send a zip file to Netlify for deployment. I hoped this would work, but Simply Static ZIP file option generates a zip with a folder in it. This hangs when deploying to Netlify.</p>
+
+
+
+<h3>2. Local Directory delivery method</h3>
+
+
+
+<figure class="wp-block-image size-full"><img width="930" height="650" src="/wp-content/uploads/2022/06/local-directory-1.jpg" alt="Simply Static generation options" class="wp-image-1071" srcset="/wp-content/uploads/2022/06/local-directory-1.jpg 930w, /wp-content/uploads/2022/06/local-directory-1-300x210.jpg 300w, /wp-content/uploads/2022/06/local-directory-1-768x537.jpg 768w" sizes="(max-width: 930px) 100vw, 930px" /></figure>
+
+
+
+<p>Output the generated site to a local directory. I&#8217;ve chosen an output directory in another site added through Local, mattradbuild.local. Along with the option to <em>Use relative URLs</em> this means I can easily preview the generated files after they&#8217;re built.</p>
+
+
+
+<p>I have a very small site, but Simply Static makes quick work of regenerating each time.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="400" src="/wp-content/uploads/2022/06/simply-static-generate-1024x400.jpg" alt="Simply static site generation" class="wp-image-1075" srcset="/wp-content/uploads/2022/06/simply-static-generate-1024x400.jpg 1024w, /wp-content/uploads/2022/06/simply-static-generate-300x117.jpg 300w, /wp-content/uploads/2022/06/simply-static-generate-768x300.jpg 768w, /wp-content/uploads/2022/06/simply-static-generate.jpg 1166w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<h2>Local Directory + Git = easy deploys</h2>
+
+
+
+<p>Before I started generating static files, I made the output directory &#8211; <code>/Users/matt/Local Sites/mattradbuild/app/public</code> &#8211; a git repository. This is the key that simplifies deployment &#8211; after generation I just have to commit all files and push.</p>
+
+
+
+<p>The subsequent repository on Github &#8211; <a href="https://github.com/mattradford/mattrad-uk-build">https://github.com/mattradford/mattrad-uk-build</a> &#8211; is connected to my Netlify account. Anything pushed to the repository on the <code>main</code> branch will automatically deploy to Netlify. And as a bonus, anything pushed to a different branch will trigger a branch deploy at Netlify, and give me a preview URL to view the generated site.</p>
+
+
+
+<p>Although this setup means I&#8217;m restricted to posting blog articles via my computer, it works for me. After the initial setup, there is very little to do to get my site re-published with new content.</p>
+
+
+
+<h2>Bonus: Sitemaps and RSS</h2>
+
+
+
+<p>Adding a sitemap and RSS feed was straightforward. Since version 5.5, WordPress has supported the generation of native sitemaps. And it has supported feeds since <em>foreever</em>. Adding these to Simply Static&#8217;s list of Additional URLs was all I needed to do to include these features on the generated site.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="969" height="424" src="/wp-content/uploads/2022/06/rss-and-sitemap.jpg" alt="Simply Static additional URLs" class="wp-image-1072" srcset="/wp-content/uploads/2022/06/rss-and-sitemap.jpg 969w, /wp-content/uploads/2022/06/rss-and-sitemap-300x131.jpg 300w, /wp-content/uploads/2022/06/rss-and-sitemap-768x336.jpg 768w" sizes="(max-width: 969px) 100vw, 969px" /></figure>
+
+<p><a href="/deploying-wordpress-as-static-html-to-netlify/" rel="nofollow">Source</a></p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Stripped</title>
 		<link>/stripped/</link>
 		
@@ -37,7 +138,7 @@
 
 
 
-<figure class="wp-block-image size-full"><img width="557" height="694" src="/wp-content/uploads/2022/06/robin-rendle-complexity.jpg" alt="" class="wp-image-1060" srcset="/wp-content/uploads/2022/06/robin-rendle-complexity.jpg 557w, /wp-content/uploads/2022/06/robin-rendle-complexity-241x300.jpg 241w" sizes="(max-width: 557px) 100vw, 557px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" width="557" height="694" src="/wp-content/uploads/2022/06/robin-rendle-complexity.jpg" alt="Robin Rendle Tweet" class="wp-image-1060" srcset="/wp-content/uploads/2022/06/robin-rendle-complexity.jpg 557w, /wp-content/uploads/2022/06/robin-rendle-complexity-241x300.jpg 241w" sizes="(max-width: 557px) 100vw, 557px" /></figure>
 
 
 
@@ -69,11 +170,11 @@
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="998" height="639" src="/wp-content/uploads/2022/06/TwentyTwentyTwo_Network.jpeg" alt="" class="wp-image-1053" srcset="/wp-content/uploads/2022/06/TwentyTwentyTwo_Network.jpeg 998w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Network-300x192.jpeg 300w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Network-768x492.jpeg 768w" sizes="(max-width: 998px) 100vw, 998px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" width="998" height="639" src="/wp-content/uploads/2022/06/TwentyTwentyTwo_Network.jpeg" alt="Default theme assets" class="wp-image-1053" srcset="/wp-content/uploads/2022/06/TwentyTwentyTwo_Network.jpeg 998w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Network-300x192.jpeg 300w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Network-768x492.jpeg 768w" sizes="(max-width: 998px) 100vw, 998px" /></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="813" src="/wp-content/uploads/2022/06/TwentyTwentyTwo_Head-1024x813.jpeg" alt="" class="wp-image-1054" srcset="/wp-content/uploads/2022/06/TwentyTwentyTwo_Head-1024x813.jpeg 1024w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head-300x238.jpeg 300w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head-768x610.jpeg 768w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head.jpeg 1077w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="813" src="/wp-content/uploads/2022/06/TwentyTwentyTwo_Head-1024x813.jpeg" alt="Default theme HTML head" class="wp-image-1054" srcset="/wp-content/uploads/2022/06/TwentyTwentyTwo_Head-1024x813.jpeg 1024w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head-300x238.jpeg 300w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head-768x610.jpeg 768w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head.jpeg 1077w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -85,11 +186,11 @@
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="955" height="573" src="/wp-content/uploads/2022/06/Negligible_Network.jpeg" alt="" class="wp-image-1055" srcset="/wp-content/uploads/2022/06/Negligible_Network.jpeg 955w, /wp-content/uploads/2022/06/Negligible_Network-300x180.jpeg 300w, /wp-content/uploads/2022/06/Negligible_Network-768x461.jpeg 768w" sizes="(max-width: 955px) 100vw, 955px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" width="955" height="573" src="/wp-content/uploads/2022/06/Negligible_Network.jpeg" alt="Negligible theme assets" class="wp-image-1055" srcset="/wp-content/uploads/2022/06/Negligible_Network.jpeg 955w, /wp-content/uploads/2022/06/Negligible_Network-300x180.jpeg 300w, /wp-content/uploads/2022/06/Negligible_Network-768x461.jpeg 768w" sizes="(max-width: 955px) 100vw, 955px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="856" height="522" src="/wp-content/uploads/2022/06/Negligible_Head.jpeg" alt="" class="wp-image-1056" srcset="/wp-content/uploads/2022/06/Negligible_Head.jpeg 856w, /wp-content/uploads/2022/06/Negligible_Head-300x183.jpeg 300w, /wp-content/uploads/2022/06/Negligible_Head-768x468.jpeg 768w" sizes="(max-width: 856px) 100vw, 856px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" width="856" height="522" src="/wp-content/uploads/2022/06/Negligible_Head.jpeg" alt="Negligible theme HTML head" class="wp-image-1056" srcset="/wp-content/uploads/2022/06/Negligible_Head.jpeg 856w, /wp-content/uploads/2022/06/Negligible_Head-300x183.jpeg 300w, /wp-content/uploads/2022/06/Negligible_Head-768x468.jpeg 768w" sizes="(max-width: 856px) 100vw, 856px" /></figure>
 
 
 
@@ -840,115 +941,6 @@
 <p>@ajwalker / @48in48org</p>
 
 <p><a href="/48-48-48-adam-walker-wcldn/" rel="nofollow">Source</a></p>]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Developing your story &#8211; Lee Jackson #wcldn</title>
-		<link>/developing-your-story-lee-jackson-wcldn/</link>
-		
-		<dc:creator><![CDATA[mattrad]]></dc:creator>
-		<pubDate>Sat, 14 Apr 2018 09:13:41 +0000</pubDate>
-				<guid isPermaLink="false">https://mattrad.uk/?p=840</guid>
-
-					<description><![CDATA[A few years ago: I hated my agency Mean clients Baldness ensued Something had to change Agency reset: 1 Finding your why? (are we doing this) Write a mission statement Look at your past Ask others 2 Discover your (key) strengths Offer services based on those Don’t chase the money What are you excited about? [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<h3>A few years ago:</h3>
-
-
-
-<p>I hated my agency</p>
-
-
-
-<p>Mean clients</p>
-
-
-
-<p>Baldness ensued</p>
-
-
-
-<h3>Something had to change</h3>
-
-
-
-<p>Agency reset:</p>
-
-
-
-<p><strong>1</strong></p>
-
-
-
-<p>Finding your why? (are we doing this)</p>
-
-
-
-<p>Write a mission statement</p>
-
-
-
-<p>Look at your past</p>
-
-
-
-<p>Ask others</p>
-
-
-
-<p><strong>2</strong></p>
-
-
-
-<p>Discover your (key) strengths</p>
-
-
-
-<p>Offer services based on those</p>
-
-
-
-<p>Don’t chase the money</p>
-
-
-
-<p>What are you excited about?</p>
-
-
-
-<p>His agency does themes only &#8211; no plugins</p>
-
-
-
-<p><strong>3</strong></p>
-
-
-
-<p>Client goals, blockers and solutions</p>
-
-
-
-<p>Key services that play to your strengths</p>
-
-
-
-<p><strong>4</strong></p>
-
-
-
-<p>Messaging</p>
-
-
-
-<p>Branding is a consistent voice and message</p>
-
-
-
-<p><a href="https://agencytrailblazer.com/">Agencytrailblazer.com</a> &#8211; podcast and WC slides available</p>
-
-<p><a href="/developing-your-story-lee-jackson-wcldn/" rel="nofollow">Source</a></p>]]></content:encoded>
 					
 		
 		
