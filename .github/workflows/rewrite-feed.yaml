@@ -11,7 +11,7 @@ jobs:
           find: "src=\"/wp-content/"
           replace: "src=\"https://mattrad.uk/wp-content/"
           regex: false
-          include: "feed/index.xml"
+          include: "feed/**"
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
