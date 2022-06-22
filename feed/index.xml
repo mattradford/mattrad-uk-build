@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Matt Radford</title>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Messing with links since &#60;blink&#62;</description>
+	<lastBuildDate>Wed, 22 Jun 2022 21:05:19 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>Stripped</title>
+		<link>/stripped/</link>
+		
+		<dc:creator><![CDATA[mattrad]]></dc:creator>
+		<pubDate>Sat, 18 Jun 2022 16:16:03 +0000</pubDate>
+				<guid isPermaLink="false">/?p=1049</guid>
+
+					<description><![CDATA[I had a great day at Pixel Pioneers in Bristol recently and it got me enthused about the craft of the web again. My day job is fascinating in the reach and attention to detail, but there are also understandable and necessary constraints in working for a large organisation. And the first talk of the [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>I had a great day at <a href="https://pixelpioneers.co/">Pixel Pioneers</a> in Bristol recently and it got me enthused about the craft of the web again. My day job is fascinating in the reach and attention to detail, but there are also understandable and necessary constraints in working for a large organisation. And the first talk of the day at Pixel Pioneers was from <a href="https://www.jam-factory.com/">Gavin Strange</a> of Aardman &#8211; “Less thinkering, more tinkering”. With the other talks, it got me excited about the possibilities of the web and playing around with my own neglected website. But the <strong>weight</strong> of doing of a rebuild… ugh.</p>
+
+
+
+<p>I’d reworked the site using <a href="https://www.11ty.dev/">Eleventy</a> a while ago but my JavaScript is not brilliant and that’s not what I want to focus on; I need a playground for HTML &amp; CSS with minimal JS. And then I saw <a href="https://twitter.com/robinrendle/status/1536395645107326976">a tweet by Robin Rendle</a>:</p>
+
+
+
+<figure class="wp-block-image size-full"><img width="557" height="694" src="/wp-content/uploads/2022/06/robin-rendle-complexity.jpg" alt="" class="wp-image-1060" srcset="/wp-content/uploads/2022/06/robin-rendle-complexity.jpg 557w, /wp-content/uploads/2022/06/robin-rendle-complexity-241x300.jpg 241w" sizes="(max-width: 557px) 100vw, 557px" /></figure>
+
+
+
+<p>That’s exactly what I need to start with: nothing! Take it back to what the web is: HTML. Everything else can come later, considered and added byte by byte.</p>
+
+
+
+<p>No frameworks, dependencies or build process. No cruft. No JavaScript or CSS, to begin with. Just a basic HTML5 structure for a blog with an index and posts.</p>
+
+
+
+<h2>So, just write HTML?</h2>
+
+
+
+<p>Well, that doesn’t mean I wanted to write every page by hand. As well as having a technical playground I want to be able to write and publish quickly when I feel the urge. And still I had a copy of my previous site in a WordPress backup…</p>
+
+
+
+<p>So import the backup and get going. But the familiar warm embrace of WP is not a state of <em>nothing</em>. A basic install of WordPress 6.0 loads up a page with a lot of stuff. So it needed to be stripped down.</p>
+
+
+
+<h2>The front end overload</h2>
+
+
+
+<p>Between WordPress 6.0 and the default theme, <a href="https://wordpress.org/themes/twentytwentytwo/">Twenty Twenty-Two</a>, there&#8217;s a lot getting in the way of my &#8220;Just the HTML, Ma&#8217;am&#8221; approach. We&#8217;ve got 2 CSS files, 2 JS files, a font and favicons. But it&#8217;s the <code>&lt;head&gt;</code> that&#8217;s a bit <em>whoah</em>.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="998" height="639" src="/wp-content/uploads/2022/06/TwentyTwentyTwo_Network.jpeg" alt="" class="wp-image-1053" srcset="/wp-content/uploads/2022/06/TwentyTwentyTwo_Network.jpeg 998w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Network-300x192.jpeg 300w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Network-768x492.jpeg 768w" sizes="(max-width: 998px) 100vw, 998px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="813" src="/wp-content/uploads/2022/06/TwentyTwentyTwo_Head-1024x813.jpeg" alt="" class="wp-image-1054" srcset="/wp-content/uploads/2022/06/TwentyTwentyTwo_Head-1024x813.jpeg 1024w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head-300x238.jpeg 300w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head-768x610.jpeg 768w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head.jpeg 1077w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>Look at all that! Script and many styles blocks, mostly for the block editor. Stuff like support for Windows Live Writter, which was discontinued in 2017. A DNS prefetch for s.w.org. </p>
+
+
+
+<p>We&#8217;ve come to expect this from a web page. It&#8217;s not my vision of starting with the least HTML5 and building up. So all that had to go.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="955" height="573" src="/wp-content/uploads/2022/06/Negligible_Network.jpeg" alt="" class="wp-image-1055" srcset="/wp-content/uploads/2022/06/Negligible_Network.jpeg 955w, /wp-content/uploads/2022/06/Negligible_Network-300x180.jpeg 300w, /wp-content/uploads/2022/06/Negligible_Network-768x461.jpeg 768w" sizes="(max-width: 955px) 100vw, 955px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="856" height="522" src="/wp-content/uploads/2022/06/Negligible_Head.jpeg" alt="" class="wp-image-1056" srcset="/wp-content/uploads/2022/06/Negligible_Head.jpeg 856w, /wp-content/uploads/2022/06/Negligible_Head-300x183.jpeg 300w, /wp-content/uploads/2022/06/Negligible_Head-768x468.jpeg 768w" sizes="(max-width: 856px) 100vw, 856px" /></figure>
+
+
+
+<p>Ah, that&#8217;s better for what I need, running a very simple theme. In that I&#8217;ve removed support for:</p>
+
+
+
+<ul><li>Taxonomies</li><li>Pagination</li><li>Author archives</li><li>Search</li><li>Comments</li><li>oEmbeds</li><li>REST API</li></ul>
+
+
+
+<h3>What do I need to add?</h3>
+
+
+
+<ul><li>Sitemaps<ul><li>To aid search engine discovery. Notwithstanding Yoast SEO&#8217;s ubiquity, these have been built in to WordPress since 5.5 and are easy to customise. I only had to remove the sitemaps for taxonomies and users.</li></ul></li><li>One line of CSS, to make images responsive.</li></ul>
+
+
+
+<h2>What do I need from a blog CMS?</h2>
+
+
+
+<p>As well as the front end, I thought about what I need from the back end. I&#8217;ve worked with WordPress so long and tend to ignore the bits I don&#8217;t need, but for this I want a lean experience. I don&#8217;t need:</p>
+
+
+
+<ul><li>the Dashboard<ul><li>it&#8217;s useless anyway, so just redirect to <em>Posts</em> on login</li></ul></li><li>the Customizer</li></ul>
+
+
+
+<p>So away they went. </p>
+
+
+
+<p>All these customisations can bee seen in the theme, <em>Negligible</em>:</p>
+
+
+
+<p><a href="https://github.com/mattradford/mattrad-uk-source/tree/main/wp-content/themes/negligible">https://github.com/mattradford/mattrad-uk-source/tree/main/wp-content/themes/negligible</a></p>
+
+
+
+<p>Because <a href="https://en.wikipedia.org/wiki/Gertrude_Stein">there is no there there</a>.</p>
+
+
+
+<p>This lightweight approach feels fresh. I feel like I&#8217;m back on the web with a personal site, having consolidated all the articles I&#8217;ve written that I could find and without the mental overhead and technical load that comes from building a site in the way that&#8217;s become expected.</p>
+
+
+
+<p>Onward to play <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+<p><a href="/stripped/" rel="nofollow">Source</a></p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Eleventy reasons to move from WordPress</title>
+		<link>/eleventy-reasons-to-move-from-wordpress/</link>
+		
+		<dc:creator><![CDATA[mattrad]]></dc:creator>
+		<pubDate>Mon, 27 May 2019 01:00:00 +0000</pubDate>
+				<guid isPermaLink="false">/?p=953</guid>
+
+					<description><![CDATA[WordPress pays my wages. It enables me (and many others) to create flexible and extensible websites for clients. It’s fair to say, after years of working with it, that I know it inside out. But there’s more out there. When I decided to rebuild my own website, I wanted something different. Something that would stretch [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>WordPress pays my wages. It enables me (and many others) to create flexible and extensible websites for clients. It’s fair to say, after years of working with it, that I know it inside out.</p>
+
+
+
+<p>But there’s more out there. When I decided to rebuild my own website, I wanted something different. Something that would stretch me, help me learn more JavaScript, write in Markdown, and which would be output in static HTML. And be more <em>fun</em>. Enter <strong>Eleventy</strong>.</p>
+
+
+
+<p><a href="https://www.11ty.io/">Eleventy</a> is a static site generator written in JS. There are a few starter packages available &#8211; I forked from <a href="https://github.com/11ty/eleventy-base-blog">eleventy-base-blog</a>. This gave me a head start with a few blogging bits, such as a RSS feed.</p>
+
+
+
+<h2 id="what-have-i-learnt-or-added-so-far%3F">What have I learnt or added so far? <a href="https://mattrad.uk/eleventy-reasons-to-move-from-wordpress/#what-have-i-learnt-or-added-so-far%3F">#</a></h2>
+
+
+
+<ul><li>The <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> templating language, including how to manipulate loops</li><li>Added Gulp asset building, which also runs <code>npx eleventy —serve</code> to build the site</li><li>Forcing post permalinks to use a <code>%postname%</code> equivalent to WordPress</li><li>Allowing post permalinks to redirect to an external link</li><li>Date format handling using <a href="https://moment.github.io/luxon/index.html">luxon</a></li><li>Generating read time<ul><li>Removed for now as most posts were coming in at “About 1 min. read time”, so what’s the point? I’d like to make it conditional on &gt; 1 minute.</li></ul></li><li>Allowing for some fuzzy dates, for the older repost material that I’m finding in the depths of my hard drives</li></ul>
+
+
+
+<h2 id="what%E2%80%99s-left-to-do%3F">What’s left to do? <a href="https://mattrad.uk/eleventy-reasons-to-move-from-wordpress/#what%E2%80%99s-left-to-do%3F">#</a></h2>
+
+
+
+<p>Many many things.</p>
+
+
+
+<ul><li>Applying a design. But I’m trying to focus on the content first, otherwise I’ll get distracted by all the <em>shiny</em>. So the CSS will have to wait.</li><li>Clean up the root directory, as there are files scattered everywhere right now</li><li>Inserting images (sorry <a href="https://lynx.browser.org/">Lynx</a> users)</li><li>Inserting images as <code>&lt;figure&gt;</code>, which will probably need a Nunjucks macro</li><li>Output one year indicator per collection of posts in that year. This is surprisingly involved, especially as Nunjucks doesn’t have <code>foreach</code> loops.</li><li>A proper draft status, rather than keeping them in a non-processed directory</li><li>Figure out how to schedule posts, and have Netlify build on a schedule</li><li>Auto-posting to Twitter (using a <a href="https://www.netlify.com/docs/functions/">Netlify lambda function</a>)</li><li><a href="https://indieweb.org/Webmention">Webmentions</a></li><li>Remove Gulp and use <code>npm</code> for asset compilation</li></ul>
+
+
+
+<p>“You could have saved yourself a lot of bother and just stuck with WordPress”. Well yes, but the point is to learn and expand my horizons. Everything I’ve learnt so far is visible and available to others on Github at <a href="https://github.com/mattradford/mattrad-uk">https://github.com/mattradford/mattrad-uk</a>. <a href="https://www.11ty.io/docs/sites/">Others have done the same</a>.</p>
+
+
+
+<p>I can now write this post in <a href="https://ia.net/writer">IA Writer</a> on my phone, push to my website’s git repo (using <a href="https://workingcopyapp.com/">Working Copy</a>), which Netlify will then build and deploy. It’s not going to be everyone’s cup of tea but I’m loving it. Forward!</p>
+
+<p><a href="/eleventy-reasons-to-move-from-wordpress/" rel="nofollow">Source</a></p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Learning in Public</title>
+		<link>/learning-in-public/</link>
+		
+		<dc:creator><![CDATA[mattrad]]></dc:creator>
+		<pubDate>Sat, 04 May 2019 01:00:00 +0000</pubDate>
+				<guid isPermaLink="false">/?p=955</guid>
+
+					<description><![CDATA[Serendipity. Sometimes things come along just at the right moment. I read an email newsletter on Friday called Learning in Public by Tania Rascia. She described how she’s been documenting her development on her blog: Writing down what you learn helps you retain it, understand it more deeply, improve your communication, and has the added [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p><em>Serendipity</em>. Sometimes things come along just at the right moment. I read an email newsletter on Friday called <em>Learning in Public</em> by <a href="https://www.taniarascia.com/">Tania Rascia</a>. She described how she’s been documenting her development on her blog:</p>
+
+
+
+<blockquote class="wp-block-quote"><p>Writing down what you learn helps you retain it, understand it more deeply, improve your communication, and has the added benefit of helping others who stumble upon your site. It doesn&#8217;t matter if anyone else sees it or only you, because the benefit is still there.</p></blockquote>
+
+
+
+<p>Yes! This is exactly what I want to do with my new blog. To learn in the open as I develop it, showing my successes and failures. To have it available as a teaching tool for anyone who stumbles across it. To not worry about showing what I don’t know.</p>
+
+
+
+<p>That’s the essence of the web for me. Everything open for others to see and learn from. No walled gardens or obfuscations. <em>View source</em> FTW.</p>
+
+<p><a href="/learning-in-public/" rel="nofollow">Source</a></p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>JFDI Redux</title>
+		<link>/jfdi-redux/</link>
+		
+		<dc:creator><![CDATA[mattrad]]></dc:creator>
+		<pubDate>Wed, 01 May 2019 01:00:00 +0000</pubDate>
+				<guid isPermaLink="false">/?p=951</guid>
+
+					<description><![CDATA[Last time I got my writing groove on, I wrote &#8220;&#8230;blogging is important in establishing reputation&#8221;. 5 years later and it&#8217;s more &#8220;Meh&#8221;. If I want to write, I&#8217;ll write. But I want to own my writing, my thoughts. It matters that it&#8217;s here, on my space on the web, not on someone else&#8217;s. I [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Last time I got my writing groove on, I wrote <a href="https://mattrad.uk/jfdi">&#8220;&#8230;blogging is important in establishing reputation&#8221;</a>.</p>
+
+
+
+<p>5 years later and it&#8217;s more &#8220;Meh&#8221;. If I want to write, I&#8217;ll write. But I want to <em>own</em> my writing, my thoughts. It matters that it&#8217;s here, on my space on the web, not on someone else&#8217;s. I want more of that <a href="https://en.wikipedia.org/wiki/Yahoo!_GeoCities">Geocities</a> feel. I used to just make a website for fun, so I want more of that. How much will be written remains to be seen.</p>
+
+
+
+<p>In the meantime, I&#8217;m curating the stuff I&#8217;ve already published. There&#8217;s a fair bit that&#8217;s accumulated over the years and I&#8217;m gradually going through it all, putting posts back up as I have time. I&#8217;m taking this as an opportunity to do something other than <a href="https://wordpress.org/">WordPress</a> &#8211; because a website like this doesn&#8217;t need a database, and will have more longevity without one. I&#8217;m learning to use <a href="https://11ty.io/">Eleventy</a>, a JavaScript-based static site generator, because JS is eating everything. And I get to use all the modern CSS I like, not that there&#8217;s much CSS going on here at the moment <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+<p><a href="/jfdi-redux/" rel="nofollow">Source</a></p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Embedding an Apple Map on a WordPress website using Mapkit JS</title>
+		<link>/embedding-apple-map-wordpress/</link>
+		
+		<dc:creator><![CDATA[mattrad]]></dc:creator>
+		<pubDate>Tue, 12 Jun 2018 21:36:20 +0000</pubDate>
+				<guid isPermaLink="false">https://mattrad.uk/?p=888</guid>
+
+					<description><![CDATA[Apple announced MapKit JS at WWDC recently, and there are already some great demos available: https://mapkit-demo.herokuapp.com/ (source: https://github.com/ankurp/mapkit-demo) https://github.com/chrisdrackett/react-mapkit (this shows lots of controls in use) https://github.com/vasile/mapkit-js-demo (this shows a country outline drawn from a geoJSON file). But how can we integrate this with WordPress? I use Advanced Custom Fields Pro quite a lot, so [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Apple announced MapKit JS at WWDC recently, and there are already some great demos available:</p>
+
+
+
+<ul><li><a href="https://mapkit-demo.herokuapp.com/">https://mapkit-demo.herokuapp.com/</a> (source: <a href="https://github.com/ankurp/mapkit-demo">https://github.com/ankurp/mapkit-demo</a>)</li><li><a href="https://github.com/chrisdrackett/react-mapkit">https://github.com/chrisdrackett/react-mapkit</a> (this shows lots of controls in use)</li><li><a href="https://github.com/vasile/mapkit-js-demo">https://github.com/vasile/mapkit-js-demo</a> (this shows a country outline drawn from a geoJSON file).</li></ul>
+
+
+
+<p>But how can we integrate this with WordPress? I use <a href="https://www.advancedcustomfields.com/">Advanced Custom Fields Pro</a> quite a lot, so my first thought was &#8220;How can I work MapKit JS into ACF and provide user-customisable maps to clients?&#8221; There is already a Google Maps field type in ACF, so perhaps I can piggyback on that? But I&#8217;m getting ahead of myself.</p>
+
+
+
+<h2>Pre-requisites</h2>
+
+
+
+<p>You thought it was just a matter of generating and adding an API key? Not so fast. Before you can embed a MapKit JS map, you will need:</p>
+
+
+
+<ul><li>an Apple developer account</li><li>your Apple developer Team ID</li><li>a maps identifier</li><li>a private key</li><li>a key identifier</li><li>a JWT (JSON Web Token)</li></ul>
+
+
+
+<p>Get an Apple Developer account if you don&#8217;t have one already. <a href="https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/">9 to 5 Mac have a good guide to getting an account for free</a>.</p>
+
+
+
+<p>Then follow Apple&#8217;s Developer documentation here:&nbsp;<a href="https://help.apple.com/developer-account/#/dev4bb1cc12b?sub=devc240e1a83">https://help.apple.com/developer-account/#/dev4bb1cc12b?sub=devc240e1a83</a></p>
+
+
+
+<blockquote class="wp-block-quote"><p>To communicate with the MapKit JS, you’ll use a Maps private key to sign one or more developer tokens.</p><p>First <a id="ember600" class="ember-view xRef Task subTopicLink active" href="https://help.apple.com/developer-account/#/dev4bb1cc12b?sub=devc240e1a83">register a Maps identifier</a> to identify your app. Register a Maps identifier for each app that uses MapKit JS. Next <a id="ember601" class="ember-view xRef AppleTopic" href="https://help.apple.com/developer-account/#/devcdfbb56a3?sub=devc240e1a83">create and download a private key</a> with MapKit JS enabled and associate it with the Maps identifier. You can associate two keys with each Maps identifier.</p><p>Then <a id="ember602" class="ember-view xRef AppleTopic" href="https://help.apple.com/developer-account/#/dev646934554?sub=devc240e1a83">get the key identifier</a> (<em>kid</em>) to create a JSON web token (JWT) that you’ll use to communicate with the services you enabled.</p></blockquote>
+
+
+
+<p>Once you have a maps identifier, private key and key identifier, you can then generate a JWT.</p>
+
+
+
+<p><em>Phew</em>. This is starting to sound like a lot of work.</p>
+
+
+
+<p>Especially as (ideally) Apple wants you to host a:</p>
+
+
+
+<blockquote class="wp-block-quote"><p><code>/services/jwt/</code> endpoint yourself. The endpoint should return a signed <a href="https://jwt.io/">JWT-token</a> which can then be used to authenticate against Apple endpoints.</p></blockquote>
+
+
+
+<p>See <a href="https://blog.rubeng.nl/getting-started-with-apples-mapkit-js/">https://blog.rubeng.nl/getting-started-with-apples-mapkit-js/</a> for (many) more details. But as the author Ruben Gommers points out in that post, you can also generate a token that will last up to 10 years, and negate the need to run an endpoint for token generation. So that&#8217;s something. But you still have to generate the JWT.</p>
+
+
+
+<p>[Update 2017-09-12] Ruben contacted me to point out he has created a tool to create long-lived tokens. It&#8217;s available here: <a href="https://mapkitjs.rubeng.nl/">https://mapkitjs.rubeng.nl/</a></p>
+
+
+
+<p>Thankfully, Thomas Schoffelen has already created MapKit JWT for PHP: <a href="https://github.com/includable/mapkit-jwt">https://github.com/includable/mapkit-jwt</a> <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> You pass his function a private key, key identifier and maps identifier, and it returns a JWT. It&#8217;s this token that you use much like a Google Maps API key in order to authorise initialization of your map.</p>
+
+
+
+<p>Now we are getting somewhere.</p>
+
+
+
+<h2>How do Mapkit JS embeds work?</h2>
+
+
+
+<p>Apple has demonstrated some embeds on its introductory page for developers: <a href="https://developer.apple.com/maps/mapkitjs/">https://developer.apple.com/maps/mapkitjs/</a>. Here&#8217;s the sample code for a simple embed:</p>
+
+
+
+<pre class="wp-block-code"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+        <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
+        
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+        
+        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+        <span class="p">#</span><span class="nn">map</span> <span class="p">{</span>
+            <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+            <span class="k">height</span><span class="p">:</span> <span class="mi">600</span><span class="kt">px</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+        
+        <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+        
+        <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"map"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        
+        <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="nx">mapkit</span><span class="p">.</span><span class="nx">init</span><span class="p">({</span>
+            <span class="nx">authorizationCallback</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">var</span> <span class="nx">xhr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
+                <span class="nx">xhr</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="s2">"/services/jwt"</span><span class="p">);</span>
+                <span class="nx">xhr</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"load"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+                    <span class="nx">done</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">responseText</span><span class="p">);</span>
+                <span class="p">});</span>
+                <span class="nx">xhr</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">});</span>
+        
+        <span class="kd">var</span> <span class="nx">Cupertino</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mapkit</span><span class="p">.</span><span class="nx">CoordinateRegion</span><span class="p">(</span>
+            <span class="k">new</span> <span class="nx">mapkit</span><span class="p">.</span><span class="nx">Coordinate</span><span class="p">(</span><span class="mf">37.3316850890998</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.030067374026</span><span class="p">),</span>
+            <span class="k">new</span> <span class="nx">mapkit</span><span class="p">.</span><span class="nx">CoordinateSpan</span><span class="p">(</span><span class="mf">0.167647972</span><span class="p">,</span> <span class="mf">0.354985255</span><span class="p">)</span>
+        <span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mapkit</span><span class="p">.</span><span class="nx">Map</span><span class="p">(</span><span class="s2">"map"</span><span class="p">);</span>
+        <span class="nx">map</span><span class="p">.</span><span class="nx">region</span> <span class="o">=</span> <span class="nx">Cupertino</span><span class="p">;</span>
+        <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
+
+
+
+<p>Breaking this down, we have:</p>
+
+
+
+<p><strong>Link to the MapKit JS library</strong></p>
+
+
+
+<pre class="wp-block-code"><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre>
+
+
+
+<p><strong>Define the map size</strong></p>
+
+
+
+<pre class="wp-block-code"><code><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">#</span><span class="nn">map</span> <span class="p">{</span>
+<span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="k">height</span><span class="p">:</span> <span class="mi">600</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+
+
+
+<p><strong>Give the map JS a target in the DOM</strong></p>
+
+
+
+<pre class="wp-block-code"><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"map"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+
+
+
+<p><strong>Initialise, set map parameters and attach it to the DOM element</strong></p>
+
+
+
+<pre class="wp-block-code"><code> <span class="nx">mapkit</span><span class="p">.</span><span class="nx">init</span><span class="p">({</span>
+            <span class="nx">authorizationCallback</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">done</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">var</span> <span class="nx">xhr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
+                <span class="nx">xhr</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="s2">"/services/jwt"</span><span class="p">);</span>
+                <span class="nx">xhr</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"load"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+                    <span class="nx">done</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">responseText</span><span class="p">);</span>
+                <span class="p">});</span>
+                <span class="nx">xhr</span><span class="p">.</span><span class="nx">send</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">});</span>
+        
+        <span class="kd">var</span> <span class="nx">Cupertino</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mapkit</span><span class="p">.</span><span class="nx">CoordinateRegion</span><span class="p">(</span>
+            <span class="k">new</span> <span class="nx">mapkit</span><span class="p">.</span><span class="nx">Coordinate</span><span class="p">(</span><span class="mf">37.3316850890998</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.030067374026</span><span class="p">),</span>
+            <span class="k">new</span> <span class="nx">mapkit</span><span class="p">.</span><span class="nx">CoordinateSpan</span><span class="p">(</span><span class="mf">0.167647972</span><span class="p">,</span> <span class="mf">0.354985255</span><span class="p">)</span>
+        <span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mapkit</span><span class="p">.</span><span class="nx">Map</span><span class="p">(</span><span class="s2">"map"</span><span class="p">);</span>
+        <span class="nx">map</span><span class="p">.</span><span class="nx">region</span> <span class="o">=</span> <span class="nx">Cupertino</span><span class="p">;</span></code></pre>
+
+
+
+<p>All in all, this looks a lot like the ACF documentation for adding a Google Map: <a href="https://www.advancedcustomfields.com/resources/google-map/">https://www.advancedcustomfields.com/resources/google-map/</a>.</p>
+
+
+
+<h2>WordPress integration</h2>
+
+
+
+<p>To get this integrated into a WordPress website I will:</p>
+
+
+
+<ul><li>add the MapKit JWT library</li><li>create a settings page to store Team ID, Key ID, Private Key and origin</li><li>store those in <code>wp_options</code></li><li>generate a JWT and store that in <code>wp_options</code> as well</li><li>enqueue the MapKit JS CDN and custom map JS</li><li>initialise and display the map using a shortcode</li></ul>
+
+
+
+<h2>And here&#8217;s the result:</h2>
+
+
+
+<p><em>Well it did show a live Apple Map. But I&#8217;ve deactivated the plugin now.</em></p>
+
+
+
+<p>To do this I&#8217;ve created a plugin. It&#8217;s just a demo of&nbsp;a simple embed but does output an Apple Map <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" />&nbsp; Even this was certainly more effort than using a Google Maps embed, and a lot more work than I was expecting. The next step will be to integrate custom markers, controlled using an ACF repeater. Any questions, please contact me on Twitter or raise an issue on Github.</p>
+
+
+
+<p>You can get the plugin here: <a href="https://github.com/mattradford/apple-map-embed">https://github.com/mattradford/apple-map-embed</a>.</p>
+
+<p><a href="/embedding-apple-map-wordpress/" rel="nofollow">Source</a></p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Gutenberg for Designers #wcldn</title>
+		<link>/gutenberg-for-designers-wcldn/</link>
+		
+		<dc:creator><![CDATA[mattrad]]></dc:creator>
+		<pubDate>Sat, 14 Apr 2018 16:21:12 +0000</pubDate>
+				<guid isPermaLink="false">https://mattrad.uk/?p=877</guid>
+
+					<description><![CDATA[Nicola Campbell, 93 Digital Don&#8217;t panic! (Matt &#8211; well maybe panic a bit. Try it on a staging copy of a website first. Don&#8217;t blindly upgrade on live.) Dropcaps, backgrounds and separators. Pull quotes more easily placed within text. Shortcodes won&#8217;t break. Probably. Handing over too much control to users? Colours not in line with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Nicola Campbell, 93 Digital</p>
+<p>Don&#8217;t panic! (<em>Matt</em> &#8211; well maybe panic a bit. Try it on a staging copy of a website first. Don&#8217;t blindly upgrade on live.)</p>
+<p>Dropcaps, backgrounds and separators. Pull quotes more easily placed within text.</p>
+<p>Shortcodes won&#8217;t break. <em>Probably</em>.</p>
+<p>Handing over too much control to users? Colours not in line with the brand or design.</p>
+<p>Some accessibility cues, e.g. for colour:</p>
+<p><img loading="lazy" src="/wp-content/uploads/2018/04/img_2825.jpg" class="wp-image-879 size-full" height="3024" width="4032" srcset="/wp-content/uploads/2018/04/img_2825.jpg 4032w, /wp-content/uploads/2018/04/img_2825-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2825-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2825-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></p>
+<p>Blocks and views is a more appropriate design language than pages and posts. Be aware of different use cases of blocks.</p>
+<p>Final point: prepare your clients.</p>
+<p>(<em>Matt</em> &#8211; Gutenberg is exciting, no doubt, but with so many WordPress websites in the wild I am bit skeptical that&#8217;ll all be just fine.)</p>
+
+<p><a href="/gutenberg-for-designers-wcldn/" rel="nofollow">Source</a></p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Scaling WordPress for Enterprise &#8211; Elliot Taylor #wcldn</title>
+		<link>/scaling-wordpress-for-enterprise-elliot-taylor-wcldn/</link>
+		
+		<dc:creator><![CDATA[mattrad]]></dc:creator>
+		<pubDate>Sat, 14 Apr 2018 13:21:12 +0000</pubDate>
+				<guid isPermaLink="false">https://mattrad.uk/?p=875</guid>
+
+					<description><![CDATA[WordPress is Enterprise-ready, see: TechCrunch Wired White House Move from a functional PHP to a MVC model Different components in different places Model &#8211; calls to DB View &#8211; HTML Controller &#8211; pulls those together OOP in the Loop E.g. wp_query No need to be afraid of the backend with MVC. Separation of concerns to [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>WordPress is Enterprise-ready, see:</p>
+
+
+
+<p>TechCrunch</p>
+
+
+
+<p>Wired</p>
+
+
+
+<p>White House</p>
+
+
+
+<figure class="wp-block-image"><img loading="lazy" width="1132" height="750" src="/wp-content/uploads/2018/04/img_2820-2.jpg" alt="" class="wp-image-874" srcset="/wp-content/uploads/2018/04/img_2820-2.jpg 1132w, /wp-content/uploads/2018/04/img_2820-2-300x199.jpg 300w, /wp-content/uploads/2018/04/img_2820-2-768x509.jpg 768w, /wp-content/uploads/2018/04/img_2820-2-1024x678.jpg 1024w" sizes="(max-width: 1132px) 100vw, 1132px" /></figure>
+
+
+
+<p>Move from a functional PHP to a MVC model</p>
+
+
+
+<p>Different components in different places</p>
+
+
+
+<p>Model &#8211; calls to DB</p>
+
+
+
+<p>View &#8211; HTML</p>
+
+
+
+<p>Controller &#8211; pulls those together</p>
+
+
+
+<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2821.jpg" alt="" class="wp-image-870" srcset="/wp-content/uploads/2018/04/img_2821.jpg 4032w, /wp-content/uploads/2018/04/img_2821-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2821-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2821-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+
+
+
+<p>OOP in the Loop</p>
+
+
+
+<p>E.g. wp_query</p>
+
+
+
+<p>No need to be afraid of the backend with MVC. Separation of concerns to split out work in the team.</p>
+
+
+
+<p>LEAN</p>
+
+
+
+<p>Customer-centric small iterations. Add as you grow.</p>
+
+
+
+<p>Build</p>
+
+
+
+<p>Measure</p>
+
+
+
+<p>Learn</p>
+
+
+
+<p><em>repeat</em></p>
+
+
+
+<p>The &#8220;easiest&#8221; part of building the product is building the product, i.e. it&#8217;s not all development.</p>
+
+
+
+<p><a href="http://prod.press/">http://prod.press/</a> &#8211; MVC Enterprise WP framework</p>
+
+<p><a href="/scaling-wordpress-for-enterprise-elliot-taylor-wcldn/" rel="nofollow">Source</a></p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Security is a process &#8211; @vitalethomas #wcldn</title>
+		<link>/security-is-a-process-vitalethomas-wcldn/</link>
+		
+		<dc:creator><![CDATA[mattrad]]></dc:creator>
+		<pubDate>Sat, 14 Apr 2018 11:18:52 +0000</pubDate>
+				<guid isPermaLink="false">https://mattrad.uk/?p=847</guid>
+
+					<description><![CDATA[Coolest graphic of the day! Kapersky global real time threat map Know your enemy “I’m just a small blog”. Bots don’t care. Why do they attack? Is your domain clean? Spam sending is then easy. Attackers can earn money by stealing data and resources. Why is security vital? Legal issues include GDPR. What are security [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2806.jpg" alt="" class="wp-image-849" srcset="/wp-content/uploads/2018/04/img_2806.jpg 4032w, /wp-content/uploads/2018/04/img_2806-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2806-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2806-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+
+
+
+<p>Coolest graphic of the day!</p>
+
+
+
+<p>Kapersky global real time threat map</p>
+
+
+
+<figure class="wp-block-image"><img loading="lazy" width="1262" height="750" src="/wp-content/uploads/2018/04/img_2807.jpg" alt="" class="wp-image-851" srcset="/wp-content/uploads/2018/04/img_2807.jpg 1262w, /wp-content/uploads/2018/04/img_2807-300x178.jpg 300w, /wp-content/uploads/2018/04/img_2807-768x456.jpg 768w, /wp-content/uploads/2018/04/img_2807-1024x609.jpg 1024w" sizes="(max-width: 1262px) 100vw, 1262px" /></figure>
+
+
+
+<p>Know your enemy</p>
+
+
+
+<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2809.jpg" alt="" class="wp-image-850" srcset="/wp-content/uploads/2018/04/img_2809.jpg 4032w, /wp-content/uploads/2018/04/img_2809-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2809-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2809-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+
+
+
+<p>“I’m just a small blog”. Bots don’t care.</p>
+
+
+
+<h3>Why do they attack?</h3>
+
+
+
+<h3><img loading="lazy" class="size-full wp-image-852" src="/wp-content/uploads/2018/04/img_2810.jpg" width="4032" height="3024" srcset="/wp-content/uploads/2018/04/img_2810.jpg 4032w, /wp-content/uploads/2018/04/img_2810-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2810-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2810-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></h3>
+
+
+
+<p>Is your domain clean? Spam sending is then easy.</p>
+
+
+
+<p>Attackers can earn money by stealing data and resources.</p>
+
+
+
+<h3>Why is security vital?</h3>
+
+
+
+<h3><img loading="lazy" class="wp-image-853 size-full" src="/wp-content/uploads/2018/04/img_2811.jpg" width="4032" height="3024" srcset="/wp-content/uploads/2018/04/img_2811.jpg 4032w, /wp-content/uploads/2018/04/img_2811-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2811-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2811-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></h3>
+
+
+
+<p>Legal issues include GDPR.</p>
+
+
+
+<h3>What are security goals?</h3>
+
+
+
+<p><img loading="lazy" class="wp-image-854 size-full" src="/wp-content/uploads/2018/04/img_2812.jpg" width="4032" height="3024" srcset="/wp-content/uploads/2018/04/img_2812.jpg 4032w, /wp-content/uploads/2018/04/img_2812-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2812-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2812-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" />Security is a continuous process</p>
+
+
+
+<h3>5 security principles to follow:</h3>
+
+
+
+<h4>1 Manage security risks</h4>
+
+
+
+<p>Vulnerabilities</p>
+
+
+
+<p>Threats</p>
+
+
+
+<p>Risk = likelihood a threat will exploit a vulnerability</p>
+
+
+
+<p>Nothing is 100% secure.</p>
+
+
+
+<h4>2 Be reluctant to trust</h4>
+
+
+
+<p>Supply-chain attack on plugins on WordPress repository. Can infect masses of installs at once.</p>
+
+
+
+<p>Apply a trust boundary.</p>
+
+
+
+<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file.jpg" alt="" class="wp-image-858" srcset="/wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file.jpg 4032w, /wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file-300x225.jpg 300w, /wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file-768x576.jpg 768w, /wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+
+
+
+<h4>3 Defence in Depth</h4>
+
+
+
+<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file.jpg" alt="" class="wp-image-861" srcset="/wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file.jpg 4032w, /wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file-300x225.jpg 300w, /wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file-768x576.jpg 768w, /wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+
+
+
+<p>Include your own (client) devices in your website&#8217;s security model.</p>
+
+
+
+<p>Security is not static. Security is not binary.</p>
+
+
+
+<h4>4 Stay up to date</h4>
+
+
+
+<p>Update software. Preserve security by using monitoring. Always have a backup <em>plan</em>.</p>
+
+
+
+<h4>Is WordPress secure?</h4>
+
+
+
+<p>Security is not binary!</p>
+
+
+
+<p>This is ambiguous. What does <em>WordPress</em> mean. See the software stack photo above.</p>
+
+
+
+<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file.jpg" alt="" class="wp-image-865" srcset="/wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file.jpg 4032w, /wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file-300x225.jpg 300w, /wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file-768x576.jpg 768w, /wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+
+
+
+<p>People are usually the problem.</p>
+
+
+
+<h4>5 Secure the weakest link</h4>
+
+
+
+<p>People are the weakest link.</p>
+
+
+
+<p>It is a shared responsibility.</p>
+
+
+
+<p>Take care of users and the web.</p>
+
+<p><a href="/security-is-a-process-vitalethomas-wcldn/" rel="nofollow">Source</a></p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>48/48/48 &#8211; Adam Walker #wcldn</title>
+		<link>/48-48-48-adam-walker-wcldn/</link>
+		
+		<dc:creator><![CDATA[mattrad]]></dc:creator>
+		<pubDate>Sat, 14 Apr 2018 10:17:32 +0000</pubDate>
+				<guid isPermaLink="false">https://mattrad.uk/?p=845</guid>
+
+					<description><![CDATA[Event for marketing pros to build 48 websites for 48 charities in 48 hours Using professional skills to help the community Templated process using Beaver Builder Takes prep from charities &#8211; both technical and marketing (branding, website targeting). Teams get a brief at the beginning of the event. Volunteers show up on Friday, quick brief [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Event for marketing pros to build 48 websites for 48 charities in 48 hours</p>
+
+
+
+<p>Using professional skills to help the community</p>
+
+
+
+<p>Templated process using Beaver Builder</p>
+
+
+
+<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2803.jpg" alt="" class="wp-image-842" srcset="/wp-content/uploads/2018/04/img_2803.jpg 4032w, /wp-content/uploads/2018/04/img_2803-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2803-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2803-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+
+
+
+<p>Takes prep from charities &#8211; both technical and marketing (branding, website targeting).</p>
+
+
+
+<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2804.jpg" alt="" class="wp-image-843" srcset="/wp-content/uploads/2018/04/img_2804.jpg 4032w, /wp-content/uploads/2018/04/img_2804-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2804-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2804-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+
+
+
+<p>Teams get a brief at the beginning of the event.</p>
+
+
+
+<p>Volunteers show up on Friday, quick brief with the charity, then start building. Typically the homepage is done on Friday. Sites go live on Sunday night.</p>
+
+
+
+<p>WP multi-tenancy (not multisite) with core set of plugins. Spins up 48 sites at once.</p>
+
+
+
+<p>After a month, they can move to GoDaddy for a year for free.</p>
+
+
+
+<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2805-1.jpg" alt="" class="wp-image-844" srcset="/wp-content/uploads/2018/04/img_2805-1.jpg 4032w, /wp-content/uploads/2018/04/img_2805-1-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2805-1-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2805-1-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+
+
+
+<p>Expectation is set that it’s a gift, not a client project.</p>
+
+
+
+<p>@ajwalker / @48in48org</p>
+
+<p><a href="/48-48-48-adam-walker-wcldn/" rel="nofollow">Source</a></p>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Developing your story &#8211; Lee Jackson #wcldn</title>
+		<link>/developing-your-story-lee-jackson-wcldn/</link>
+		
+		<dc:creator><![CDATA[mattrad]]></dc:creator>
+		<pubDate>Sat, 14 Apr 2018 09:13:41 +0000</pubDate>
+				<guid isPermaLink="false">https://mattrad.uk/?p=840</guid>
+
+					<description><![CDATA[A few years ago: I hated my agency Mean clients Baldness ensued Something had to change Agency reset: 1 Finding your why? (are we doing this) Write a mission statement Look at your past Ask others 2 Discover your (key) strengths Offer services based on those Don’t chase the money What are you excited about? [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h3>A few years ago:</h3>
+
+
+
+<p>I hated my agency</p>
+
+
+
+<p>Mean clients</p>
+
+
+
+<p>Baldness ensued</p>
+
+
+
+<h3>Something had to change</h3>
+
+
+
+<p>Agency reset:</p>
+
+
+
+<p><strong>1</strong></p>
+
+
+
+<p>Finding your why? (are we doing this)</p>
+
+
+
+<p>Write a mission statement</p>
+
+
+
+<p>Look at your past</p>
+
+
+
+<p>Ask others</p>
+
+
+
+<p><strong>2</strong></p>
+
+
+
+<p>Discover your (key) strengths</p>
+
+
+
+<p>Offer services based on those</p>
+
+
+
+<p>Don’t chase the money</p>
+
+
+
+<p>What are you excited about?</p>
+
+
+
+<p>His agency does themes only &#8211; no plugins</p>
+
+
+
+<p><strong>3</strong></p>
+
+
+
+<p>Client goals, blockers and solutions</p>
+
+
+
+<p>Key services that play to your strengths</p>
+
+
+
+<p><strong>4</strong></p>
+
+
+
+<p>Messaging</p>
+
+
+
+<p>Branding is a consistent voice and message</p>
+
+
+
+<p><a href="https://agencytrailblazer.com/">Agencytrailblazer.com</a> &#8211; podcast and WC slides available</p>
+
+<p><a href="/developing-your-story-lee-jackson-wcldn/" rel="nofollow">Source</a></p>]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
