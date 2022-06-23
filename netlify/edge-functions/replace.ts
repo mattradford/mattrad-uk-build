@@ -5,21 +5,22 @@ export default async (request: Request, context: Context) => {
   // Just return what was requested without transforming it,
   // unless we fnd the query parameter for this demo
   const url = new URL(request.url);
-  if (url.searchParams.get("include") !== "pricing") {
+  if (url.searchParams.get("replace") !== "canon") {
     return;
   }
 
-  console.log("Including pricing content into the page");
+  console.log("Replace canonical");
 
   // Get the page content
   const response = await context.next();
   const page = await response.text();
 
   // Search for the placeholder
-  const regex = /{{INCLUDE_PRICE_INFO}}/i;
+
+  const canon = document.querySelector("link[rel='canonical']");
+  const canonhref = document.querySelector("link[rel='canonical']").href;
 
   // Replace the content
-  const pricingContent = "It's expensive, but buy it anyway.";
-  const updatedPage = page.replace(regex, pricingContent);
+  const updatedPage = page.replace(canonhref, canon);
   return new Response(updatedPage, response);
 };
