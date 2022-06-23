@@ -1,5 +1,5 @@
 import type { Context } from "netlify:edge";
 
 export default async (request: Request, context: Context) => {
-  return context.rewrite("/feed/index.xml");
+  return context.rewrite("index.xml");
 };
