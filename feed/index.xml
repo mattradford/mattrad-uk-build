@@ -8,7 +8,7 @@
 	>
 
 <channel>
-	<title>Matt Radford</title>
+	<title>mattrad</title>
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>Messing with links since &#60;blink&#62;</description>
@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	
+	<generator>https://wordpress.org/?v=6.9</generator>
 	<item>
 		<title>Deploying WordPress as static HTML to Netlify</title>
 		<link>/deploying-wordpress-as-static-html-to-netlify/</link>
@@ -33,7 +33,7 @@
 
 
 
-<ul><li>Local<ul><li><a href="https://localwp.com/">https://localwp.com/</a></li></ul></li><li>Simply Static<ul><li><a href="https://wordpress.org/plugins/simply-static/">https://wordpress.org/plugins/simply-static/</a></li></ul></li><li>GitHub<ul><li><a href="https://github.com/">https://github.com/</a></li></ul></li><li>Netlify<ul><li><a href="https://www.netlify.com/">https://www.netlify.com/</a></li></ul></li></ul>
+<ul class="wp-block-list"><li>Local<ul><li><a href="https://localwp.com/">https://localwp.com/</a></li></ul></li><li>Simply Static<ul><li><a href="https://wordpress.org/plugins/simply-static/">https://wordpress.org/plugins/simply-static/</a></li></ul></li><li>GitHub<ul><li><a href="https://github.com/">https://github.com/</a></li></ul></li><li>Netlify<ul><li><a href="https://www.netlify.com/">https://www.netlify.com/</a></li></ul></li></ul>
 
 
 
@@ -49,7 +49,7 @@
 
 
 
-<h3>Sidenote: WP2Static</h3>
+<h3 class="wp-block-heading">Sidenote: WP2Static</h3>
 
 
 
@@ -57,11 +57,11 @@
 
 
 
-<h2>Options for generation and deploy</h2>
+<h2 class="wp-block-heading">Options for generation and deploy</h2>
 
 
 
-<h3>1. A free add-on plugin  is available</h3>
+<h3 class="wp-block-heading">1. A free add-on plugin  is available</h3>
 
 
 
@@ -69,11 +69,11 @@
 
 
 
-<h3>2. Local Directory delivery method</h3>
+<h3 class="wp-block-heading">2. Local Directory delivery method</h3>
 
 
 
-<figure class="wp-block-image size-full"><img width="930" height="650" src="/wp-content/uploads/2022/06/local-directory-1.jpg" alt="Simply Static generation options" class="wp-image-1071" srcset="/wp-content/uploads/2022/06/local-directory-1.jpg 930w, /wp-content/uploads/2022/06/local-directory-1-300x210.jpg 300w, /wp-content/uploads/2022/06/local-directory-1-768x537.jpg 768w" sizes="(max-width: 930px) 100vw, 930px" /></figure>
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="930" height="650" src="/wp-content/uploads/2022/06/local-directory-1.jpg" alt="Simply Static generation options" class="wp-image-1071" srcset="/wp-content/uploads/2022/06/local-directory-1.jpg 930w, /wp-content/uploads/2022/06/local-directory-1-300x210.jpg 300w, /wp-content/uploads/2022/06/local-directory-1-768x537.jpg 768w" sizes="(max-width: 930px) 100vw, 930px" /></figure>
 
 
 
@@ -85,11 +85,11 @@
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="400" src="/wp-content/uploads/2022/06/simply-static-generate-1024x400.jpg" alt="Simply static site generation" class="wp-image-1075" srcset="/wp-content/uploads/2022/06/simply-static-generate-1024x400.jpg 1024w, /wp-content/uploads/2022/06/simply-static-generate-300x117.jpg 300w, /wp-content/uploads/2022/06/simply-static-generate-768x300.jpg 768w, /wp-content/uploads/2022/06/simply-static-generate.jpg 1166w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="400" src="/wp-content/uploads/2022/06/simply-static-generate-1024x400.jpg" alt="Simply static site generation" class="wp-image-1075" srcset="/wp-content/uploads/2022/06/simply-static-generate-1024x400.jpg 1024w, /wp-content/uploads/2022/06/simply-static-generate-300x117.jpg 300w, /wp-content/uploads/2022/06/simply-static-generate-768x300.jpg 768w, /wp-content/uploads/2022/06/simply-static-generate.jpg 1166w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
-<h2>Local Directory + Git = easy deploys</h2>
+<h2 class="wp-block-heading">Local Directory + Git = easy deploys</h2>
 
 
 
@@ -105,7 +105,7 @@
 
 
 
-<h2>Bonus: Sitemaps and RSS</h2>
+<h2 class="wp-block-heading">Bonus: Sitemaps and RSS</h2>
 
 
 
@@ -113,7 +113,7 @@
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="969" height="424" src="/wp-content/uploads/2022/06/rss-and-sitemap.jpg" alt="Simply Static additional URLs" class="wp-image-1072" srcset="/wp-content/uploads/2022/06/rss-and-sitemap.jpg 969w, /wp-content/uploads/2022/06/rss-and-sitemap-300x131.jpg 300w, /wp-content/uploads/2022/06/rss-and-sitemap-768x336.jpg 768w" sizes="(max-width: 969px) 100vw, 969px" /></figure>
+<figure class="wp-block-image size-full"><img decoding="async" width="969" height="424" src="/wp-content/uploads/2022/06/rss-and-sitemap.jpg" alt="Simply Static additional URLs" class="wp-image-1072" srcset="/wp-content/uploads/2022/06/rss-and-sitemap.jpg 969w, /wp-content/uploads/2022/06/rss-and-sitemap-300x131.jpg 300w, /wp-content/uploads/2022/06/rss-and-sitemap-768x336.jpg 768w" sizes="(max-width: 969px) 100vw, 969px" /></figure>
 
 <p><a href="/deploying-wordpress-as-static-html-to-netlify/" rel="nofollow">Source</a></p>]]></content:encoded>
 					
@@ -138,7 +138,7 @@
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="557" height="694" src="/wp-content/uploads/2022/06/robin-rendle-complexity.jpg" alt="Robin Rendle Tweet" class="wp-image-1060" srcset="/wp-content/uploads/2022/06/robin-rendle-complexity.jpg 557w, /wp-content/uploads/2022/06/robin-rendle-complexity-241x300.jpg 241w" sizes="(max-width: 557px) 100vw, 557px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="557" height="694" src="/wp-content/uploads/2022/06/robin-rendle-complexity.jpg" alt="Robin Rendle Tweet" class="wp-image-1060" srcset="/wp-content/uploads/2022/06/robin-rendle-complexity.jpg 557w, /wp-content/uploads/2022/06/robin-rendle-complexity-241x300.jpg 241w" sizes="auto, (max-width: 557px) 100vw, 557px" /></figure>
 
 
 
@@ -150,7 +150,7 @@
 
 
 
-<h2>So, just write HTML?</h2>
+<h2 class="wp-block-heading">So, just write HTML?</h2>
 
 
 
@@ -162,7 +162,7 @@
 
 
 
-<h2>The front end overload</h2>
+<h2 class="wp-block-heading">The front end overload</h2>
 
 
 
@@ -170,11 +170,11 @@
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="998" height="639" src="/wp-content/uploads/2022/06/TwentyTwentyTwo_Network.jpeg" alt="Default theme assets" class="wp-image-1053" srcset="/wp-content/uploads/2022/06/TwentyTwentyTwo_Network.jpeg 998w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Network-300x192.jpeg 300w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Network-768x492.jpeg 768w" sizes="(max-width: 998px) 100vw, 998px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="998" height="639" src="/wp-content/uploads/2022/06/TwentyTwentyTwo_Network.jpeg" alt="Default theme assets" class="wp-image-1053" srcset="/wp-content/uploads/2022/06/TwentyTwentyTwo_Network.jpeg 998w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Network-300x192.jpeg 300w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Network-768x492.jpeg 768w" sizes="auto, (max-width: 998px) 100vw, 998px" /></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="813" src="/wp-content/uploads/2022/06/TwentyTwentyTwo_Head-1024x813.jpeg" alt="Default theme HTML head" class="wp-image-1054" srcset="/wp-content/uploads/2022/06/TwentyTwentyTwo_Head-1024x813.jpeg 1024w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head-300x238.jpeg 300w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head-768x610.jpeg 768w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head.jpeg 1077w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="813" src="/wp-content/uploads/2022/06/TwentyTwentyTwo_Head-1024x813.jpeg" alt="Default theme HTML head" class="wp-image-1054" srcset="/wp-content/uploads/2022/06/TwentyTwentyTwo_Head-1024x813.jpeg 1024w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head-300x238.jpeg 300w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head-768x610.jpeg 768w, /wp-content/uploads/2022/06/TwentyTwentyTwo_Head.jpeg 1077w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -186,11 +186,11 @@
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="955" height="573" src="/wp-content/uploads/2022/06/Negligible_Network.jpeg" alt="Negligible theme assets" class="wp-image-1055" srcset="/wp-content/uploads/2022/06/Negligible_Network.jpeg 955w, /wp-content/uploads/2022/06/Negligible_Network-300x180.jpeg 300w, /wp-content/uploads/2022/06/Negligible_Network-768x461.jpeg 768w" sizes="(max-width: 955px) 100vw, 955px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="955" height="573" src="/wp-content/uploads/2022/06/Negligible_Network.jpeg" alt="Negligible theme assets" class="wp-image-1055" srcset="/wp-content/uploads/2022/06/Negligible_Network.jpeg 955w, /wp-content/uploads/2022/06/Negligible_Network-300x180.jpeg 300w, /wp-content/uploads/2022/06/Negligible_Network-768x461.jpeg 768w" sizes="auto, (max-width: 955px) 100vw, 955px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="856" height="522" src="/wp-content/uploads/2022/06/Negligible_Head.jpeg" alt="Negligible theme HTML head" class="wp-image-1056" srcset="/wp-content/uploads/2022/06/Negligible_Head.jpeg 856w, /wp-content/uploads/2022/06/Negligible_Head-300x183.jpeg 300w, /wp-content/uploads/2022/06/Negligible_Head-768x468.jpeg 768w" sizes="(max-width: 856px) 100vw, 856px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="856" height="522" src="/wp-content/uploads/2022/06/Negligible_Head.jpeg" alt="Negligible theme HTML head" class="wp-image-1056" srcset="/wp-content/uploads/2022/06/Negligible_Head.jpeg 856w, /wp-content/uploads/2022/06/Negligible_Head-300x183.jpeg 300w, /wp-content/uploads/2022/06/Negligible_Head-768x468.jpeg 768w" sizes="auto, (max-width: 856px) 100vw, 856px" /></figure>
 
 
 
@@ -198,19 +198,19 @@
 
 
 
-<ul><li>Taxonomies</li><li>Pagination</li><li>Author archives</li><li>Search</li><li>Comments</li><li>oEmbeds</li><li>REST API</li></ul>
+<ul class="wp-block-list"><li>Taxonomies</li><li>Pagination</li><li>Author archives</li><li>Search</li><li>Comments</li><li>oEmbeds</li><li>REST API</li></ul>
 
 
 
-<h3>What do I need to add?</h3>
+<h3 class="wp-block-heading">What do I need to add?</h3>
 
 
 
-<ul><li>Sitemaps<ul><li>To aid search engine discovery. Notwithstanding Yoast SEO&#8217;s ubiquity, these have been built in to WordPress since 5.5 and are easy to customise. I only had to remove the sitemaps for taxonomies and users.</li></ul></li><li>One line of CSS, to make images responsive.</li></ul>
+<ul class="wp-block-list"><li>Sitemaps<ul><li>To aid search engine discovery. Notwithstanding Yoast SEO&#8217;s ubiquity, these have been built in to WordPress since 5.5 and are easy to customise. I only had to remove the sitemaps for taxonomies and users.</li></ul></li><li>One line of CSS, to make images responsive.</li></ul>
 
 
 
-<h2>What do I need from a blog CMS?</h2>
+<h2 class="wp-block-heading">What do I need from a blog CMS?</h2>
 
 
 
@@ -218,7 +218,7 @@
 
 
 
-<ul><li>the Dashboard<ul><li>it&#8217;s useless anyway, so just redirect to <em>Posts</em> on login</li></ul></li><li>the Customizer</li></ul>
+<ul class="wp-block-list"><li>the Dashboard<ul><li>it&#8217;s useless anyway, so just redirect to <em>Posts</em> on login</li></ul></li><li>the Customizer</li></ul>
 
 
 
@@ -242,7 +242,7 @@
 
 
 
-<p>Onward to play <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Onward to play <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 
 <p><a href="/stripped/" rel="nofollow">Source</a></p>]]></content:encoded>
 					
@@ -255,7 +255,8 @@
 		
 		<dc:creator><![CDATA[mattrad]]></dc:creator>
 		<pubDate>Mon, 27 May 2019 01:00:00 +0000</pubDate>
-				<guid isPermaLink="false">/?p=953</guid>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=953</guid>
 
 					<description><![CDATA[WordPress pays my wages. It enables me (and many others) to create flexible and extensible websites for clients. It’s fair to say, after years of working with it, that I know it inside out. But there’s more out there. When I decided to rebuild my own website, I wanted something different. Something that would stretch [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -271,15 +272,15 @@
 
 
 
-<h2 id="what-have-i-learnt-or-added-so-far%3F">What have I learnt or added so far? <a href="https://mattrad.uk/eleventy-reasons-to-move-from-wordpress/#what-have-i-learnt-or-added-so-far%3F">#</a></h2>
+<h2 class="wp-block-heading" id="what-have-i-learnt-or-added-so-far%3F">What have I learnt or added so far? <a href="https://mattrad.uk/eleventy-reasons-to-move-from-wordpress/#what-have-i-learnt-or-added-so-far%3F">#</a></h2>
 
 
 
-<ul><li>The <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> templating language, including how to manipulate loops</li><li>Added Gulp asset building, which also runs <code>npx eleventy —serve</code> to build the site</li><li>Forcing post permalinks to use a <code>%postname%</code> equivalent to WordPress</li><li>Allowing post permalinks to redirect to an external link</li><li>Date format handling using <a href="https://moment.github.io/luxon/index.html">luxon</a></li><li>Generating read time<ul><li>Removed for now as most posts were coming in at “About 1 min. read time”, so what’s the point? I’d like to make it conditional on &gt; 1 minute.</li></ul></li><li>Allowing for some fuzzy dates, for the older repost material that I’m finding in the depths of my hard drives</li></ul>
+<ul class="wp-block-list"><li>The <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> templating language, including how to manipulate loops</li><li>Added Gulp asset building, which also runs <code>npx eleventy —serve</code> to build the site</li><li>Forcing post permalinks to use a <code>%postname%</code> equivalent to WordPress</li><li>Allowing post permalinks to redirect to an external link</li><li>Date format handling using <a href="https://moment.github.io/luxon/index.html">luxon</a></li><li>Generating read time<ul><li>Removed for now as most posts were coming in at “About 1 min. read time”, so what’s the point? I’d like to make it conditional on &gt; 1 minute.</li></ul></li><li>Allowing for some fuzzy dates, for the older repost material that I’m finding in the depths of my hard drives</li></ul>
 
 
 
-<h2 id="what%E2%80%99s-left-to-do%3F">What’s left to do? <a href="https://mattrad.uk/eleventy-reasons-to-move-from-wordpress/#what%E2%80%99s-left-to-do%3F">#</a></h2>
+<h2 class="wp-block-heading" id="what%E2%80%99s-left-to-do%3F">What’s left to do? <a href="https://mattrad.uk/eleventy-reasons-to-move-from-wordpress/#what%E2%80%99s-left-to-do%3F">#</a></h2>
 
 
 
@@ -287,7 +288,7 @@
 
 
 
-<ul><li>Applying a design. But I’m trying to focus on the content first, otherwise I’ll get distracted by all the <em>shiny</em>. So the CSS will have to wait.</li><li>Clean up the root directory, as there are files scattered everywhere right now</li><li>Inserting images (sorry <a href="https://lynx.browser.org/">Lynx</a> users)</li><li>Inserting images as <code>&lt;figure&gt;</code>, which will probably need a Nunjucks macro</li><li>Output one year indicator per collection of posts in that year. This is surprisingly involved, especially as Nunjucks doesn’t have <code>foreach</code> loops.</li><li>A proper draft status, rather than keeping them in a non-processed directory</li><li>Figure out how to schedule posts, and have Netlify build on a schedule</li><li>Auto-posting to Twitter (using a <a href="https://www.netlify.com/docs/functions/">Netlify lambda function</a>)</li><li><a href="https://indieweb.org/Webmention">Webmentions</a></li><li>Remove Gulp and use <code>npm</code> for asset compilation</li></ul>
+<ul class="wp-block-list"><li>Applying a design. But I’m trying to focus on the content first, otherwise I’ll get distracted by all the <em>shiny</em>. So the CSS will have to wait.</li><li>Clean up the root directory, as there are files scattered everywhere right now</li><li>Inserting images (sorry <a href="https://lynx.browser.org/">Lynx</a> users)</li><li>Inserting images as <code>&lt;figure&gt;</code>, which will probably need a Nunjucks macro</li><li>Output one year indicator per collection of posts in that year. This is surprisingly involved, especially as Nunjucks doesn’t have <code>foreach</code> loops.</li><li>A proper draft status, rather than keeping them in a non-processed directory</li><li>Figure out how to schedule posts, and have Netlify build on a schedule</li><li>Auto-posting to Twitter (using a <a href="https://www.netlify.com/docs/functions/">Netlify lambda function</a>)</li><li><a href="https://indieweb.org/Webmention">Webmentions</a></li><li>Remove Gulp and use <code>npm</code> for asset compilation</li></ul>
 
 
 
@@ -308,7 +309,8 @@
 		
 		<dc:creator><![CDATA[mattrad]]></dc:creator>
 		<pubDate>Sat, 04 May 2019 01:00:00 +0000</pubDate>
-				<guid isPermaLink="false">/?p=955</guid>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=955</guid>
 
 					<description><![CDATA[Serendipity. Sometimes things come along just at the right moment. I read an email newsletter on Friday called Learning in Public by Tania Rascia. She described how she’s been documenting her development on her blog: Writing down what you learn helps you retain it, understand it more deeply, improve your communication, and has the added [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -316,7 +318,7 @@
 
 
 
-<blockquote class="wp-block-quote"><p>Writing down what you learn helps you retain it, understand it more deeply, improve your communication, and has the added benefit of helping others who stumble upon your site. It doesn&#8217;t matter if anyone else sees it or only you, because the benefit is still there.</p></blockquote>
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>Writing down what you learn helps you retain it, understand it more deeply, improve your communication, and has the added benefit of helping others who stumble upon your site. It doesn&#8217;t matter if anyone else sees it or only you, because the benefit is still there.</p></blockquote>
 
 
 
@@ -337,7 +339,8 @@
 		
 		<dc:creator><![CDATA[mattrad]]></dc:creator>
 		<pubDate>Wed, 01 May 2019 01:00:00 +0000</pubDate>
-				<guid isPermaLink="false">/?p=951</guid>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=951</guid>
 
 					<description><![CDATA[Last time I got my writing groove on, I wrote &#8220;&#8230;blogging is important in establishing reputation&#8221;. 5 years later and it&#8217;s more &#8220;Meh&#8221;. If I want to write, I&#8217;ll write. But I want to own my writing, my thoughts. It matters that it&#8217;s here, on my space on the web, not on someone else&#8217;s. I [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -349,7 +352,7 @@
 
 
 
-<p>In the meantime, I&#8217;m curating the stuff I&#8217;ve already published. There&#8217;s a fair bit that&#8217;s accumulated over the years and I&#8217;m gradually going through it all, putting posts back up as I have time. I&#8217;m taking this as an opportunity to do something other than <a href="https://wordpress.org/">WordPress</a> &#8211; because a website like this doesn&#8217;t need a database, and will have more longevity without one. I&#8217;m learning to use <a href="https://11ty.io/">Eleventy</a>, a JavaScript-based static site generator, because JS is eating everything. And I get to use all the modern CSS I like, not that there&#8217;s much CSS going on here at the moment <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>In the meantime, I&#8217;m curating the stuff I&#8217;ve already published. There&#8217;s a fair bit that&#8217;s accumulated over the years and I&#8217;m gradually going through it all, putting posts back up as I have time. I&#8217;m taking this as an opportunity to do something other than <a href="https://wordpress.org/">WordPress</a> &#8211; because a website like this doesn&#8217;t need a database, and will have more longevity without one. I&#8217;m learning to use <a href="https://11ty.io/">Eleventy</a>, a JavaScript-based static site generator, because JS is eating everything. And I get to use all the modern CSS I like, not that there&#8217;s much CSS going on here at the moment <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
 
 <p><a href="/jfdi-redux/" rel="nofollow">Source</a></p>]]></content:encoded>
 					
@@ -362,7 +365,8 @@
 		
 		<dc:creator><![CDATA[mattrad]]></dc:creator>
 		<pubDate>Tue, 12 Jun 2018 21:36:20 +0000</pubDate>
-				<guid isPermaLink="false">https://mattrad.uk/?p=888</guid>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://mattrad.uk/?p=888</guid>
 
 					<description><![CDATA[Apple announced MapKit JS at WWDC recently, and there are already some great demos available: https://mapkit-demo.herokuapp.com/ (source: https://github.com/ankurp/mapkit-demo) https://github.com/chrisdrackett/react-mapkit (this shows lots of controls in use) https://github.com/vasile/mapkit-js-demo (this shows a country outline drawn from a geoJSON file). But how can we integrate this with WordPress? I use Advanced Custom Fields Pro quite a lot, so [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -370,7 +374,7 @@
 
 
 
-<ul><li><a href="https://mapkit-demo.herokuapp.com/">https://mapkit-demo.herokuapp.com/</a> (source: <a href="https://github.com/ankurp/mapkit-demo">https://github.com/ankurp/mapkit-demo</a>)</li><li><a href="https://github.com/chrisdrackett/react-mapkit">https://github.com/chrisdrackett/react-mapkit</a> (this shows lots of controls in use)</li><li><a href="https://github.com/vasile/mapkit-js-demo">https://github.com/vasile/mapkit-js-demo</a> (this shows a country outline drawn from a geoJSON file).</li></ul>
+<ul class="wp-block-list"><li><a href="https://mapkit-demo.herokuapp.com/">https://mapkit-demo.herokuapp.com/</a> (source: <a href="https://github.com/ankurp/mapkit-demo">https://github.com/ankurp/mapkit-demo</a>)</li><li><a href="https://github.com/chrisdrackett/react-mapkit">https://github.com/chrisdrackett/react-mapkit</a> (this shows lots of controls in use)</li><li><a href="https://github.com/vasile/mapkit-js-demo">https://github.com/vasile/mapkit-js-demo</a> (this shows a country outline drawn from a geoJSON file).</li></ul>
 
 
 
@@ -378,7 +382,7 @@
 
 
 
-<h2>Pre-requisites</h2>
+<h2 class="wp-block-heading">Pre-requisites</h2>
 
 
 
@@ -386,7 +390,7 @@
 
 
 
-<ul><li>an Apple developer account</li><li>your Apple developer Team ID</li><li>a maps identifier</li><li>a private key</li><li>a key identifier</li><li>a JWT (JSON Web Token)</li></ul>
+<ul class="wp-block-list"><li>an Apple developer account</li><li>your Apple developer Team ID</li><li>a maps identifier</li><li>a private key</li><li>a key identifier</li><li>a JWT (JSON Web Token)</li></ul>
 
 
 
@@ -398,7 +402,7 @@
 
 
 
-<blockquote class="wp-block-quote"><p>To communicate with the MapKit JS, you’ll use a Maps private key to sign one or more developer tokens.</p><p>First <a id="ember600" class="ember-view xRef Task subTopicLink active" href="https://help.apple.com/developer-account/#/dev4bb1cc12b?sub=devc240e1a83">register a Maps identifier</a> to identify your app. Register a Maps identifier for each app that uses MapKit JS. Next <a id="ember601" class="ember-view xRef AppleTopic" href="https://help.apple.com/developer-account/#/devcdfbb56a3?sub=devc240e1a83">create and download a private key</a> with MapKit JS enabled and associate it with the Maps identifier. You can associate two keys with each Maps identifier.</p><p>Then <a id="ember602" class="ember-view xRef AppleTopic" href="https://help.apple.com/developer-account/#/dev646934554?sub=devc240e1a83">get the key identifier</a> (<em>kid</em>) to create a JSON web token (JWT) that you’ll use to communicate with the services you enabled.</p></blockquote>
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>To communicate with the MapKit JS, you’ll use a Maps private key to sign one or more developer tokens.</p><p>First <a id="ember600" class="ember-view xRef Task subTopicLink active" href="https://help.apple.com/developer-account/#/dev4bb1cc12b?sub=devc240e1a83">register a Maps identifier</a> to identify your app. Register a Maps identifier for each app that uses MapKit JS. Next <a id="ember601" class="ember-view xRef AppleTopic" href="https://help.apple.com/developer-account/#/devcdfbb56a3?sub=devc240e1a83">create and download a private key</a> with MapKit JS enabled and associate it with the Maps identifier. You can associate two keys with each Maps identifier.</p><p>Then <a id="ember602" class="ember-view xRef AppleTopic" href="https://help.apple.com/developer-account/#/dev646934554?sub=devc240e1a83">get the key identifier</a> (<em>kid</em>) to create a JSON web token (JWT) that you’ll use to communicate with the services you enabled.</p></blockquote>
 
 
 
@@ -414,7 +418,7 @@
 
 
 
-<blockquote class="wp-block-quote"><p><code>/services/jwt/</code> endpoint yourself. The endpoint should return a signed <a href="https://jwt.io/">JWT-token</a> which can then be used to authenticate against Apple endpoints.</p></blockquote>
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p><code>/services/jwt/</code> endpoint yourself. The endpoint should return a signed <a href="https://jwt.io/">JWT-token</a> which can then be used to authenticate against Apple endpoints.</p></blockquote>
 
 
 
@@ -426,7 +430,7 @@
 
 
 
-<p>Thankfully, Thomas Schoffelen has already created MapKit JWT for PHP: <a href="https://github.com/includable/mapkit-jwt">https://github.com/includable/mapkit-jwt</a> <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> You pass his function a private key, key identifier and maps identifier, and it returns a JWT. It&#8217;s this token that you use much like a Google Maps API key in order to authorise initialization of your map.</p>
+<p>Thankfully, Thomas Schoffelen has already created MapKit JWT for PHP: <a href="https://github.com/includable/mapkit-jwt">https://github.com/includable/mapkit-jwt</a> <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> You pass his function a private key, key identifier and maps identifier, and it returns a JWT. It&#8217;s this token that you use much like a Google Maps API key in order to authorise initialization of your map.</p>
 
 
 
@@ -434,7 +438,7 @@
 
 
 
-<h2>How do Mapkit JS embeds work?</h2>
+<h2 class="wp-block-heading">How do Mapkit JS embeds work?</h2>
 
 
 
@@ -546,7 +550,7 @@
 
 
 
-<h2>WordPress integration</h2>
+<h2 class="wp-block-heading">WordPress integration</h2>
 
 
 
@@ -554,11 +558,11 @@
 
 
 
-<ul><li>add the MapKit JWT library</li><li>create a settings page to store Team ID, Key ID, Private Key and origin</li><li>store those in <code>wp_options</code></li><li>generate a JWT and store that in <code>wp_options</code> as well</li><li>enqueue the MapKit JS CDN and custom map JS</li><li>initialise and display the map using a shortcode</li></ul>
+<ul class="wp-block-list"><li>add the MapKit JWT library</li><li>create a settings page to store Team ID, Key ID, Private Key and origin</li><li>store those in <code>wp_options</code></li><li>generate a JWT and store that in <code>wp_options</code> as well</li><li>enqueue the MapKit JS CDN and custom map JS</li><li>initialise and display the map using a shortcode</li></ul>
 
 
 
-<h2>And here&#8217;s the result:</h2>
+<h2 class="wp-block-heading">And here&#8217;s the result:</h2>
 
 
 
@@ -566,7 +570,7 @@
 
 
 
-<p>To do this I&#8217;ve created a plugin. It&#8217;s just a demo of&nbsp;a simple embed but does output an Apple Map <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" />&nbsp; Even this was certainly more effort than using a Google Maps embed, and a lot more work than I was expecting. The next step will be to integrate custom markers, controlled using an ACF repeater. Any questions, please contact me on Twitter or raise an issue on Github.</p>
+<p>To do this I&#8217;ve created a plugin. It&#8217;s just a demo of&nbsp;a simple embed but does output an Apple Map <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" />&nbsp; Even this was certainly more effort than using a Google Maps embed, and a lot more work than I was expecting. The next step will be to integrate custom markers, controlled using an ACF repeater. Any questions, please contact me on Twitter or raise an issue on Github.</p>
 
 
 
@@ -583,7 +587,8 @@
 		
 		<dc:creator><![CDATA[mattrad]]></dc:creator>
 		<pubDate>Sat, 14 Apr 2018 16:21:12 +0000</pubDate>
-				<guid isPermaLink="false">https://mattrad.uk/?p=877</guid>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://mattrad.uk/?p=877</guid>
 
 					<description><![CDATA[Nicola Campbell, 93 Digital Don&#8217;t panic! (Matt &#8211; well maybe panic a bit. Try it on a staging copy of a website first. Don&#8217;t blindly upgrade on live.) Dropcaps, backgrounds and separators. Pull quotes more easily placed within text. Shortcodes won&#8217;t break. Probably. Handing over too much control to users? Colours not in line with [&#8230;]]]></description>
 										<content:encoded><![CDATA[<p>Nicola Campbell, 93 Digital</p>
@@ -592,7 +597,7 @@
 <p>Shortcodes won&#8217;t break. <em>Probably</em>.</p>
 <p>Handing over too much control to users? Colours not in line with the brand or design.</p>
 <p>Some accessibility cues, e.g. for colour:</p>
-<p><img loading="lazy" src="/wp-content/uploads/2018/04/img_2825.jpg" class="wp-image-879 size-full" height="3024" width="4032" srcset="/wp-content/uploads/2018/04/img_2825.jpg 4032w, /wp-content/uploads/2018/04/img_2825-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2825-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2825-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></p>
+<p><img loading="lazy" decoding="async" src="/wp-content/uploads/2018/04/img_2825.jpg" class="wp-image-879 size-full" height="3024" width="4032" srcset="/wp-content/uploads/2018/04/img_2825.jpg 4032w, /wp-content/uploads/2018/04/img_2825-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2825-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2825-1024x768.jpg 1024w" sizes="auto, (max-width: 4032px) 100vw, 4032px" /></p>
 <p>Blocks and views is a more appropriate design language than pages and posts. Be aware of different use cases of blocks.</p>
 <p>Final point: prepare your clients.</p>
 <p>(<em>Matt</em> &#8211; Gutenberg is exciting, no doubt, but with so many WordPress websites in the wild I am bit skeptical that&#8217;ll all be just fine.)</p>
@@ -608,7 +613,8 @@
 		
 		<dc:creator><![CDATA[mattrad]]></dc:creator>
 		<pubDate>Sat, 14 Apr 2018 13:21:12 +0000</pubDate>
-				<guid isPermaLink="false">https://mattrad.uk/?p=875</guid>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://mattrad.uk/?p=875</guid>
 
 					<description><![CDATA[WordPress is Enterprise-ready, see: TechCrunch Wired White House Move from a functional PHP to a MVC model Different components in different places Model &#8211; calls to DB View &#8211; HTML Controller &#8211; pulls those together OOP in the Loop E.g. wp_query No need to be afraid of the backend with MVC. Separation of concerns to [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -628,7 +634,7 @@
 
 
 
-<figure class="wp-block-image"><img loading="lazy" width="1132" height="750" src="/wp-content/uploads/2018/04/img_2820-2.jpg" alt="" class="wp-image-874" srcset="/wp-content/uploads/2018/04/img_2820-2.jpg 1132w, /wp-content/uploads/2018/04/img_2820-2-300x199.jpg 300w, /wp-content/uploads/2018/04/img_2820-2-768x509.jpg 768w, /wp-content/uploads/2018/04/img_2820-2-1024x678.jpg 1024w" sizes="(max-width: 1132px) 100vw, 1132px" /></figure>
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="1132" height="750" src="/wp-content/uploads/2018/04/img_2820-2.jpg" alt="" class="wp-image-874" srcset="/wp-content/uploads/2018/04/img_2820-2.jpg 1132w, /wp-content/uploads/2018/04/img_2820-2-300x199.jpg 300w, /wp-content/uploads/2018/04/img_2820-2-768x509.jpg 768w, /wp-content/uploads/2018/04/img_2820-2-1024x678.jpg 1024w" sizes="auto, (max-width: 1132px) 100vw, 1132px" /></figure>
 
 
 
@@ -652,7 +658,7 @@
 
 
 
-<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2821.jpg" alt="" class="wp-image-870" srcset="/wp-content/uploads/2018/04/img_2821.jpg 4032w, /wp-content/uploads/2018/04/img_2821-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2821-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2821-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2821.jpg" alt="" class="wp-image-870" srcset="/wp-content/uploads/2018/04/img_2821.jpg 4032w, /wp-content/uploads/2018/04/img_2821-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2821-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2821-1024x768.jpg 1024w" sizes="auto, (max-width: 4032px) 100vw, 4032px" /></figure>
 
 
 
@@ -709,11 +715,12 @@
 		
 		<dc:creator><![CDATA[mattrad]]></dc:creator>
 		<pubDate>Sat, 14 Apr 2018 11:18:52 +0000</pubDate>
-				<guid isPermaLink="false">https://mattrad.uk/?p=847</guid>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://mattrad.uk/?p=847</guid>
 
 					<description><![CDATA[Coolest graphic of the day! Kapersky global real time threat map Know your enemy “I’m just a small blog”. Bots don’t care. Why do they attack? Is your domain clean? Spam sending is then easy. Attackers can earn money by stealing data and resources. Why is security vital? Legal issues include GDPR. What are security [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2806.jpg" alt="" class="wp-image-849" srcset="/wp-content/uploads/2018/04/img_2806.jpg 4032w, /wp-content/uploads/2018/04/img_2806-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2806-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2806-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2806.jpg" alt="" class="wp-image-849" srcset="/wp-content/uploads/2018/04/img_2806.jpg 4032w, /wp-content/uploads/2018/04/img_2806-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2806-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2806-1024x768.jpg 1024w" sizes="auto, (max-width: 4032px) 100vw, 4032px" /></figure>
 
 
 
@@ -725,7 +732,7 @@
 
 
 
-<figure class="wp-block-image"><img loading="lazy" width="1262" height="750" src="/wp-content/uploads/2018/04/img_2807.jpg" alt="" class="wp-image-851" srcset="/wp-content/uploads/2018/04/img_2807.jpg 1262w, /wp-content/uploads/2018/04/img_2807-300x178.jpg 300w, /wp-content/uploads/2018/04/img_2807-768x456.jpg 768w, /wp-content/uploads/2018/04/img_2807-1024x609.jpg 1024w" sizes="(max-width: 1262px) 100vw, 1262px" /></figure>
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="1262" height="750" src="/wp-content/uploads/2018/04/img_2807.jpg" alt="" class="wp-image-851" srcset="/wp-content/uploads/2018/04/img_2807.jpg 1262w, /wp-content/uploads/2018/04/img_2807-300x178.jpg 300w, /wp-content/uploads/2018/04/img_2807-768x456.jpg 768w, /wp-content/uploads/2018/04/img_2807-1024x609.jpg 1024w" sizes="auto, (max-width: 1262px) 100vw, 1262px" /></figure>
 
 
 
@@ -733,7 +740,7 @@
 
 
 
-<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2809.jpg" alt="" class="wp-image-850" srcset="/wp-content/uploads/2018/04/img_2809.jpg 4032w, /wp-content/uploads/2018/04/img_2809-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2809-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2809-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2809.jpg" alt="" class="wp-image-850" srcset="/wp-content/uploads/2018/04/img_2809.jpg 4032w, /wp-content/uploads/2018/04/img_2809-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2809-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2809-1024x768.jpg 1024w" sizes="auto, (max-width: 4032px) 100vw, 4032px" /></figure>
 
 
 
@@ -741,11 +748,11 @@
 
 
 
-<h3>Why do they attack?</h3>
+<h3 class="wp-block-heading">Why do they attack?</h3>
 
 
 
-<h3><img loading="lazy" class="size-full wp-image-852" src="/wp-content/uploads/2018/04/img_2810.jpg" width="4032" height="3024" srcset="/wp-content/uploads/2018/04/img_2810.jpg 4032w, /wp-content/uploads/2018/04/img_2810-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2810-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2810-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></h3>
+<h3 class="wp-block-heading"><img loading="lazy" decoding="async" class="size-full wp-image-852" src="/wp-content/uploads/2018/04/img_2810.jpg" width="4032" height="3024" srcset="/wp-content/uploads/2018/04/img_2810.jpg 4032w, /wp-content/uploads/2018/04/img_2810-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2810-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2810-1024x768.jpg 1024w" sizes="auto, (max-width: 4032px) 100vw, 4032px" /></h3>
 
 
 
@@ -757,11 +764,11 @@
 
 
 
-<h3>Why is security vital?</h3>
+<h3 class="wp-block-heading">Why is security vital?</h3>
 
 
 
-<h3><img loading="lazy" class="wp-image-853 size-full" src="/wp-content/uploads/2018/04/img_2811.jpg" width="4032" height="3024" srcset="/wp-content/uploads/2018/04/img_2811.jpg 4032w, /wp-content/uploads/2018/04/img_2811-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2811-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2811-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></h3>
+<h3 class="wp-block-heading"><img loading="lazy" decoding="async" class="wp-image-853 size-full" src="/wp-content/uploads/2018/04/img_2811.jpg" width="4032" height="3024" srcset="/wp-content/uploads/2018/04/img_2811.jpg 4032w, /wp-content/uploads/2018/04/img_2811-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2811-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2811-1024x768.jpg 1024w" sizes="auto, (max-width: 4032px) 100vw, 4032px" /></h3>
 
 
 
@@ -769,19 +776,19 @@
 
 
 
-<h3>What are security goals?</h3>
+<h3 class="wp-block-heading">What are security goals?</h3>
 
 
 
-<p><img loading="lazy" class="wp-image-854 size-full" src="/wp-content/uploads/2018/04/img_2812.jpg" width="4032" height="3024" srcset="/wp-content/uploads/2018/04/img_2812.jpg 4032w, /wp-content/uploads/2018/04/img_2812-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2812-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2812-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" />Security is a continuous process</p>
+<p><img loading="lazy" decoding="async" class="wp-image-854 size-full" src="/wp-content/uploads/2018/04/img_2812.jpg" width="4032" height="3024" srcset="/wp-content/uploads/2018/04/img_2812.jpg 4032w, /wp-content/uploads/2018/04/img_2812-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2812-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2812-1024x768.jpg 1024w" sizes="auto, (max-width: 4032px) 100vw, 4032px" />Security is a continuous process</p>
 
 
 
-<h3>5 security principles to follow:</h3>
+<h3 class="wp-block-heading">5 security principles to follow:</h3>
 
 
 
-<h4>1 Manage security risks</h4>
+<h4 class="wp-block-heading">1 Manage security risks</h4>
 
 
 
@@ -801,7 +808,7 @@
 
 
 
-<h4>2 Be reluctant to trust</h4>
+<h4 class="wp-block-heading">2 Be reluctant to trust</h4>
 
 
 
@@ -813,15 +820,15 @@
 
 
 
-<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file.jpg" alt="" class="wp-image-858" srcset="/wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file.jpg 4032w, /wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file-300x225.jpg 300w, /wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file-768x576.jpg 768w, /wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="4032" height="3024" src="/wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file.jpg" alt="" class="wp-image-858" srcset="/wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file.jpg 4032w, /wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file-300x225.jpg 300w, /wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file-768x576.jpg 768w, /wp-content/uploads/2018/04/50f6aa76-2568-4e39-9034-01cc1373ec56-5645-000003303060bafa_file-1024x768.jpg 1024w" sizes="auto, (max-width: 4032px) 100vw, 4032px" /></figure>
 
 
 
-<h4>3 Defence in Depth</h4>
+<h4 class="wp-block-heading">3 Defence in Depth</h4>
 
 
 
-<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file.jpg" alt="" class="wp-image-861" srcset="/wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file.jpg 4032w, /wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file-300x225.jpg 300w, /wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file-768x576.jpg 768w, /wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="4032" height="3024" src="/wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file.jpg" alt="" class="wp-image-861" srcset="/wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file.jpg 4032w, /wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file-300x225.jpg 300w, /wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file-768x576.jpg 768w, /wp-content/uploads/2018/04/e25fac27-2707-40bc-baf9-f5d80d73819d-5645-000003310298a153_file-1024x768.jpg 1024w" sizes="auto, (max-width: 4032px) 100vw, 4032px" /></figure>
 
 
 
@@ -833,7 +840,7 @@
 
 
 
-<h4>4 Stay up to date</h4>
+<h4 class="wp-block-heading">4 Stay up to date</h4>
 
 
 
@@ -841,7 +848,7 @@
 
 
 
-<h4>Is WordPress secure?</h4>
+<h4 class="wp-block-heading">Is WordPress secure?</h4>
 
 
 
@@ -853,7 +860,7 @@
 
 
 
-<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file.jpg" alt="" class="wp-image-865" srcset="/wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file.jpg 4032w, /wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file-300x225.jpg 300w, /wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file-768x576.jpg 768w, /wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="4032" height="3024" src="/wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file.jpg" alt="" class="wp-image-865" srcset="/wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file.jpg 4032w, /wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file-300x225.jpg 300w, /wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file-768x576.jpg 768w, /wp-content/uploads/2018/04/51a4984a-fbb9-4dab-900b-c46af910b014-5645-00000332e626de89_file-1024x768.jpg 1024w" sizes="auto, (max-width: 4032px) 100vw, 4032px" /></figure>
 
 
 
@@ -861,7 +868,7 @@
 
 
 
-<h4>5 Secure the weakest link</h4>
+<h4 class="wp-block-heading">5 Secure the weakest link</h4>
 
 
 
@@ -886,7 +893,8 @@
 		
 		<dc:creator><![CDATA[mattrad]]></dc:creator>
 		<pubDate>Sat, 14 Apr 2018 10:17:32 +0000</pubDate>
-				<guid isPermaLink="false">https://mattrad.uk/?p=845</guid>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://mattrad.uk/?p=845</guid>
 
 					<description><![CDATA[Event for marketing pros to build 48 websites for 48 charities in 48 hours Using professional skills to help the community Templated process using Beaver Builder Takes prep from charities &#8211; both technical and marketing (branding, website targeting). Teams get a brief at the beginning of the event. Volunteers show up on Friday, quick brief [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -902,7 +910,7 @@
 
 
 
-<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2803.jpg" alt="" class="wp-image-842" srcset="/wp-content/uploads/2018/04/img_2803.jpg 4032w, /wp-content/uploads/2018/04/img_2803-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2803-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2803-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2803.jpg" alt="" class="wp-image-842" srcset="/wp-content/uploads/2018/04/img_2803.jpg 4032w, /wp-content/uploads/2018/04/img_2803-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2803-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2803-1024x768.jpg 1024w" sizes="auto, (max-width: 4032px) 100vw, 4032px" /></figure>
 
 
 
@@ -910,7 +918,7 @@
 
 
 
-<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2804.jpg" alt="" class="wp-image-843" srcset="/wp-content/uploads/2018/04/img_2804.jpg 4032w, /wp-content/uploads/2018/04/img_2804-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2804-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2804-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2804.jpg" alt="" class="wp-image-843" srcset="/wp-content/uploads/2018/04/img_2804.jpg 4032w, /wp-content/uploads/2018/04/img_2804-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2804-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2804-1024x768.jpg 1024w" sizes="auto, (max-width: 4032px) 100vw, 4032px" /></figure>
 
 
 
@@ -930,7 +938,7 @@
 
 
 
-<figure class="wp-block-image"><img loading="lazy" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2805-1.jpg" alt="" class="wp-image-844" srcset="/wp-content/uploads/2018/04/img_2805-1.jpg 4032w, /wp-content/uploads/2018/04/img_2805-1-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2805-1-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2805-1-1024x768.jpg 1024w" sizes="(max-width: 4032px) 100vw, 4032px" /></figure>
+<figure class="wp-block-image"><img loading="lazy" decoding="async" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2805-1.jpg" alt="" class="wp-image-844" srcset="/wp-content/uploads/2018/04/img_2805-1.jpg 4032w, /wp-content/uploads/2018/04/img_2805-1-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2805-1-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2805-1-1024x768.jpg 1024w" sizes="auto, (max-width: 4032px) 100vw, 4032px" /></figure>
 
 
 
