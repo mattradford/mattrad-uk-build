@@ -87,9 +87,44 @@
 			z-index: 100000;
 		}
 /*# sourceURL=wp-block-template-skip-link-inline-css */</style>
-<link rel="stylesheet" id="theme-css" href="/wp-content/themes/gertrude2/style.css?ver=6.9" media="all">
 
 <link rel="shortlink" href="/?p=286">
+<style>:root {
+        --link-colour: rgb(0, 0, 238);
+        --link-colour-hover: rgb(0, 0, 0);
+        --link-colour-visited: rebeccapurple;
+    }
+    body {
+        padding: 0 1rem;
+        @media (min-width: 720px ) {
+            padding: 0;
+        }
+    }
+    .wp-block-navigation .wp-block-navigation-item__content.wp-block-navigation-item__content {
+        color: var(--link-colour);
+        text-decoration: underline;
+
+        &:hover, &:focus {
+            color: var(--link-colour-hover);
+        }
+
+        &:visited {
+            color: var(--link-colour-visited);
+        }
+    }
+    .home :where(.is-layout-flow) > *{
+        margin-block-start: 0.5rem;
+    }
+    .home .wp-block-post-title :where(a) {
+        font-size: var(--wp--preset--font-size--normal);
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+    .home .wp-block-post-date {
+        margin-inline-start: auto;
+    }</style>
 <script type="importmap" id="wp-importmap">{"imports":{"@wordpress/interactivity":"/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=8964710565a1d258501f"}}</script>
 <link rel="modulepreload" href="/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=8964710565a1d258501f" id="@wordpress/interactivity-js-modulepreload" fetchpriority="low">
 </head>
