@@ -27,7 +27,9 @@
 		<pubDate>Wed, 22 Jun 2022 22:06:48 +0000</pubDate>
 				<guid isPermaLink="false">/?p=1067</guid>
 
-					<description><![CDATA[Zero-cost hosting with super-fast performance? You can&#8217;t beat static HTML. This post looks at using the following to take a local-only site to one hosted as static HTML on Netlify, using: Local https://localwp.com/ Simply Static https://wordpress.org/plugins/simply-static/ GitHub https://github.com/ Netlify https://www.netlify.com/ I use Local as my local WordPress development environment. It&#8217;s been very reliable for a [&#8230;]]]></description>
+					<description><![CDATA[<p>Zero-cost hosting with super-fast performance? You can&#8217;t beat static HTML. This post looks at using the following to take a local-only site to one hosted as static HTML on Netlify, using: Local https://localwp.com/ Simply Static https://wordpress.org/plugins/simply-static/ GitHub https://github.com/ Netlify https://www.netlify.com/ I use Local as my local WordPress development environment. It&#8217;s been very reliable for a [&#8230;]</p>
+<p>The post <a href="/deploying-wordpress-as-static-html-to-netlify/">Deploying WordPress as static HTML to Netlify</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[
 <p>Zero-cost hosting with super-fast performance? You can&#8217;t beat static HTML. This post looks at using the following to take a local-only site to one hosted as static HTML on Netlify, using:</p>
 
@@ -114,8 +116,8 @@
 
 
 <figure class="wp-block-image size-full"><img decoding="async" width="969" height="424" src="/wp-content/uploads/2022/06/rss-and-sitemap.jpg" alt="Simply Static additional URLs" class="wp-image-1072" srcset="/wp-content/uploads/2022/06/rss-and-sitemap.jpg 969w, /wp-content/uploads/2022/06/rss-and-sitemap-300x131.jpg 300w, /wp-content/uploads/2022/06/rss-and-sitemap-768x336.jpg 768w" sizes="(max-width: 969px) 100vw, 969px" /></figure>
-
-<p><a href="/deploying-wordpress-as-static-html-to-netlify/" rel="nofollow">Source</a></p>]]></content:encoded>
+<p>The post <a href="/deploying-wordpress-as-static-html-to-netlify/">Deploying WordPress as static HTML to Netlify</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></content:encoded>
 					
 		
 		
@@ -128,7 +130,9 @@
 		<pubDate>Sat, 18 Jun 2022 16:16:03 +0000</pubDate>
 				<guid isPermaLink="false">/?p=1049</guid>
 
-					<description><![CDATA[I had a great day at Pixel Pioneers in Bristol recently and it got me enthused about the craft of the web again. My day job is fascinating in the reach and attention to detail, but there are also understandable and necessary constraints in working for a large organisation. And the first talk of the [&#8230;]]]></description>
+					<description><![CDATA[<p>I had a great day at Pixel Pioneers in Bristol recently and it got me enthused about the craft of the web again. My day job is fascinating in the reach and attention to detail, but there are also understandable and necessary constraints in working for a large organisation. And the first talk of the [&#8230;]</p>
+<p>The post <a href="/stripped/">Stripped</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[
 <p>I had a great day at <a href="https://pixelpioneers.co/">Pixel Pioneers</a> in Bristol recently and it got me enthused about the craft of the web again. My day job is fascinating in the reach and attention to detail, but there are also understandable and necessary constraints in working for a large organisation. And the first talk of the day at Pixel Pioneers was from <a href="https://www.jam-factory.com/">Gavin Strange</a> of Aardman &#8211; “Less thinkering, more tinkering”. With the other talks, it got me excited about the possibilities of the web and playing around with my own neglected website. But the <strong>weight</strong> of doing of a rebuild… ugh.</p>
 
@@ -243,8 +247,8 @@
 
 
 <p>Onward to play <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
-
-<p><a href="/stripped/" rel="nofollow">Source</a></p>]]></content:encoded>
+<p>The post <a href="/stripped/">Stripped</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></content:encoded>
 					
 		
 		
@@ -258,7 +262,9 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">/?p=953</guid>
 
-					<description><![CDATA[WordPress pays my wages. It enables me (and many others) to create flexible and extensible websites for clients. It’s fair to say, after years of working with it, that I know it inside out. But there’s more out there. When I decided to rebuild my own website, I wanted something different. Something that would stretch [&#8230;]]]></description>
+					<description><![CDATA[<p>WordPress pays my wages. It enables me (and many others) to create flexible and extensible websites for clients. It’s fair to say, after years of working with it, that I know it inside out. But there’s more out there. When I decided to rebuild my own website, I wanted something different. Something that would stretch [&#8230;]</p>
+<p>The post <a href="/eleventy-reasons-to-move-from-wordpress/">Eleventy reasons to move from WordPress</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[
 <p>WordPress pays my wages. It enables me (and many others) to create flexible and extensible websites for clients. It’s fair to say, after years of working with it, that I know it inside out.</p>
 
@@ -297,8 +303,8 @@
 
 
 <p>I can now write this post in <a href="https://ia.net/writer">IA Writer</a> on my phone, push to my website’s git repo (using <a href="https://workingcopyapp.com/">Working Copy</a>), which Netlify will then build and deploy. It’s not going to be everyone’s cup of tea but I’m loving it. Forward!</p>
-
-<p><a href="/eleventy-reasons-to-move-from-wordpress/" rel="nofollow">Source</a></p>]]></content:encoded>
+<p>The post <a href="/eleventy-reasons-to-move-from-wordpress/">Eleventy reasons to move from WordPress</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></content:encoded>
 					
 		
 		
@@ -312,7 +318,9 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">/?p=955</guid>
 
-					<description><![CDATA[Serendipity. Sometimes things come along just at the right moment. I read an email newsletter on Friday called Learning in Public by Tania Rascia. She described how she’s been documenting her development on her blog: Writing down what you learn helps you retain it, understand it more deeply, improve your communication, and has the added [&#8230;]]]></description>
+					<description><![CDATA[<p>Serendipity. Sometimes things come along just at the right moment. I read an email newsletter on Friday called Learning in Public by Tania Rascia. She described how she’s been documenting her development on her blog: Writing down what you learn helps you retain it, understand it more deeply, improve your communication, and has the added [&#8230;]</p>
+<p>The post <a href="/learning-in-public/">Learning in Public</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[
 <p><em>Serendipity</em>. Sometimes things come along just at the right moment. I read an email newsletter on Friday called <em>Learning in Public</em> by <a href="https://www.taniarascia.com/">Tania Rascia</a>. She described how she’s been documenting her development on her blog:</p>
 
@@ -327,8 +335,8 @@
 
 
 <p>That’s the essence of the web for me. Everything open for others to see and learn from. No walled gardens or obfuscations. <em>View source</em> FTW.</p>
-
-<p><a href="/learning-in-public/" rel="nofollow">Source</a></p>]]></content:encoded>
+<p>The post <a href="/learning-in-public/">Learning in Public</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></content:encoded>
 					
 		
 		
@@ -342,7 +350,9 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">/?p=951</guid>
 
-					<description><![CDATA[Last time I got my writing groove on, I wrote &#8220;&#8230;blogging is important in establishing reputation&#8221;. 5 years later and it&#8217;s more &#8220;Meh&#8221;. If I want to write, I&#8217;ll write. But I want to own my writing, my thoughts. It matters that it&#8217;s here, on my space on the web, not on someone else&#8217;s. I [&#8230;]]]></description>
+					<description><![CDATA[<p>Last time I got my writing groove on, I wrote &#8220;&#8230;blogging is important in establishing reputation&#8221;. 5 years later and it&#8217;s more &#8220;Meh&#8221;. If I want to write, I&#8217;ll write. But I want to own my writing, my thoughts. It matters that it&#8217;s here, on my space on the web, not on someone else&#8217;s. I [&#8230;]</p>
+<p>The post <a href="/jfdi-redux/">JFDI Redux</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[
 <p>Last time I got my writing groove on, I wrote <a href="https://mattrad.uk/jfdi">&#8220;&#8230;blogging is important in establishing reputation&#8221;</a>.</p>
 
@@ -353,8 +363,8 @@
 
 
 <p>In the meantime, I&#8217;m curating the stuff I&#8217;ve already published. There&#8217;s a fair bit that&#8217;s accumulated over the years and I&#8217;m gradually going through it all, putting posts back up as I have time. I&#8217;m taking this as an opportunity to do something other than <a href="https://wordpress.org/">WordPress</a> &#8211; because a website like this doesn&#8217;t need a database, and will have more longevity without one. I&#8217;m learning to use <a href="https://11ty.io/">Eleventy</a>, a JavaScript-based static site generator, because JS is eating everything. And I get to use all the modern CSS I like, not that there&#8217;s much CSS going on here at the moment <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
-
-<p><a href="/jfdi-redux/" rel="nofollow">Source</a></p>]]></content:encoded>
+<p>The post <a href="/jfdi-redux/">JFDI Redux</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></content:encoded>
 					
 		
 		
@@ -368,7 +378,9 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">https://mattrad.uk/?p=888</guid>
 
-					<description><![CDATA[Apple announced MapKit JS at WWDC recently, and there are already some great demos available: https://mapkit-demo.herokuapp.com/ (source: https://github.com/ankurp/mapkit-demo) https://github.com/chrisdrackett/react-mapkit (this shows lots of controls in use) https://github.com/vasile/mapkit-js-demo (this shows a country outline drawn from a geoJSON file). But how can we integrate this with WordPress? I use Advanced Custom Fields Pro quite a lot, so [&#8230;]]]></description>
+					<description><![CDATA[<p>Apple announced MapKit JS at WWDC recently, and there are already some great demos available: https://mapkit-demo.herokuapp.com/ (source: https://github.com/ankurp/mapkit-demo) https://github.com/chrisdrackett/react-mapkit (this shows lots of controls in use) https://github.com/vasile/mapkit-js-demo (this shows a country outline drawn from a geoJSON file). But how can we integrate this with WordPress? I use Advanced Custom Fields Pro quite a lot, so [&#8230;]</p>
+<p>The post <a href="/embedding-apple-map-wordpress/">Embedding an Apple Map on a WordPress website using Mapkit JS</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[
 <p>Apple announced MapKit JS at WWDC recently, and there are already some great demos available:</p>
 
@@ -575,8 +587,8 @@
 
 
 <p>You can get the plugin here: <a href="https://github.com/mattradford/apple-map-embed">https://github.com/mattradford/apple-map-embed</a>.</p>
-
-<p><a href="/embedding-apple-map-wordpress/" rel="nofollow">Source</a></p>]]></content:encoded>
+<p>The post <a href="/embedding-apple-map-wordpress/">Embedding an Apple Map on a WordPress website using Mapkit JS</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></content:encoded>
 					
 		
 		
@@ -590,7 +602,9 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">https://mattrad.uk/?p=877</guid>
 
-					<description><![CDATA[Nicola Campbell, 93 Digital Don&#8217;t panic! (Matt &#8211; well maybe panic a bit. Try it on a staging copy of a website first. Don&#8217;t blindly upgrade on live.) Dropcaps, backgrounds and separators. Pull quotes more easily placed within text. Shortcodes won&#8217;t break. Probably. Handing over too much control to users? Colours not in line with [&#8230;]]]></description>
+					<description><![CDATA[<p>Nicola Campbell, 93 Digital Don&#8217;t panic! (Matt &#8211; well maybe panic a bit. Try it on a staging copy of a website first. Don&#8217;t blindly upgrade on live.) Dropcaps, backgrounds and separators. Pull quotes more easily placed within text. Shortcodes won&#8217;t break. Probably. Handing over too much control to users? Colours not in line with [&#8230;]</p>
+<p>The post <a href="/gutenberg-for-designers-wcldn/">Gutenberg for Designers #wcldn</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[<p>Nicola Campbell, 93 Digital</p>
 <p>Don&#8217;t panic! (<em>Matt</em> &#8211; well maybe panic a bit. Try it on a staging copy of a website first. Don&#8217;t blindly upgrade on live.)</p>
 <p>Dropcaps, backgrounds and separators. Pull quotes more easily placed within text.</p>
@@ -601,8 +615,8 @@
 <p>Blocks and views is a more appropriate design language than pages and posts. Be aware of different use cases of blocks.</p>
 <p>Final point: prepare your clients.</p>
 <p>(<em>Matt</em> &#8211; Gutenberg is exciting, no doubt, but with so many WordPress websites in the wild I am bit skeptical that&#8217;ll all be just fine.)</p>
-
-<p><a href="/gutenberg-for-designers-wcldn/" rel="nofollow">Source</a></p>]]></content:encoded>
+<p>The post <a href="/gutenberg-for-designers-wcldn/">Gutenberg for Designers #wcldn</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></content:encoded>
 					
 		
 		
@@ -616,7 +630,9 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">https://mattrad.uk/?p=875</guid>
 
-					<description><![CDATA[WordPress is Enterprise-ready, see: TechCrunch Wired White House Move from a functional PHP to a MVC model Different components in different places Model &#8211; calls to DB View &#8211; HTML Controller &#8211; pulls those together OOP in the Loop E.g. wp_query No need to be afraid of the backend with MVC. Separation of concerns to [&#8230;]]]></description>
+					<description><![CDATA[<p>WordPress is Enterprise-ready, see: TechCrunch Wired White House Move from a functional PHP to a MVC model Different components in different places Model &#8211; calls to DB View &#8211; HTML Controller &#8211; pulls those together OOP in the Loop E.g. wp_query No need to be afraid of the backend with MVC. Separation of concerns to [&#8230;]</p>
+<p>The post <a href="/scaling-wordpress-for-enterprise-elliot-taylor-wcldn/">Scaling WordPress for Enterprise &#8211; Elliot Taylor #wcldn</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[
 <p>WordPress is Enterprise-ready, see:</p>
 
@@ -703,8 +719,8 @@
 
 
 <p><a href="http://prod.press/">http://prod.press/</a> &#8211; MVC Enterprise WP framework</p>
-
-<p><a href="/scaling-wordpress-for-enterprise-elliot-taylor-wcldn/" rel="nofollow">Source</a></p>]]></content:encoded>
+<p>The post <a href="/scaling-wordpress-for-enterprise-elliot-taylor-wcldn/">Scaling WordPress for Enterprise &#8211; Elliot Taylor #wcldn</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></content:encoded>
 					
 		
 		
@@ -718,7 +734,9 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">https://mattrad.uk/?p=847</guid>
 
-					<description><![CDATA[Coolest graphic of the day! Kapersky global real time threat map Know your enemy “I’m just a small blog”. Bots don’t care. Why do they attack? Is your domain clean? Spam sending is then easy. Attackers can earn money by stealing data and resources. Why is security vital? Legal issues include GDPR. What are security [&#8230;]]]></description>
+					<description><![CDATA[<p>Coolest graphic of the day! Kapersky global real time threat map Know your enemy “I’m just a small blog”. Bots don’t care. Why do they attack? Is your domain clean? Spam sending is then easy. Attackers can earn money by stealing data and resources. Why is security vital? Legal issues include GDPR. What are security [&#8230;]</p>
+<p>The post <a href="/security-is-a-process-vitalethomas-wcldn/">Security is a process &#8211; @vitalethomas #wcldn</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[
 <figure class="wp-block-image"><img loading="lazy" decoding="async" width="4032" height="3024" src="/wp-content/uploads/2018/04/img_2806.jpg" alt="" class="wp-image-849" srcset="/wp-content/uploads/2018/04/img_2806.jpg 4032w, /wp-content/uploads/2018/04/img_2806-300x225.jpg 300w, /wp-content/uploads/2018/04/img_2806-768x576.jpg 768w, /wp-content/uploads/2018/04/img_2806-1024x768.jpg 1024w" sizes="auto, (max-width: 4032px) 100vw, 4032px" /></figure>
 
@@ -881,8 +899,8 @@
 
 
 <p>Take care of users and the web.</p>
-
-<p><a href="/security-is-a-process-vitalethomas-wcldn/" rel="nofollow">Source</a></p>]]></content:encoded>
+<p>The post <a href="/security-is-a-process-vitalethomas-wcldn/">Security is a process &#8211; @vitalethomas #wcldn</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></content:encoded>
 					
 		
 		
@@ -896,7 +914,9 @@
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">https://mattrad.uk/?p=845</guid>
 
-					<description><![CDATA[Event for marketing pros to build 48 websites for 48 charities in 48 hours Using professional skills to help the community Templated process using Beaver Builder Takes prep from charities &#8211; both technical and marketing (branding, website targeting). Teams get a brief at the beginning of the event. Volunteers show up on Friday, quick brief [&#8230;]]]></description>
+					<description><![CDATA[<p>Event for marketing pros to build 48 websites for 48 charities in 48 hours Using professional skills to help the community Templated process using Beaver Builder Takes prep from charities &#8211; both technical and marketing (branding, website targeting). Teams get a brief at the beginning of the event. Volunteers show up on Friday, quick brief [&#8230;]</p>
+<p>The post <a href="/48-48-48-adam-walker-wcldn/">48/48/48 &#8211; Adam Walker #wcldn</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[
 <p>Event for marketing pros to build 48 websites for 48 charities in 48 hours</p>
 
@@ -947,8 +967,8 @@
 
 
 <p>@ajwalker / @48in48org</p>
-
-<p><a href="/48-48-48-adam-walker-wcldn/" rel="nofollow">Source</a></p>]]></content:encoded>
+<p>The post <a href="/48-48-48-adam-walker-wcldn/">48/48/48 &#8211; Adam Walker #wcldn</a> appeared first on <a href="/">mattrad</a>.</p>
+]]></content:encoded>
 					
 		
 		
